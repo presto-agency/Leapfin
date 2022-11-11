@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6, h7 {
+  color: $color-royal-blue-800;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $color-dark-gray-800;
+}
+
+h1, .h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+h3, .h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
