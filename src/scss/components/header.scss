@@ -198,25 +198,27 @@
                         a {
                           display: flex;
 
-                          &:hover {
-                            p {
-                              strong {
-                                color: $color-punchy-green-800;
-                              }
-                            }
-
-                            &._yellow-link {
+                          @media (min-width: 1200px) {
+                            &:hover {
                               p {
                                 strong {
-                                  color: $color-bright-orange;
+                                  color: $color-punchy-green-800;
                                 }
                               }
-                            }
 
-                            &._punchy-link {
-                              p {
-                                strong {
-                                  color: $color-punchy-green;
+                              &._yellow-link {
+                                p {
+                                  strong {
+                                    color: $color-bright-orange;
+                                  }
+                                }
+                              }
+
+                              &._punchy-link {
+                                p {
+                                  strong {
+                                    color: $color-punchy-green;
+                                  }
                                 }
                               }
                             }
@@ -480,21 +482,23 @@
                       width: 100%;
                     }
 
-                   > li {
+                    > li {
                       position: relative;
                       width: 100%;
                       padding: 16px 20px 16px 0;
                       border-bottom: 1px solid #F3F2F3;
                       min-height: initial;
                       max-width: initial;
-                      &.active{
-                        .plus{
-                          &:after{
+
+                      &.active {
+                        .plus {
+                          &:after {
                             background: $color-punchy-green-800;
                             transform: translateX(-50%) rotate(90deg);
                           }
                         }
-                        >p{
+
+                        > p {
                           color: $color-punchy-green-800;
                         }
                       }
@@ -542,9 +546,11 @@
                         max-height: 0px;
                         transition: 300ms;
                         overflow: hidden;
-                        li{
+
+                        li {
                           border-bottom: initial;
-                          &:first-child{
+
+                          &:first-child {
                             padding: 32px 0 0 0;
                           }
                         }
