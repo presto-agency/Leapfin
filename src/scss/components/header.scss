@@ -102,7 +102,7 @@
               transition: 300ms;
             }
 
-            .dropdown-bg {
+            .dropdown-menu {
               position: fixed;
               opacity: 0;
               pointer-events: none;
@@ -136,6 +136,7 @@
 
                   li {
                     max-width: 313px;
+                    min-height: 84px;
 
                     p {
                       font-size: 16px;
@@ -155,6 +156,22 @@
                             p {
                               strong {
                                 color: $color-punchy-green-800;
+                              }
+                            }
+
+                            &._yellow-link {
+                              p {
+                                strong {
+                                  color: $color-bright-orange;
+                                }
+                              }
+                            }
+
+                            &._punchy-link {
+                              p {
+                                strong {
+                                  color: $color-punchy-green;
+                                }
                               }
                             }
                           }
@@ -218,7 +235,7 @@
               }
 
               &.submenu {
-                .dropdown-bg {
+                .dropdown-menu {
                   opacity: 1;
                   pointer-events: initial;
 

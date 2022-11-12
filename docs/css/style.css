@@ -260,7 +260,7 @@ h3,
   transition: 300ms;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg {
+.header__content .navigation__links > li.submenu .dropdown-menu {
   position: fixed;
   opacity: 0;
   pointer-events: none;
@@ -272,7 +272,7 @@ h3,
   transition: 500ms;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu {
   position: absolute;
   display: flex;
   top: 0;
@@ -281,7 +281,7 @@ h3,
   transition: 500ms;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list {
   display: flex;
   justify-content: space-between;
   width: 763px;
@@ -290,16 +290,17 @@ h3,
   background: #fff;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list.small {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list.small {
   width: 363px;
   background: #FAFAFB;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li {
   max-width: 313px;
+  min-height: 84px;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li p {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -308,21 +309,29 @@ h3,
   opacity: 0.8;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a {
   display: flex;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a:hover p strong {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a:hover p strong {
   color: #A2CB94;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a span {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a:hover._yellow-link p strong {
+  color: #FAA204;
+}
+
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a:hover._punchy-link p strong {
+  color: #1ED760;
+}
+
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a span {
   flex: 0 0 42px;
   height: 42px;
   margin: 0 16px 0 0;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a span img {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a span img {
   border-radius: 4px;
   width: 100%;
   height: 100%;
@@ -330,12 +339,12 @@ h3,
      object-fit: cover;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a p {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a p {
   display: flex;
   flex-direction: column;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a p strong {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a p strong {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -344,7 +353,7 @@ h3,
   transition: 500ms;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-bg__submenu_list li ul li a p small {
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a p small {
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
@@ -391,12 +400,12 @@ h3,
     color: #1ED760;
   }
 
-  .header__content .navigation__links > li:hover.submenu .dropdown-bg {
+  .header__content .navigation__links > li:hover.submenu .dropdown-menu {
     opacity: 1;
     pointer-events: initial;
   }
 
-  .header__content .navigation__links > li:hover.submenu .dropdown-bg__submenu {
+  .header__content .navigation__links > li:hover.submenu .dropdown-menu__submenu {
     transform: translateX(-50%) translateY(0);
   }
 
