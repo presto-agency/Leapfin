@@ -16,19 +16,71 @@
   <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
 </head>
 <body>
-<header class="header">
+<div class="wrapper">
+  <div class="root"></div>
+  <header class="header">
   <div class="container">
-
+    <div class="header__content">
+      <div class="header__content_logo">
+        <a href="#">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+      </div>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__links">
+          <li>
+            <a href="#">
+              Platform
+            </a>
+          </li>
+          <li class="submenu">
+            <p>
+              Solutions
+            </p>
+          </li>
+          <li>
+            <a href="#">
+              Integrations
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Customers
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="submenu">
+            <p>
+              Resources
+            </p>
+          </li>
+        </ul>
+        <a class="button _green" href="#">
+          Request a Demo
+        </a>
+      </nav>
+      <a href="#" class="header__content_login">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#login"></use>
+        </svg>
+        <span>
+          Login
+        </span>
+      </a>
+    </div>
   </div>
 </header>
-<main>
 
-</main>
-<footer class="footer">
+  <footer class="footer">
   <div class="container">
 
   </div>
 </footer>
+</div>
 <script src="js/app.min.js"></script>
 </body>
 </html>
