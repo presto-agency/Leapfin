@@ -26,7 +26,7 @@
           <img src="img/logo.svg" alt="logo">
         </a>
       </div>
-      <nav class="header__navigation navigation">
+      <nav class="navigation">
         <ul class="navigation__links">
           <li>
             <a href="#">
@@ -34,13 +34,17 @@
             </a>
           </li>
           <li class="submenu">
-            <p>
+            <p data-attr="call-2" class="trigger">
               Solutions
             </p>
-            <div class="dropdown-menu">
+            <div id="call-2" class="dropdown-menu">
               <div class="dropdown-menu__submenu">
+                <span data-close="call-2" class="back-list sub-close">
+                      Solutions
+                </span>
                 <ul class="dropdown-menu__submenu_list small">
                   <li>
+                    <span class="plus"></span>
                     <p>
                       Business Initiatives
                     </p>
@@ -80,6 +84,7 @@
                 </ul>
                 <ul class="dropdown-menu__submenu_list">
                   <li>
+                    <span class="plus"></span>
                     <p>
                       For Finance Systems & CTO
                     </p>
@@ -132,6 +137,7 @@
                     </ul>
                   </li>
                   <li>
+                    <span class="plus"></span>
                     <p>
                       For Finance & Accounting
                     </p>
@@ -203,13 +209,17 @@
             </a>
           </li>
           <li class="submenu">
-            <p>
+            <p data-attr="call-1" class="trigger">
               Resources
             </p>
-            <div class="dropdown-menu">
+            <div id="call-1" class="dropdown-menu">
               <div class="dropdown-menu__submenu">
+                <span data-close="call-1" class="back-list sub-close">
+                      Resources
+                </span>
                 <ul class="dropdown-menu__submenu_list">
                   <li>
+                    <span class="plus"></span>
                     <p>
                       Company
                     </p>
@@ -247,6 +257,7 @@
                     </ul>
                   </li>
                   <li>
+                    <span class="plus"></span>
                     <p>
                       Learn
                     </p>
@@ -300,6 +311,11 @@
           Login
         </span>
       </a>
+      <div class="header__content_cross">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 </header>
