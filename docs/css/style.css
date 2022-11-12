@@ -645,12 +645,17 @@ h3,
     transform: translateX(-50%) rotate(90deg);
   }
 
+  .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li.active .plus:before {
+    background: #A2CB94;
+  }
+
   .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li.active > p {
     color: #A2CB94;
   }
 
   .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li .plus {
     position: absolute;
+    pointer-events: none;
     right: 0;
     top: 20px;
     display: block;

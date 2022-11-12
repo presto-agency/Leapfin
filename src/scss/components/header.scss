@@ -496,6 +496,10 @@
                             background: $color-punchy-green-800;
                             transform: translateX(-50%) rotate(90deg);
                           }
+
+                          &:before {
+                            background: $color-punchy-green-800;
+                          }
                         }
 
                         > p {
@@ -505,6 +509,7 @@
 
                       .plus {
                         position: absolute;
+                        pointer-events: none;
                         right: 0;
                         top: 20px;
                         display: block;
