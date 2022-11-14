@@ -266,7 +266,6 @@ h3,
 }
 
 .header__content .navigation__links > li {
-  cursor: pointer;
   padding: 0 0 28px 0;
   margin: 0 32px 0 0;
   transition: 500ms;
@@ -395,6 +394,7 @@ h3,
 
 .header__content .navigation__links > li > a,
 .header__content .navigation__links > li > p {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -408,12 +408,13 @@ h3,
 
 .footer__content {
   display: flex;
+  justify-content: space-between;
   padding: 64px 0 0 0;
 }
 
 .footer__content .description {
-  max-width: 271px;
-  margin: 0 192px 0 0;
+  flex: 0 1 271px;
+  margin: 0 40px 0 0;
 }
 
 .footer__content .description__logo {
@@ -466,6 +467,7 @@ h3,
 }
 
 .footer__content .navigation {
+  flex: 0 1 653px;
   display: flex;
 }
 
@@ -508,6 +510,8 @@ h3,
 
 .footer__content .navigation > ul > li {
   margin: 25px 40px;
+  width: 100%;
+  max-width: 111px;
 }
 
 .footer__content .navigation > ul > li:nth-child(2n+1) {
@@ -599,6 +603,10 @@ h3,
 }
 
 @media (max-width: 1199px) {
+  .root {
+    padding: 57px 0 0 0;
+  }
+
   .header {
     background: initial;
   }
@@ -653,6 +661,7 @@ h3,
   .header__content .navigation {
     position: fixed;
     flex-direction: column;
+    background: #fff;
     width: 100%;
     height: 100%;
     top: 0;
@@ -848,5 +857,61 @@ h3,
   .header__content .navigation .button {
     text-align: center;
     width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__content .description {
+    flex: initial;
+    margin: 0 0 32px 0;
+  }
+
+  .footer__content .description__social {
+    display: none;
+  }
+
+  .footer__content .navigation {
+    flex: initial;
+    flex-direction: column;
+  }
+
+  .footer__content .navigation__list-items.sidebar {
+    margin: 0 0 32px 0;
+    max-width: initial;
+  }
+
+  .footer__content .navigation > ul {
+    margin: -16px -11px;
+  }
+
+  .footer__content .navigation > ul > li {
+    margin: 16px 11px;
+    width: calc((100% - 44px) / 2);
+    max-width: initial;
+  }
+
+  .footer__content .navigation > ul > li:nth-child(2n+1) {
+    width: calc((100% - 44px) / 2);
+    max-width: initial;
+  }
+
+  .footer__bottom p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 374px) {
+  .footer__content .navigation > ul > li {
+    width: calc(100% - 22px);
+  }
+
+  .footer__content .navigation > ul > li:nth-child(2n+1) {
+    width: calc(100% - 22px);
   }
 }
