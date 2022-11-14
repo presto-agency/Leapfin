@@ -13,7 +13,6 @@ export const callMenu = () => {
     btnClose.addEventListener("click", function () {
       let closeTabAttr = this.getAttribute("data-close");
       document.getElementById(closeTabAttr).classList.remove("active-menu");
-      body.style.overflow = '';
     })
   ) : null;
 }

@@ -343,6 +343,7 @@
     &__content {
       position: relative;
       justify-content: space-between;
+      padding: 13px 0;
 
       &:before {
         content: '';
@@ -352,7 +353,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        height: 31px;
+        height: 57px;
         background: $color-royal-blue-800;
       }
 
@@ -373,7 +374,7 @@
         top: 0;
         left: 0;
         margin: 0;
-        padding: 100px 25px 24px;
+        padding: 83px 25px 24px;
         max-height: 100%;
         overflow-y: auto;
         transform: translateX(-100vw);
@@ -396,6 +397,8 @@
             border-bottom: 1px solid #F3F2F3;
 
             > a, p {
+              font-size: 20px;
+              line-height: 24px;
               opacity: 0.8;
               color: $color-dark-gray-800;
               font-weight: 500;
@@ -434,7 +437,7 @@
                   left: 0;
                   transform: initial;
                   width: 100%;
-                  padding: 100px 25px;
+                  padding: 61px 25px;
 
                   .back-list {
                     position: relative;
@@ -444,7 +447,7 @@
                     font-weight: 400;
                     color: $color-dark-gray-800;
                     opacity: .8;
-                    margin: 0 0 34px 0;
+                    margin: 0 0 23px 0;
                     padding: 0 0 0 24px;
 
                     &:before {
@@ -542,6 +545,8 @@
                       }
 
                       > p {
+                        font-size: 20px;
+                        line-height: 24px;
                         margin: 0;
                         font-weight: 500;
                         transition: 300ms;
