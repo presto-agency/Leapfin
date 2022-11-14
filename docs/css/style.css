@@ -440,32 +440,6 @@ h3,
   color: #C0C0C7;
 }
 
-.footer__content .description__social {
-  margin: 72px 0 0 0;
-  display: flex;
-}
-
-.footer__content .description__social li {
-  width: 24px;
-  height: 24px;
-  margin: 0 16px 0 0;
-}
-
-.footer__content .description__social li:last-child {
-  margin: 0;
-}
-
-.footer__content .description__social li a {
-  display: block;
-}
-
-.footer__content .description__social li a svg {
-  fill: #fff;
-  width: 24px;
-  height: 24px;
-  transition: 500ms;
-}
-
 .footer__content .navigation {
   flex: 0 1 653px;
   display: flex;
@@ -517,6 +491,36 @@ h3,
 .footer__content .navigation > ul > li:nth-child(2n+1) {
   width: 100%;
   max-width: 206px;
+}
+
+.footer__content .social-media {
+  margin: 72px 0 0 0;
+  display: flex;
+}
+
+.footer__content .social-media.mob {
+  display: none;
+}
+
+.footer__content .social-media li {
+  width: 24px;
+  height: 24px;
+  margin: 0 16px 0 0;
+}
+
+.footer__content .social-media li:last-child {
+  margin: 0;
+}
+
+.footer__content .social-media li a {
+  display: block;
+}
+
+.footer__content .social-media li a svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+  transition: 500ms;
 }
 
 .footer__bottom {
@@ -589,12 +593,12 @@ h3,
     border-color: #1ED760;
   }
 
-  .footer__content .description__social li a:hover svg {
-    fill: #A2CB94;
-  }
-
   .footer__content .navigation__list-items li a:hover {
     color: #A2CB94;
+  }
+
+  .footer__content .social-media li a:hover svg {
+    fill: #A2CB94;
   }
 
   .button:hover._green {
@@ -865,13 +869,32 @@ h3,
     flex-direction: column;
   }
 
+  .footer__content .social-media {
+    margin: 40px 0 0 0;
+  }
+
+  .footer__content .social-media.desktop {
+    display: none;
+  }
+
+  .footer__content .social-media.mob {
+    display: flex;
+  }
+
+  .footer__content .social-media li {
+    width: 32px;
+    height: 32px;
+    margin: 0 24px 0 0;
+  }
+
+  .footer__content .social-media li a svg {
+    width: 32px;
+    height: 32px;
+  }
+
   .footer__content .description {
     flex: initial;
     margin: 0 0 32px 0;
-  }
-
-  .footer__content .description__social {
-    display: none;
   }
 
   .footer__content .navigation {
@@ -897,6 +920,10 @@ h3,
   .footer__content .navigation > ul > li:nth-child(2n+1) {
     width: calc((100% - 44px) / 2);
     max-width: initial;
+  }
+
+  .footer__bottom {
+    margin: 40px 0 0 0;
   }
 
   .footer__bottom p {

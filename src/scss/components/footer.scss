@@ -31,40 +31,6 @@
           color: $color-gray-secondary;
         }
       }
-
-      &__social {
-        margin: 72px 0 0 0;
-        display: flex;
-
-        li {
-          width: 24px;
-          height: 24px;
-          margin: 0 16px 0 0;
-
-          &:last-child {
-            margin: 0;
-          }
-
-          a {
-            display: block;
-
-            svg {
-              fill: $color-white;
-              width: 24px;
-              height: 24px;
-              transition: 500ms;
-            }
-
-            @media (min-width: 1200px) {
-              &:hover {
-                svg {
-                  fill: $color-punchy-green-800;
-                }
-              }
-            }
-          }
-        }
-      }
     }
 
     .navigation {
@@ -126,6 +92,44 @@
         }
       }
     }
+
+    .social-media {
+      margin: 72px 0 0 0;
+      display: flex;
+      &.mob{
+        display: none;
+      }
+
+      li {
+        width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          display: block;
+
+          svg {
+            fill: $color-white;
+            width: 24px;
+            height: 24px;
+            transition: 500ms;
+          }
+
+          @media (min-width: 1200px) {
+            &:hover {
+              svg {
+                fill: $color-punchy-green-800;
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 
   &__bottom {
@@ -146,13 +150,31 @@
     &__content {
       flex-direction: column;
 
+      .social-media {
+        margin: 40px 0 0 0;
+        &.desktop{
+          display: none;
+        }
+        &.mob{
+          display: flex;
+        }
+        li{
+          width: 32px;
+          height: 32px;
+          margin: 0 24px 0 0;
+          a{
+            svg{
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+      }
+
       .description {
         flex: initial;
         margin: 0 0 32px 0;
 
-        &__social {
-          display: none;
-        }
       }
 
       .navigation {
@@ -184,6 +206,7 @@
     }
 
     &__bottom {
+      margin: 40px 0 0 0;
       p {
         text-align: center;
         font-size: 11px;
