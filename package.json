@@ -36,6 +36,8 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "lottie-web": "^5.9.6",
+    "bodymovin": "^4.13.0",
     "gulp-cheerio": "^1.0.0"
   }
 }
