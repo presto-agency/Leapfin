@@ -402,6 +402,133 @@ h3,
   transition: 500ms;
 }
 
+.footer {
+  background: #22338A;
+}
+
+.footer__content {
+  display: flex;
+  padding: 64px 0 0 0;
+}
+
+.footer__content .description {
+  max-width: 271px;
+  margin: 0 192px 0 0;
+}
+
+.footer__content .description__logo {
+  width: 96px;
+  height: 24px;
+}
+
+.footer__content .description__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__content .description__paragraph {
+  margin: 16px 0 0 0;
+}
+
+.footer__content .description__paragraph p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #C0C0C7;
+}
+
+.footer__content .description__social {
+  margin: 72px 0 0 0;
+  display: flex;
+}
+
+.footer__content .description__social li {
+  width: 24px;
+  height: 24px;
+  margin: 0 16px 0 0;
+}
+
+.footer__content .description__social li:last-child {
+  margin: 0;
+}
+
+.footer__content .description__social li a {
+  display: block;
+}
+
+.footer__content .description__social li a svg {
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 500ms;
+}
+
+.footer__content .navigation {
+  display: flex;
+}
+
+.footer__content .navigation__list-items p {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #A2CB94;
+  margin: 0 0 16px 0;
+}
+
+.footer__content .navigation__list-items li {
+  margin: 0 0 4px 0;
+}
+
+.footer__content .navigation__list-items li:last-child {
+  margin: 0;
+}
+
+.footer__content .navigation__list-items li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  transition: 500ms;
+}
+
+.footer__content .navigation__list-items.sidebar {
+  margin: 0 70px 0 0;
+  max-width: 185px;
+  width: 100%;
+}
+
+.footer__content .navigation > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -25px -40px;
+}
+
+.footer__content .navigation > ul > li {
+  margin: 25px 40px;
+}
+
+.footer__content .navigation > ul > li:nth-child(2n+1) {
+  width: 100%;
+  max-width: 206px;
+}
+
+.footer__bottom {
+  margin: 70px 0 0 0;
+  border-top: 1px solid #70727E;
+  padding: 8px 0 28px;
+}
+
+.footer__bottom p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
 .button {
   display: inline-block;
   font-size: 16px;
@@ -458,6 +585,14 @@ h3,
 
   .header__content .navigation__links > li:hover.submenu:before {
     border-color: #1ED760;
+  }
+
+  .footer__content .description__social li a:hover svg {
+    fill: #A2CB94;
+  }
+
+  .footer__content .navigation__list-items li a:hover {
+    color: #A2CB94;
   }
 
   .button:hover._green {
