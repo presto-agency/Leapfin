@@ -1,20 +1,17 @@
 .hero {
   position: relative;
-  margin: 0 0 366px 0;
-  padding: 80px 0 0 0;
-
+  padding: 80px 0 280px 0;
+  background: radial-gradient(59.83% 127.2% at 111.77% 56.02%, #63B866 2.53%, #2A326D 42.88%, #1B2345 90.1%);
   &:before {
     content: '';
     position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
+    right: 0;
+    bottom: 0;
     width: 100vw;
-    height: 989px;
-    background-image: url("../img/hero/bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw 989px;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 180px 100vw;
+    border-color: transparent transparent #fff transparent;
   }
 
   &__content {
@@ -53,10 +50,18 @@
       flex: 0 1 540px;
     }
   }
+
+  .partners{
+    margin: 67px 0 0 0;
+  }
 }
 
 @media (max-width: 1023px) {
   .hero {
+    &:before {
+      content: '';
+      border-width: 0 0 90px 100vw;
+    }
     &__content {
       flex-direction: column;
       padding: 40px 0 0 0;
