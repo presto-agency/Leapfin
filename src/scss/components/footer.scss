@@ -14,10 +14,14 @@
         width: 96px;
         height: 24px;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
+        a {
+          display: block;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
       }
 
@@ -96,7 +100,8 @@
     .social-media {
       margin: 72px 0 0 0;
       display: flex;
-      &.mob{
+
+      &.mob {
         display: none;
       }
 
@@ -152,18 +157,22 @@
 
       .social-media {
         margin: 40px 0 0 0;
-        &.desktop{
+
+        &.desktop {
           display: none;
         }
-        &.mob{
+
+        &.mob {
           display: flex;
         }
-        li{
+
+        li {
           width: 32px;
           height: 32px;
           margin: 0 24px 0 0;
-          a{
-            svg{
+
+          a {
+            svg {
               width: 32px;
               height: 32px;
             }
@@ -207,6 +216,7 @@
 
     &__bottom {
       margin: 40px 0 0 0;
+
       p {
         text-align: center;
         font-size: 11px;

@@ -422,7 +422,11 @@ h3,
   height: 24px;
 }
 
-.footer__content .description__logo img {
+.footer__content .description__logo a {
+  display: block;
+}
+
+.footer__content .description__logo a img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -573,7 +577,7 @@ h3,
 
 .hero {
   position: relative;
-  padding: 80px 0 280px 0;
+  padding: 80px 0 275px 0;
   background: radial-gradient(59.83% 127.2% at 111.77% 56.02%, #63B866 2.53%, #2A326D 42.88%, #1B2345 90.1%);
 }
 
@@ -628,6 +632,152 @@ h3,
 
 .hero .partners {
   margin: 67px 0 0 0;
+}
+
+.accurate {
+  margin: 88px 0 220px;
+}
+
+.accurate__title {
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.accurate__title h2 {
+  text-align: center;
+}
+
+.accurate__title h2 span {
+  color: #1ED760;
+}
+
+.accurate__title p {
+  font-weight: 400;
+  margin: 32px 0 0 0;
+  text-align: center;
+}
+
+.accurate__content {
+  margin: 120px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accurate__content .title-top {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #A2CB94;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+
+.accurate__content_initiatives {
+  position: relative;
+  flex: 0 1 540px;
+}
+
+.accurate__content_initiatives:before {
+  content: "";
+  position: absolute;
+  right: -192px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 192px;
+  height: 390px;
+  background-image: url("../img/accurate/pipes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 192px 390px;
+}
+
+.accurate__content_initiatives ul li {
+  padding: 44px 55px 44px 40px;
+  box-shadow: 4px 4px 100px rgba(108, 123, 170, 0.12);
+  margin: 0 0 24px 0;
+}
+
+.accurate__content_initiatives ul li span {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+  color: #22338A;
+}
+
+.accurate__content_initiatives ul li p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.accurate__content_roles {
+  position: relative;
+  z-index: 2;
+  flex: 0 1 350px;
+}
+
+.accurate__content_roles ul li {
+  padding: 48px 0;
+  border-bottom: 1px solid #E6E6E9;
+  background-color: #fff;
+}
+
+.accurate__content_roles ul li:first-child {
+  padding: 0 0 48px 0;
+}
+
+.accurate__content_roles ul li:last-child {
+  padding: 48px 0 0 0;
+  border-bottom: initial;
+}
+
+.accurate__content_roles ul li a {
+  display: flex;
+  flex-direction: column;
+}
+
+.accurate__content_roles ul li a p:first-child {
+  display: inline-flex;
+  align-items: center;
+}
+
+.accurate__content_roles ul li a p:first-child span {
+  flex: 0 0 56px;
+  height: 56px;
+  margin: 0 24px 0 0;
+}
+
+.accurate__content_roles ul li a p:first-child strong {
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #22338A;
+  padding: 0 32px 0 0;
+}
+
+.accurate__content_roles ul li a p:first-child strong:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(0) translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/accurate/arrow-right.svg");
+  transition: 500ms;
+}
+
+.accurate__content_roles ul li a p:nth-child(2) small {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 @media (min-width: 1200px) {
@@ -687,6 +837,10 @@ h3,
 
   .button:hover._green {
     background: #1B2345;
+  }
+
+  .accurate__content_roles ul li a:hover p:first-child strong:after {
+    transform: translateX(20px) translateY(-50%);
   }
 }
 
