@@ -1,0 +1,54 @@
+.hero {
+  position: relative;
+  margin: 0 0 366px 0;
+  padding: 80px 0 0 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 989px;
+    background-image: url("../img/hero/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 989px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 98px 0 0 0;
+
+    &_title {
+      flex: 0 1 445px;
+
+      h1 {
+        font-size: 44px;
+        line-height: 54px;
+        color: $color-white;
+        span{
+          color: $color-punchy-green;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 32px 0 0 0;
+        color: $color-gray-secondary;
+      }
+
+      .button {
+        margin: 48px 0 0 0;
+      }
+    }
+
+    &_lottie {
+      flex: 0 1 540px;
+    }
+  }
+}

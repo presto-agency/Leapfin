@@ -4,7 +4,12 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background: $color-royal-blue-800;
+  transition: 500ms;
+  @media (min-width: 1200px) {
+    &.hide {
+      background: $color-royal-blue-800;
+    }
+  }
 
   &__content {
     position: relative;
@@ -286,9 +291,9 @@
               &.submenu {
                 .dropdown-menu {
                   opacity: 1;
-                  pointer-events: initial;
 
                   &__submenu {
+                    pointer-events: initial;
                     transform: translateX(-50%) translateY(0);
                   }
                 }
