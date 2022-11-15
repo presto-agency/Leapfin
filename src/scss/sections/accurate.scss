@@ -37,7 +37,8 @@
     &_initiatives {
       position: relative;
       flex: 0 1 540px;
-      &:before{
+
+      &:before {
         content: '';
         position: absolute;
         right: -192px;
@@ -56,6 +57,13 @@
           padding: 44px 55px 44px 40px;
           box-shadow: 4px 4px 100px rgba(108, 123, 170, 0.12);
           margin: 0 0 24px 0;
+
+          > img {
+            display: none;
+            width: 48px;
+            height: 48px;
+            margin: 0 0 4px 0;
+          }
 
           span {
             display: block;
@@ -154,6 +162,101 @@
                   font-size: 16px;
                   line-height: 24px;
                   font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1199px) {
+  .accurate {
+    margin: 48px 0 80px;
+
+    &__content {
+      flex-direction: column;
+
+      &_initiatives {
+        flex: initial;
+        padding: 0 0 200px 0;
+
+        &:before {
+          width: 200px;
+          height: 255px;
+          right: 50%;
+          top: initial;
+          transform: translateX(50%) rotate(90deg);
+          bottom: 0;
+          background-size: contain;
+        }
+      }
+
+      &_roles {
+        flex: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .accurate {
+    &__title {
+      h2, p {
+        text-align: left;
+      }
+
+      p {
+        margin: 8px 0 0 0;
+      }
+    }
+
+    &__content {
+      margin: 64px 0 0 0;
+
+      .title-top {
+        margin: 0 0 16px 0;
+      }
+
+      &_initiatives {
+        ul {
+          li {
+            padding: 24px;
+
+            > img {
+              display: block;
+            }
+
+            span {
+              margin: 0 0 12px 0;
+            }
+          }
+        }
+      }
+
+      &_roles {
+        ul {
+          li {
+            padding: 24px 0;
+
+            &:first-child {
+              padding: 0 0 24px 0;
+            }
+
+            &:last-child {
+              padding: 24px 0 0 0;
+            }
+
+            a {
+              p {
+                &:first-child {
+                  margin: 0 0 8px 0;
+
+                  span {
+                    display: none;
+                  }
                 }
               }
             }

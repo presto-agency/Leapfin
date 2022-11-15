@@ -697,6 +697,13 @@ h3,
   margin: 0 0 24px 0;
 }
 
+.accurate__content_initiatives ul li > img {
+  display: none;
+  width: 48px;
+  height: 48px;
+  margin: 0 0 4px 0;
+}
+
 .accurate__content_initiatives ul li span {
   display: block;
   font-size: 16px;
@@ -1113,12 +1120,49 @@ h3,
     scrollbar-width: none;
   }
 
+  .partners li {
+    margin: 0 40px 0 0;
+  }
+
   .partners::-webkit-scrollbar {
     display: none;
+  }
+
+  .accurate {
+    margin: 48px 0 80px;
+  }
+
+  .accurate__content {
+    flex-direction: column;
+  }
+
+  .accurate__content_initiatives {
+    flex: initial;
+    padding: 0 0 200px 0;
+  }
+
+  .accurate__content_initiatives:before {
+    width: 200px;
+    height: 255px;
+    right: 50%;
+    top: initial;
+    transform: translateX(50%) rotate(90deg);
+    bottom: 0;
+    background-size: contain;
+  }
+
+  .accurate__content_roles {
+    flex: initial;
   }
 }
 
 @media (max-width: 1023px) {
+  h2,
+  .h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .footer__content {
     flex-direction: column;
   }
@@ -1186,18 +1230,23 @@ h3,
     line-height: 18px;
   }
 
+  .hero {
+    padding: 80px 0;
+  }
+
   .hero:before {
     content: "";
-    border-width: 0 0 90px 100vw;
+    border-width: 0 0 60px 100vw;
   }
 
   .hero__content {
     flex-direction: column;
-    padding: 40px 0 0 0;
+    padding: 10px 0 0 0;
   }
 
   .hero__content_title {
     flex: initial;
+    margin: 0;
   }
 
   .hero__content_title h1 {
@@ -1216,11 +1265,60 @@ h3,
   .hero__content_lottie {
     flex: initial;
     max-width: 500px;
-    margin: 44px auto;
+    margin: 44px auto 0;
   }
 
   .hero .partners {
     margin: 44px 0 0 0;
+  }
+
+  .accurate__title h2,
+  .accurate__title p {
+    text-align: left;
+  }
+
+  .accurate__title p {
+    margin: 8px 0 0 0;
+  }
+
+  .accurate__content {
+    margin: 64px 0 0 0;
+  }
+
+  .accurate__content .title-top {
+    margin: 0 0 16px 0;
+  }
+
+  .accurate__content_initiatives ul li {
+    padding: 24px;
+  }
+
+  .accurate__content_initiatives ul li > img {
+    display: block;
+  }
+
+  .accurate__content_initiatives ul li span {
+    margin: 0 0 12px 0;
+  }
+
+  .accurate__content_roles ul li {
+    padding: 24px 0;
+  }
+
+  .accurate__content_roles ul li:first-child {
+    padding: 0 0 24px 0;
+  }
+
+  .accurate__content_roles ul li:last-child {
+    padding: 24px 0 0 0;
+  }
+
+  .accurate__content_roles ul li a p:first-child {
+    margin: 0 0 8px 0;
+  }
+
+  .accurate__content_roles ul li a p:first-child span {
+    display: none;
   }
 }
 
