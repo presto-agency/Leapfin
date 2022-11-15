@@ -24,12 +24,14 @@
 
     &_title {
       flex: 0 1 445px;
+      margin: 0 50px 0 0;
 
       h1 {
         font-size: 44px;
         line-height: 54px;
         color: $color-white;
-        span{
+
+        span {
           color: $color-punchy-green;
         }
       }
@@ -49,6 +51,41 @@
 
     &_lottie {
       flex: 0 1 540px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    &__content {
+      flex-direction: column;
+      padding: 40px 0 0 0;
+
+      &_title {
+        flex: initial;
+
+        h1 {
+          font-size: 32px;
+          line-height: 36px;
+        }
+
+        p {
+          margin: 24px 0 0 0;
+        }
+
+        .button {
+          margin: 32px 0 0 0;
+        }
+      }
+
+      &_lottie {
+        flex: initial;
+        max-width: 500px;
+        margin: 44px auto;
+      }
+    }
+    .partners{
+      margin: 44px 0 0 0;
     }
   }
 }

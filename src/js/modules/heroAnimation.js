@@ -6,6 +6,6 @@ export const heroAnimation = () => {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'files/lottie/lottie-home-m.json'
+    path: 'files/lottie/lottie-home-s.json'
   })
 }
