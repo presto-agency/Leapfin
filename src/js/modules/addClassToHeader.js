@@ -1,6 +1,7 @@
 export const addClassHeader = () => {
   const header = document.querySelector('.header');
   const body = document.querySelector('body');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
   if (!!header) {
     const burger = header.querySelector('.header__content_cross');
     burger.onclick = () => {
@@ -14,6 +15,9 @@ export const addClassHeader = () => {
       function removeClass() {
         header.classList.remove('active');
         body.style.overflow = '';
+        if(dropdownMenu.classList.contains('active-menu')){
+          dropdownMenu.classList.remove('active-menu')
+        }
       }
     }
   }

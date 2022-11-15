@@ -700,7 +700,7 @@ h3,
   }
 
   .header.active .header__content .navigation {
-    transform: initial;
+    right: 0;
   }
 
   .header.active .header__content_cross span:nth-child(1) {
@@ -753,12 +753,11 @@ h3,
     width: 100%;
     height: calc(100% - 57px);
     top: 57px;
-    left: 0;
+    right: 100vw;
     margin: 0;
     padding: 26px 25px 24px;
     max-height: calc(100% - 57px);
     overflow-y: auto;
-    transform: translateX(-100vw);
     transition: 300ms ease-in-out;
     scrollbar-width: none;
   }
@@ -807,7 +806,7 @@ h3,
     pointer-events: initial;
     background: #fff;
     height: calc(100% - 57px);
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
     transition: 300ms ease-in;
   }
 
