@@ -808,6 +808,11 @@ h3,
     height: calc(100% - 57px);
     transform: translateX(-100vw);
     transition: 300ms ease-in;
+    scrollbar-width: none;
+  }
+
+  .header__content .navigation__links > li.submenu .dropdown-menu::-webkit-scrollbar {
+    display: none;
   }
 
   .header__content .navigation__links > li.submenu .dropdown-menu.active-menu {

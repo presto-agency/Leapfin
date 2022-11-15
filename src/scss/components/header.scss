@@ -439,6 +439,11 @@
                 height: calc(100% - 57px);
                 transform: translateX(-100vw);
                 transition: 300ms ease-in;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                  display: none;
+                }
 
                 &.active-menu {
                   transform: translateX(0);
