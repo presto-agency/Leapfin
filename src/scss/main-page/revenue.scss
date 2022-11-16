@@ -1,0 +1,144 @@
+.revenue {
+  position: relative;
+  padding: 270px 0 109px;
+  background: radial-gradient(291.17% 160.89% at 103.99% -47.18%, #EDA13D 0%, #2A326D 61.82%), linear-gradient(169.81deg, #FFFFFF -31.66%, rgba(213, 215, 229, 0.39) 73.42%);
+  margin: -73px 0 0 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 141px 100vw 0 0;
+    border-color: $color-dark-gray-200 transparent transparent transparent;
+  }
+
+  &__title {
+    max-width: 682px;
+    margin: 0 auto 48px;
+
+
+    h2 {
+      text-align: center;
+      color: $color-white;
+    }
+  }
+
+  &__form {
+    display: flex;
+    max-width: 554px;
+    margin: 0 auto 85px;
+
+    .input-container {
+      flex: 0 1 358px;
+      margin: 0 16px 0 0;
+
+      input {
+        height: 60px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        border: 2px solid #D3D3D8;
+        border-radius: 4px;
+        transition: 300ms;
+
+        &::placeholder {
+          color: $color-gray-secondary;
+        }
+
+        &:focus {
+          border: 2px solid $color-punchy-green;
+
+          //error validate classes
+          &:invalid {
+            border: 2px solid $color-bright-orange;
+            color: $color-bright-orange;
+
+            &::placeholder {
+              color: rgba($color-bright-orange, 0.3);
+            }
+          }
+
+          //finish error validate classes
+        }
+      }
+    }
+
+    .button {
+      flex: 0 1 180px;
+    }
+  }
+
+  &__img {
+    height: 261px;
+
+    &.mob {
+      display: none;
+    }
+
+    img {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .revenue {
+    &__img {
+      img {
+        left: initial;
+        transform: initial;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-width: 1023px) {
+  .revenue {
+    margin: -136px 0 0 0;
+    padding: 84px 0 24px 0;
+
+    &:before {
+      border-width: 41px 100vw 0 0;
+    }
+
+    &__title{
+      margin: 0 auto 33px;
+    }
+
+    &__form{
+      flex-direction: column;
+      .input-container{
+        flex: initial;
+        margin: 0 0 16px 0;
+      }
+      .button{
+        flex: initial;
+      }
+    }
+
+    &__img {
+      height: initial;
+      max-width: 554px;
+      margin: 0 auto;
+      &.desktop {
+        display: none;
+      }
+
+      &.mob {
+        display: block;
+      }
+    }
+  }
+}

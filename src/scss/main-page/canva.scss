@@ -1,7 +1,6 @@
 .canva {
   position: relative;
   background: $color-dark-gray-200;
-  padding: 0 0 180px 0;
 
   &:before {
     content: '';
@@ -54,9 +53,11 @@
 @media (max-width: 1023px) {
   .canva {
     padding: 67px 0;
+
     &:before {
       border-width: 0 100vw 40px 0;
     }
+
     &__content {
       flex-direction: column;
 
