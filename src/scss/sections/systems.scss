@@ -1,7 +1,8 @@
 .systems {
   position: relative;
-  padding: 156px 0 180px;
-  background: linear-gradient(167.45deg, rgba(213, 215, 229, 0.05) 11.06%, #FFFFFF 88.28%);
+  z-index: 2;
+  padding: 156px 0 208px;
+  background: linear-gradient(167.45deg, rgba(213, 215, 229, 0.15) 11.06%, #FFFFFF 88.28%);
 
   &:before {
     content: '';
@@ -166,53 +167,63 @@
 }
 
 @media (max-width: 1199px) {
-  .systems{
+  .systems {
     padding: 90px 0 10px;
-    &__content{
+
+    &__content {
       flex-direction: column;
       margin: 0 0 57px 0;
-      &.reverse{
-        .systems{
-          &__content{
-            &_text{
+
+      &.reverse {
+        .systems {
+          &__content {
+            &_text {
               order: initial;
               padding: 0;
             }
-            &_card{
+
+            &_card {
               order: initial;
             }
           }
         }
       }
-      &_text{
+
+      &_text {
         flex: initial;
         padding: 0;
         margin: 0 0 40px 0;
-        strong{
+
+        strong {
           margin: 0 0 16px 0;
         }
       }
-      &_card{
+
+      &_card {
         position: relative;
         max-width: 540px;
         margin: 0 auto;
         flex: initial;
         padding: 24px;
-        div{
-          &:nth-child(1){
+
+        div {
+          &:nth-child(1) {
             flex: initial;
-            span{
+
+            span {
               padding: 26px 0 51px 122px;
             }
           }
-          &:nth-child(2){
+
+          &:nth-child(2) {
             position: absolute;
             left: 24px;
             top: 24px;
             flex: initial;
             width: 98px;
             height: 98px;
-            span{
+
+            span {
               width: 98px;
               height: 98px;
             }
