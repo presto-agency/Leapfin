@@ -1598,6 +1598,36 @@ h3,
   .accurate__content_roles ul li a p:first-child span {
     display: none;
   }
+
+  .canva {
+    padding: 67px 0;
+  }
+
+  .canva:before {
+    border-width: 0 100vw 40px 0;
+  }
+
+  .canva__content {
+    flex-direction: column;
+  }
+
+  .canva__content_text {
+    flex: initial;
+  }
+
+  .canva__content_img {
+    max-width: 500px;
+    margin: 0 auto;
+    flex: initial;
+  }
+
+  .canva__content_img img {
+    top: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 145%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 374px) {
