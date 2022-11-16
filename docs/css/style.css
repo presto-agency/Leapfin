@@ -648,7 +648,7 @@ h3,
 }
 
 .accurate__title h2 span {
-  color: #1ED760;
+  color: #A2CB94;
 }
 
 .accurate__title p {
@@ -709,7 +709,6 @@ h3,
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  text-transform: uppercase;
   margin: 0 0 24px 0;
   color: #22338A;
 }
@@ -761,9 +760,8 @@ h3,
   position: relative;
   font-size: 24px;
   line-height: 32px;
-  text-transform: uppercase;
   color: #22338A;
-  padding: 0 32px 0 0;
+  padding: 0 40px 0 0;
 }
 
 .accurate__content_roles ul li a p:first-child strong:after {
@@ -1142,12 +1140,12 @@ h3,
   }
 
   .accurate__content_initiatives:before {
-    width: 200px;
-    height: 255px;
+    width: 211px;
+    height: 312px;
     right: 50%;
     top: initial;
     transform: translateX(50%) rotate(90deg);
-    bottom: 0;
+    bottom: -61px;
     background-size: contain;
   }
 
@@ -1231,12 +1229,12 @@ h3,
   }
 
   .hero {
-    padding: 80px 0;
+    padding: 80px 0 150px;
   }
 
   .hero:before {
     content: "";
-    border-width: 0 0 60px 100vw;
+    border-width: 0 0 48px 100vw;
   }
 
   .hero__content {
@@ -1286,10 +1284,11 @@ h3,
   }
 
   .accurate__content .title-top {
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 0;
   }
 
   .accurate__content_initiatives ul li {
+    margin: 0 0 17px 0;
     padding: 24px;
   }
 
@@ -1299,6 +1298,10 @@ h3,
 
   .accurate__content_initiatives ul li span {
     margin: 0 0 12px 0;
+  }
+
+  .accurate__content_roles {
+    margin: 38px 0 0 0;
   }
 
   .accurate__content_roles ul li {
