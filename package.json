@@ -36,7 +36,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gsap": "^3.11.3",
     "gulp-cheerio": "^1.0.0",
     "lottie-web": "^5.9.6"
   }
