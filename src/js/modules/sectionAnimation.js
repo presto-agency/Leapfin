@@ -4,7 +4,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger.js';
 export const sectionAnimation = () => {
   function animateFrom(elem, direction) {
     direction = direction || 1;
-    let x = 0, y = direction * 100;
+    let x = 0,
+      y = direction * 100;
     if (elem.classList.contains("gs_reveal_fromLeft")) {
       x = -100;
       y = 0;

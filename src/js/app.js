@@ -10,8 +10,11 @@ callMenu()
 showSubmenu(document.querySelectorAll('.sub-submenu'))
 heroAnimation()
 scrollHeader()
-if (window.innerWidth >= 1200) {
-  sectionAnimation()
-}
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth >= 1200) {
+    sectionAnimation()
+  }
+})
+
 
 
