@@ -7,7 +7,9 @@ import {scrollHeader} from "./modules/scrollHeader.js";
 addClassHeader()
 callMenu()
 showSubmenu(document.querySelectorAll('.sub-submenu'))
-heroAnimation()
+if (window.innerWidth >= 1200) {
+  heroAnimation()
+}
 scrollHeader()
 
 
