@@ -9,12 +9,14 @@ export const path = {
     css: `${buildFolder}/css/`,
     html: `${buildFolder}/`,
     images: `${buildFolder}/img/`,
+    imagesDesk: `${buildFolder}/imgDesktop/`,
     fonts: `${buildFolder}/fonts/`,
     files: `${buildFolder}/files/`
   },
   src: {
     js: `${srcFolder}/js/app.js`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
+    imagesDesk: `${srcFolder}/imgDesktop/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
     scss: `${srcFolder}/scss/style.scss`,
     html: [`${srcFolder}/*.html`, `!${srcFolder}/*_*.html`],
