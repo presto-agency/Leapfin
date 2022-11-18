@@ -1,7 +1,7 @@
 import lottie from "lottie-web";
 
 export const heroAnimation = () => {
-  window.onload = () => {
+  document.addEventListener("DOMContentLoaded", () => {
     lottie.loadAnimation({
       container: document.getElementById('hero'),
       renderer: 'svg',
@@ -9,5 +9,5 @@ export const heroAnimation = () => {
       autoplay: true,
       path: 'files/lottie/lottie-home-s.json'
     })
-  }
+  })
 }
