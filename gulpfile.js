@@ -16,7 +16,7 @@ import {html} from "./gulp/tasks/html.js";
 import {server} from "./gulp/tasks/server.js";
 import {scss} from "./gulp/tasks/scss.js";
 import {js} from "./gulp/tasks/js.js"
-import {images, imagesDesktop} from "./gulp/tasks/images.js"
+import {images, /*imagesDesktop*/} from "./gulp/tasks/images.js"
 import {otfToTtf, ttfToWoff} from "./gulp/tasks/fonts.js"
 import {svgSprite} from "./gulp/tasks/svgSprite.js"
 
@@ -32,7 +32,7 @@ function watcher() {
 
 export {otfToTtf}
 
-const mainTasks = gulp.parallel(copy, html, scss, js, images, imagesDesktop, svgSprite, ttfToWoff);
+const mainTasks = gulp.parallel(copy, html, scss, js, images, /*imagesDesktop,*/ svgSprite, ttfToWoff);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
