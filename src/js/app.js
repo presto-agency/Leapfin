@@ -4,12 +4,14 @@ import {showSubmenu} from "./modules/showSubmenu.js";
 import {heroAnimation} from "./modules/heroAnimation.js"
 import {scrollHeader} from "./modules/scrollHeader.js";
 
-addClassHeader()
-callMenu()
-showSubmenu(document.querySelectorAll('.sub-submenu'))
-if (window.innerWidth >= 1200) {
-  heroAnimation()
+if(window.innerWidth < 1200){
+  addClassHeader()
+  callMenu()
+  showSubmenu(document.querySelectorAll('.sub-submenu'))
 }
+// if (window.innerWidth >= 1200) {
+//   heroAnimation()
+// }
 scrollHeader()
 
 
