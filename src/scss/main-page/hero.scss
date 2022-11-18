@@ -2,6 +2,7 @@
   position: relative;
   padding: 80px 0 275px 0;
   background: radial-gradient(59.83% 127.2% at 111.77% 56.02%, #63B866 2.53%, #2A326D 42.88%, #1B2345 90.1%);
+
   &:before {
     content: '';
     position: absolute;
@@ -48,39 +49,43 @@
 
     &_lottie {
       flex: 0 1 540px;
-      img{
-        display: none;
+
+      img {
+        //display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
       }
     }
   }
 
-  .partners{
+  .partners {
     margin: 67px 0 0 0;
   }
 }
 
-@media(max-width: 1199px){
-  .hero{
-    &__content{
-      &_lottie{
-        max-width: 100%;
-        img{
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
-}
+//@media(max-width: 1199px){
+//  .hero{
+//    &__content{
+//      &_lottie{
+//        img{
+//          display: block;
+//        }
+//      }
+//    }
+//  }
+//}
 
 @media (max-width: 1023px) {
   .hero {
     padding: 80px 0 150px;
+
     &:before {
       content: '';
       border-width: 0 0 48px 100vw;
     }
+
     &__content {
       flex-direction: column;
       padding: 10px 0 0 0;
@@ -109,7 +114,8 @@
         margin: 44px auto 0;
       }
     }
-    .partners{
+
+    .partners {
       margin: 44px 0 0 0;
     }
   }
