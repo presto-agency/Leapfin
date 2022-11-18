@@ -9,9 +9,7 @@ if(window.innerWidth < 1200){
   callMenu()
   showSubmenu(document.querySelectorAll('.sub-submenu'))
 }
-// if (window.innerWidth >= 1200) {
-//   heroAnimation()
-// }
+// heroAnimation()
 scrollHeader()
 
 
