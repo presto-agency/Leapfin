@@ -10,6 +10,8 @@ export const images = () => {
     .pipe(app.gulp.src(app.path.src.images))
     .pipe(app.plugins.newer(app.path.build.images))
     .pipe(
+      app.plugins.ifPlugin(
+        app.isBuild,
         imagemin({
           progressive: true,
           svgoPlugins: [{removeViewBox: false}],
@@ -19,6 +21,7 @@ export const images = () => {
             imageminWebp({quality: 50})
           ]
         })
+      )
     )
     .pipe(app.gulp.dest(app.path.build.images))
     .pipe(app.gulp.src(app.path.src.svg))
@@ -34,12 +37,15 @@ export const imagesDesktop = () => {
     .pipe(app.gulp.src(app.path.src.imagesDesk))
     .pipe(app.plugins.newer(app.path.build.imagesDesk))
     .pipe(
+      app.plugins.ifPlugin(
+        app.isBuild,
         imagemin({
           progressive: true,
           svgoPlugins: [{removeViewBox: false}],
           interlaced: true,
           optimizationLevel: 2 //to 7
         })
+      )
     )
     .pipe(app.gulp.dest(app.path.build.imagesDesk))
     .pipe(app.plugins.browsersync.stream())
