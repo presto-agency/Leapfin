@@ -38,10 +38,7 @@ export const imagesDesktop = () => {
           progressive: true,
           svgoPlugins: [{removeViewBox: false}],
           interlaced: true,
-          optimizationLevel: 2, //to 7
-          plugins: [
-            imageminWebp({quality: 90})
-          ]
+          optimizationLevel: 2 //to 7
         })
     )
     .pipe(app.gulp.dest(app.path.build.imagesDesk))
