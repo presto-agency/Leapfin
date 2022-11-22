@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "gulp-cheerio": "^1.0.0",
-    "imagemin-webp": "^7.0.0",
-    "lottie-web": "^5.9.6"
+    "imagemin-webp": "^7.0.0"
   }
 }

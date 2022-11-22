@@ -1,6 +1,10 @@
 .partners {
   display: flex;
 
+  &.center {
+    justify-content: center;
+  }
+
   li {
     flex: 0 0 80px;
     height: 30px;
@@ -31,6 +35,14 @@
 
     &::-webkit-scrollbar {
       display: none;
+    }
+  }
+}
+
+@media(max-width: 1023px){
+  .partners{
+    &.center{
+      justify-content: initial;
     }
   }
 }

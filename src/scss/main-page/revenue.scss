@@ -34,39 +34,6 @@
     .input-container {
       flex: 0 1 358px;
       margin: 0 16px 0 0;
-
-      input {
-        height: 60px;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 18px 15px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        border: 2px solid #D3D3D8;
-        border-radius: 4px;
-        transition: 300ms;
-
-        &::placeholder {
-          color: $color-gray-secondary;
-        }
-
-        &:focus {
-          border: 2px solid $color-punchy-green;
-
-          //error validate classes
-          &:invalid {
-            border: 2px solid $color-bright-orange;
-            color: $color-bright-orange;
-
-            &::placeholder {
-              color: rgba($color-bright-orange, 0.3);
-            }
-          }
-
-          //finish error validate classes
-        }
-      }
     }
 
     .button {
