@@ -92,8 +92,7 @@
           height: 825px;
           opacity: 0.7;
           border-radius: 50%;
-          background: $color-green-light;
-          filter: blur(196.965px)
+          background: radial-gradient(50% 50% at 50% 50%, #0C7900 0%, rgba(12, 121, 0, 0) 100%);
         }
       }
 
