@@ -1387,6 +1387,72 @@ h3,
   font-weight: 400;
 }
 
+.demo {
+  margin: 30px auto 67px;
+}
+
+.demo__content {
+  position: relative;
+  display: flex;
+  padding: 88px 80px 84px;
+  background: linear-gradient(170.88deg, #2A326D 24.88%, #63B866 146.63%);
+  border-radius: 4px;
+}
+
+.demo__content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("../img/demo-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.demo__content_description {
+  position: relative;
+  z-index: 2;
+  max-width: 323px;
+}
+
+.demo__content_description h2 {
+  color: #fff;
+}
+
+.demo__content_description h2 span {
+  color: #A2CB94;
+}
+
+.demo__content_form {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 73px;
+}
+
+.demo__content_form form {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+}
+
+.demo__content_form form .button {
+  margin: 0 0 0 16px;
+  flex: 0 1 30%;
+}
+
+.demo__content_form form .input-container {
+  flex: 0 1 70%;
+}
+
 @media (min-width: 1200px) {
   .header.hide {
     background: #22338A;
@@ -2091,6 +2157,14 @@ h3,
     flex: initial;
     max-width: 386px;
   }
+
+  .demo__content {
+    flex-direction: column;
+  }
+
+  .demo__content_form {
+    margin: 24px 0 0 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2108,6 +2182,19 @@ h3,
     order: 1;
     flex: initial;
   }
+
+  .demo {
+    margin: 80px 0 0 0;
+  }
+
+  .demo .container {
+    padding: 0;
+  }
+
+  .demo__content {
+    border-radius: initial;
+    padding: 25px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -2118,6 +2205,27 @@ h3,
   .comment__content_logos ul li {
     margin: 20px;
     width: calc((100% - 80px) / 2);
+  }
+
+  .demo__content_description {
+    max-width: initial;
+  }
+
+  .demo__content_description h2 {
+    text-align: center;
+  }
+
+  .demo__content_form form {
+    flex-direction: column;
+  }
+
+  .demo__content_form form .input-container {
+    flex: initial;
+  }
+
+  .demo__content_form form .button {
+    margin: 18px 0 0 0;
+    flex: initial;
   }
 }
 
