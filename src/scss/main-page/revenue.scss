@@ -26,19 +26,9 @@
     }
   }
 
-  &__form {
-    display: flex;
+  .input-wrapper {
     max-width: 554px;
     margin: 0 auto 85px;
-
-    .input-container {
-      flex: 0 1 358px;
-      margin: 0 16px 0 0;
-    }
-
-    .button {
-      flex: 0 1 180px;
-    }
   }
 
   &__logos {
@@ -88,19 +78,6 @@
 
     &__title {
       margin: 0 auto 33px;
-    }
-
-    &__form {
-      flex-direction: column;
-
-      .input-container {
-        flex: initial;
-        margin: 0 0 16px 0;
-      }
-
-      .button {
-        flex: initial;
-      }
     }
 
     &__logos {

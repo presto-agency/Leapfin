@@ -44,21 +44,6 @@
       flex-direction: column;
       justify-content: center;
       margin: 0 0 0 73px;
-
-      form {
-        width: 100%;
-        align-self: flex-start;
-        display: flex;
-
-        .button {
-          margin: 0 0 0 16px;
-          flex: 0 1 30%;
-        }
-
-        .input-container {
-          flex: 0 1 70%;
-        }
-      }
     }
   }
 }
@@ -69,6 +54,9 @@
       flex-direction: column;
       &_form {
         margin: 24px 0 0 0;
+        .input-wrapper{
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -96,20 +84,6 @@
         max-width: initial;
         h2{
           text-align: center;
-        }
-      }
-      &_form {
-        form {
-          flex-direction: column;
-
-          .input-container {
-            flex: initial;
-          }
-
-          .button {
-            margin: 18px 0 0 0;
-            flex: initial;
-          }
         }
       }
     }

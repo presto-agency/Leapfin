@@ -60,18 +60,12 @@
         margin: 48px 0 0 0;
       }
 
-      form {
-        display: flex;
-        margin: 40px 0 0 0;
+      .input-wrapper {
+        margin: 40px auto 0;
 
         .button {
-          margin: 0 16px 0 0;
+          margin: 0;
           align-self: initial;
-          flex: 0 1 30%;
-        }
-
-        .input-container {
-          flex: 0 1 70%;
         }
       }
     }
@@ -158,27 +152,6 @@
 
     .partners {
       margin: 44px 0 0 0;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .hero{
-    &__content{
-      &_title{
-        form{
-          flex-direction: column;
-          .button{
-            order: 2;
-            flex: initial;
-            margin: 16px 0 0 0;
-          }
-          .input-container{
-            order: 1;
-            flex: initial;
-          }
-        }
-      }
     }
   }
 }

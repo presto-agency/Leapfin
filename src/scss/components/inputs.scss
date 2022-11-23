@@ -1,5 +1,4 @@
 .input-container {
-
   input {
     height: 60px;
     width: 100%;
@@ -30,6 +29,33 @@
       }
 
       //finish error validate classes
+    }
+  }
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+
+  .input-container {
+    flex: 0 1 70%;
+    margin: 0 16px 0 0;
+  }
+
+  .button {
+    flex: 0 1 30%;
+  }
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+
+    .input-container {
+      flex: initial;
+      margin: 0 0 16px 0;
+    }
+
+    .button {
+      flex: initial;
     }
   }
 }
