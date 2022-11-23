@@ -5,12 +5,12 @@ import versionNumber from "gulp-version-number"
 export const html = () => {
   return app.gulp.src(app.path.src.html)
     .pipe(fileInclude())
-    // .pipe(
-    //   app.plugins.ifPlugin(
-    //     app.isBuild,
-    //     webpHtmlNoSvg()
-    //   )
-    // )
+    .pipe(
+      app.plugins.ifPlugin(
+        app.isBuild,
+        webpHtmlNoSvg()
+      )
+    )
     .pipe(
       app.plugins.ifPlugin(
         app.isBuild,
