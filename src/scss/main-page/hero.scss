@@ -99,6 +99,12 @@
             background: radial-gradient(50% 50% at 50% 50%, #B56700 0%, rgba(181, 103, 0, 0) 100%);
           }
         }
+
+        &._light-blue {
+          &:before {
+            background: radial-gradient(50% 50% at 50% 50%, #1B2345 0%, rgba(27, 35, 69, 0) 100%);
+          }
+        }
       }
 
       > picture {
@@ -158,6 +164,14 @@
         flex: initial;
         max-width: 500px;
         margin: 44px auto 0;
+
+        &.background-img {
+
+          &:before {
+            width: 400px;
+            height: 400px;
+          }
+        }
       }
     }
 

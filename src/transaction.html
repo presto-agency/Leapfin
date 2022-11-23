@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Leapfin</title>
+
+  <link rel="icon" type="image/svg" sizes="32x32" href="img/favicon.svg">
+  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <!--  <div class="root"></div>-->
+  @@include('_header.html')
+  <section class="hero background-2">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__content_title">
+          <h1>
+            Transaction Matching
+          </h1>
+          <p>
+            When invoices and payments don’t match, it’s your job to figure out why. Use Leapfin to identify the root of the problem, whether it’s dunning, currency, system issues, or more.
+          </p>
+          <form class="input-wrapper" action="#">
+            <label for="emailTop" class="input-container">
+              <input required placeholder="Enter your email" type="email" name="" id="emailTop">
+            </label>
+            <button class="button _green">
+              Request a Demo
+            </button>
+          </form>
+        </div>
+        <div id="hero" class="hero__content_img background-img _light-blue">
+          <picture>
+            <source srcset="img/hero/hero-transaction.webp" media="(max-width: 1023px)" type="image/webp">
+            <source srcset="img/hero/hero-transaction.png" media="(max-width: 1023px)">
+            <source srcset="imgDesktop/hero-transaction.webp" type="image/webp">
+            <img loading="eager" src="imgDesktop/hero-transaction.png" alt="picture">
+          </picture>
+        </div>
+      </div>
+      <ul class="partners center">
+        <li>
+          <img src="img/partners/1.svg" alt="logo">
+        </li>
+        <li>
+          <img src="img/partners/2.svg" alt="logo">
+        </li>
+        <li>
+          <img src="img/partners/3.svg" alt="logo">
+        </li>
+        <li>
+          <img src="img/partners/4.svg" alt="logo">
+        </li>
+        <li>
+          <img src="img/partners/5.svg" alt="logo">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="accuracy">
+    <div class="container">
+      <div class="accuracy__title">
+        <h2>
+          Matching at scale, configured to your specific business needs
+        </h2>
+      </div>
+      <ul class="accuracy__list">
+        <ul>
+          <li>
+        <span>
+          <img loading="lazy" src="img/accuracy/1_1_1.svg" alt="picture">
+        </span>
+            <p>
+              Verify the completeness of each transaction
+            </p>
+          </li>
+          <li>
+        <span>
+          <img loading="lazy" src="img/accuracy/2_2_2.svg" alt="picture">
+        </span>
+            <p>Identify and address exceptions before it’s too late</p>
+          </li>
+          <li>
+        <span>
+          <img loading="lazy" src="img/accuracy/3_3_3.svg" alt="picture">
+        </span>
+            <p>
+              Focus on diagnosing the problem instead of time-consuming manual steps
+            </p>
+          </li>
+          <li>
+        <span>
+          <img loading="lazy" src="img/accuracy/4_4_4.svg" alt="picture">
+        </span>
+            <p>
+              Investigate discrepancies uncovered in your cash reconciliation
+            </p>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </section>
+  <section class="systems">
+    <div class="container">
+      <div class="systems__content">
+        <div class="systems__content_text">
+          <strong>
+            Identify matched and
+            unmatched transactions
+            from multiple source systems
+          </strong>
+          <p>
+            Query any amount of transactions in Leapfin so that you can easily investigate discrepancies
+          </p>
+          <ul>
+            <li>Invoice to payment</li>
+            <li>Refund to payment</li>
+            <li>Dispute to payment</li>
+            <li>Recognition event to line-item</li>
+            <li>Line-item to invoice</li>
+            <li>Credits to invoice</li>
+          </ul>
+        </div>
+        <div class="systems__content_card">
+          <picture>
+            <source srcset="img/recognition/1_1_1.webp" media="(max-width: 1023px)" type="image/webp">
+            <source srcset="img/recognition/1_1_1.png" media="(max-width: 1023px)">
+            <source srcset="imgDesktop/recognition/1_1_1.webp" type="image/webp">
+            <img loading="lazy" src="imgDesktop/recognition/1_1_1.png" alt="picture">
+          </picture>
+        </div>
+      </div>
+      <div class="systems__content reverse">
+        <div class="systems__content_text">
+          <strong>
+            Dive into transaction-level details to reconcile down to $0
+          </strong>
+          <ul>
+            <li>
+              Look at every invoice issued within a specific time period and add new conditions to ensure they match
+            </li>
+          </ul>
+        </div>
+        <div class="systems__content_card">
+          <picture>
+            <source srcset="img/recognition/2_2_2.webp" media="(max-width: 1023px)" type="image/webp">
+            <source srcset="img/recognition/2_2_2.png" media="(max-width: 1023px)">
+            <source srcset="imgDesktop/recognition/2_2_2.webp" type="image/webp">
+            <img loading="lazy" src="imgDesktop/recognition/2_2_2.png" alt="picture">
+          </picture>
+        </div>
+      </div>
+      <div class="systems__content">
+        <div class="systems__content_text">
+          <strong>
+            Match recognition event to invoice line-item
+          </strong>
+          <ul>
+            <li>
+              When fulfillment information isn’t in your billing system, Leapfin helps connect the dots between invoice line-item to shipping date, delivery date, or gift card and credit redemptions
+            </li>
+          </ul>
+        </div>
+        <div class="systems__content_card">
+          <picture>
+            <source srcset="img/recognition/3_3_3.webp" media="(max-width: 1023px)" type="image/webp">
+            <source srcset="img/recognition/3_3_3.png" media="(max-width: 1023px)">
+            <source srcset="imgDesktop/recognition/3_3_3.webp" type="image/webp">
+            <img loading="lazy" src="imgDesktop/recognition/3_3_3.png" alt="picture">
+          </picture>
+        </div>
+      </div>
+      <div class="systems__content reverse">
+        <div class="systems__content_text">
+          <strong>
+            Trust in our security and auditability
+          </strong>
+          <ul>
+            <li>
+              Have confidence in the security of Leapfin as we leverage industry standard security solutions and best
+              practices. Leapfin is SOC 1 Type 1 & 2 and SOC 2 Type 1 Compliant.
+            </li>
+          </ul>
+        </div>
+        <div class="systems__content_card">
+          <picture>
+            <source srcset="img/recognition/5.webp" media="(max-width: 1023px)" type="image/webp">
+            <source srcset="img/recognition/5.png" media="(max-width: 1023px)">
+            <source srcset="imgDesktop/recognition/5.webp" type="image/webp">
+            <img loading="lazy" src="imgDesktop/recognition/5.png" alt="picture">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="comment">
+    <div class="container">
+      <div class="comment__content">
+        <div class="comment__content_logos">
+          <ul>
+            <li>
+              <img loading="lazy" src="img/partners/1.svg" alt="logo">
+            </li>
+            <li>
+              <img loading="lazy" src="img/partners/2.svg" alt="logo">
+            </li>
+            <li>
+              <img loading="lazy" src="img/partners/3.svg" alt="logo">
+            </li>
+            <li>
+              <img loading="lazy" src="img/partners/6.svg" alt="logo">
+            </li>
+            <li>
+              <img loading="lazy" src="img/partners/4.svg" alt="logo">
+            </li>
+            <li>
+              <img loading="lazy" src="img/partners/5.svg" alt="logo">
+            </li>
+          </ul>
+        </div>
+        <div class="comment__content_description">
+          <p>
+            Closing revenue for Jan and Feb in Leapfin was so easy I shed a tear.
+          </p>
+          <p>
+          <span>
+            <img loading="lazy" src="img/comment/author-2.jpg" alt="author">
+          </span>
+            <span>
+            <strong>
+              Nan Wang
+            </strong>
+            <small>
+              Assistant Controler at Pantheon
+            </small>
+          </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="demo">
+    <div class="container">
+      <div class="demo__content">
+        <div class="demo__content_description">
+          <h2>
+            Automate revenue recognition with <span>Leapfin today.</span>
+          </h2>
+        </div>
+        <div class="demo__content_form">
+          <form class="input-wrapper" action="#">
+            <label for="emailBottom" class="input-container">
+              <input required placeholder="Enter your email" type="email" name="" id="emailBottom">
+            </label>
+            <button class="button _green">
+              Get a free demo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('_footer.html')
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

@@ -734,6 +734,10 @@ h3,
   background: radial-gradient(50% 50% at 50% 50%, #B56700 0%, rgba(181, 103, 0, 0) 100%);
 }
 
+.hero__content_img.background-img._light-blue:before {
+  background: radial-gradient(50% 50% at 50% 50%, #1B2345 0%, rgba(27, 35, 69, 0) 100%);
+}
+
 .hero__content_img > picture {
   display: block;
   position: relative;
@@ -974,6 +978,10 @@ h3,
   line-height: 32px;
   color: #22338A;
   margin: 0 0 24px 0;
+}
+
+.systems__content_text strong + p {
+  margin: 0 0 28px 0;
 }
 
 .systems__content_text p {
@@ -2003,6 +2011,11 @@ h3,
     flex: initial;
     max-width: 500px;
     margin: 44px auto 0;
+  }
+
+  .hero__content_img.background-img:before {
+    width: 400px;
+    height: 400px;
   }
 
   .hero .partners {
