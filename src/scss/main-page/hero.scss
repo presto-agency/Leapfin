@@ -73,7 +73,7 @@
     &_img {
       flex: 0 1 540px;
 
-      &._light-green {
+      &.background-img {
         position: relative;
 
         &:before {
@@ -86,7 +86,18 @@
           height: 825px;
           opacity: 0.7;
           border-radius: 50%;
-          background: radial-gradient(50% 50% at 50% 50%, #0C7900 0%, rgba(12, 121, 0, 0) 100%);
+        }
+
+        &._light-green {
+          &:before {
+            background: radial-gradient(50% 50% at 50% 50%, #0C7900 0%, rgba(12, 121, 0, 0) 100%);
+          }
+        }
+
+        &._light-orange {
+          &:before {
+            background: radial-gradient(50% 50% at 50% 50%, #B56700 0%, rgba(181, 103, 0, 0) 100%);
+          }
         }
       }
 

@@ -710,11 +710,11 @@ h3,
   flex: 0 1 540px;
 }
 
-.hero__content_img._light-green {
+.hero__content_img.background-img {
   position: relative;
 }
 
-.hero__content_img._light-green:before {
+.hero__content_img.background-img:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -724,7 +724,14 @@ h3,
   height: 825px;
   opacity: 0.7;
   border-radius: 50%;
+}
+
+.hero__content_img.background-img._light-green:before {
   background: radial-gradient(50% 50% at 50% 50%, #0C7900 0%, rgba(12, 121, 0, 0) 100%);
+}
+
+.hero__content_img.background-img._light-orange:before {
+  background: radial-gradient(50% 50% at 50% 50%, #B56700 0%, rgba(181, 103, 0, 0) 100%);
 }
 
 .hero__content_img > picture {
