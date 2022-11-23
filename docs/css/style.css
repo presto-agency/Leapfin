@@ -1794,6 +1794,10 @@ h3,
     display: none;
   }
 
+  .button {
+    padding: 18px 16px;
+  }
+
   .accurate {
     margin: 48px 0 80px;
   }
