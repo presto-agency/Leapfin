@@ -1088,7 +1088,7 @@ h3,
      object-fit: cover;
 }
 
-.systems__content_card > img {
+.systems__content_card img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
