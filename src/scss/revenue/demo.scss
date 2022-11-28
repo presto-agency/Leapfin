@@ -1,6 +1,41 @@
 .demo {
   margin: 30px auto 67px;
 
+  &.green-bg {
+    .demo {
+      &__content {
+        background: linear-gradient(180deg, #FFFFFF 44.8%, #5EC053 223.6%);
+        box-shadow: 4px 4px 8px rgba(27, 35, 69, 0.04), 0px 8px 20px rgba(42, 50, 109, 0.08);
+
+        &:before {
+          background-image: url("../img/demo-bg-2.svg");
+        }
+      }
+    }
+  }
+
+  &.estimate {
+    margin: 30px auto -70px;
+
+    .demo {
+      &__content {
+        justify-content: space-between;
+
+        &_description {
+          max-width: 562px;
+
+          h2 {
+            color: $color-royal-blue-800;
+          }
+        }
+
+        &_form {
+          width: initial;
+        }
+      }
+    }
+  }
+
   &__content {
     position: relative;
     display: flex;
@@ -50,11 +85,31 @@
 
 @media (max-width: 1023px) {
   .demo {
+    &.estimate {
+      .demo {
+        &__content {
+          &_form {
+            align-items: center;
+
+            .input-wrapper {
+              width: initial;
+
+              .button {
+                align-self: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+
     &__content {
       flex-direction: column;
+
       &_form {
         margin: 24px 0 0 0;
-        .input-wrapper{
+
+        .input-wrapper {
           margin: 0 auto;
         }
       }
@@ -80,9 +135,10 @@
 @media (max-width: 567px) {
   .demo {
     &__content {
-      &_description{
+      &_description {
         max-width: initial;
-        h2{
+
+        h2 {
           text-align: center;
         }
       }

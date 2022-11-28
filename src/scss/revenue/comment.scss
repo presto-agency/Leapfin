@@ -2,6 +2,12 @@
   position: relative;
   padding: 109px 0;
 
+  &.rotate-bg {
+    &:before {
+      transform: translateX(-50%) rotate(-5deg);
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -131,6 +137,7 @@
       &_logos {
         ul {
           margin: -20px;
+
           li {
             margin: 20px;
             width: calc((100% - (20px * 4)) / 2);

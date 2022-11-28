@@ -582,6 +582,25 @@ h3,
   background: #1ED760;
 }
 
+.button._arrow {
+  position: relative;
+  padding: 18px 60px 18px 26px;
+}
+
+.button._arrow:before {
+  content: "";
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/price/arrow-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .input-container input {
   height: 60px;
   width: 100%;
@@ -1301,6 +1320,10 @@ h3,
   padding: 109px 0;
 }
 
+.comment.rotate-bg:before {
+  transform: translateX(-50%) rotate(-5deg);
+}
+
 .comment:before {
   content: "";
   position: absolute;
@@ -1404,6 +1427,35 @@ h3,
 
 .demo {
   margin: 30px auto 67px;
+}
+
+.demo.green-bg .demo__content {
+  background: linear-gradient(180deg, #FFFFFF 44.8%, #5EC053 223.6%);
+  box-shadow: 4px 4px 8px rgba(27, 35, 69, 0.04), 0px 8px 20px rgba(42, 50, 109, 0.08);
+}
+
+.demo.green-bg .demo__content:before {
+  background-image: url("../img/demo-bg-2.svg");
+}
+
+.demo.estimate {
+  margin: 30px auto -70px;
+}
+
+.demo.estimate .demo__content {
+  justify-content: space-between;
+}
+
+.demo.estimate .demo__content_description {
+  max-width: 562px;
+}
+
+.demo.estimate .demo__content_description h2 {
+  color: #22338A;
+}
+
+.demo.estimate .demo__content_form {
+  width: initial;
 }
 
 .demo__content {
@@ -2468,6 +2520,18 @@ h3,
     max-width: 386px;
   }
 
+  .demo.estimate .demo__content_form {
+    align-items: center;
+  }
+
+  .demo.estimate .demo__content_form .input-wrapper {
+    width: initial;
+  }
+
+  .demo.estimate .demo__content_form .input-wrapper .button {
+    align-self: flex-start;
+  }
+
   .demo__content {
     flex-direction: column;
   }
@@ -2536,6 +2600,16 @@ h3,
 }
 
 @media (max-width: 767px) {
+  .button._arrow {
+    padding: 12px 40px 12px 16px;
+  }
+
+  .button._arrow:before {
+    right: 14px;
+    width: 16px;
+    height: 16px;
+  }
+
   .demo {
     margin: 80px 0 0 0;
   }
@@ -2574,7 +2648,7 @@ h3,
     z-index: 2;
     right: -8px;
     top: 0;
-    width: 30%;
+    width: 10%;
     height: 48px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
   }
@@ -2585,7 +2659,6 @@ h3,
     flex-wrap: nowrap;
     scrollbar-width: none;
     border-bottom: initial;
-    padding: 0 100px 0 0;
   }
 
   .charges__tabs .tabs__items::-webkit-scrollbar {
