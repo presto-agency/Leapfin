@@ -2525,6 +2525,14 @@ h3,
   .price .container {
     padding: 0;
   }
+
+  .charges {
+    margin: 60px auto;
+  }
+
+  .charges__tabs .tabs__items li {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2552,6 +2560,72 @@ h3,
   .price__table ul li p {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .charges__tabs {
+    position: relative;
+    margin: 30px 0 0 0;
+  }
+
+  .charges__tabs:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    right: -8px;
+    top: 0;
+    width: 30%;
+    height: 48px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
+  }
+
+  .charges__tabs .tabs__items {
+    overflow: auto;
+    justify-content: initial;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    border-bottom: initial;
+    padding: 0 100px 0 0;
+  }
+
+  .charges__tabs .tabs__items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .charges__tabs .tabs__items li {
+    white-space: nowrap;
+    margin: 0 30px 0 0;
+  }
+
+  .charges__tabs .tabs__items li:last-child {
+    margin: 0;
+  }
+
+  .charges__tabs .tabs__body {
+    margin: 30px 0 0 0;
+  }
+
+  .charges__tabs .tabs__body > li {
+    flex-direction: column;
+  }
+
+  .charges__tabs .tabs__body > li > div {
+    flex: initial;
+  }
+
+  .charges__tabs .tabs__body > li > div ul li {
+    width: 100%;
+    flex: initial;
+  }
+
+  .charges__tabs .tabs__body > li > div ul li:nth-child(2n+1) {
+    flex: initial;
+  }
+
+  .charges__tabs .tabs__body > li > div img {
+    display: block;
+    width: 50%;
+    margin: 50px auto 0;
   }
 }
 
