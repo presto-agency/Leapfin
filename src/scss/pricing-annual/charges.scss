@@ -183,6 +183,7 @@
           flex-wrap: nowrap;
           scrollbar-width: none;
           border-bottom: initial;
+          padding: 0 100px 0 0;
 
           &::-webkit-scrollbar {
             display: none;
@@ -235,13 +236,9 @@
   .charges {
     &__tabs {
       .tabs {
-
         &__body {
-
           > li {
-
             > div {
-
               img {
                 width: 100%;
               }

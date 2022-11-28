@@ -2585,6 +2585,7 @@ h3,
     flex-wrap: nowrap;
     scrollbar-width: none;
     border-bottom: initial;
+    padding: 0 100px 0 0;
   }
 
   .charges__tabs .tabs__items::-webkit-scrollbar {
