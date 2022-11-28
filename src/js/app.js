@@ -11,6 +11,8 @@ if(window.innerWidth < 1200){
 }
 scrollHeader()
 callTabs()
+showSubmenu(document.querySelectorAll('.submenu-questions'));
+
 
 
 

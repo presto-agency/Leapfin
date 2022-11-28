@@ -1,0 +1,104 @@
+.questions {
+  margin: 40px 0;
+
+  &__list {
+    .submenu-questions {
+      border-bottom: 2px solid #E5E6E9;
+
+      &.active {
+        span {
+          &:before, &:after {
+            transform: translateX(-50%) translateY(-50%) rotate(90deg);
+          }
+        }
+      }
+
+      &:last-child {
+        border-bottom: initial;
+      }
+
+      p {
+        cursor: pointer;
+        position: relative;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        padding: 24px 70px 24px 32px;
+        color: $color-royal-blue-800;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 32px;
+          width: 16px;
+          height: 16px;
+
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 2px;
+            border-radius: 8px;
+            background: #A9ABB6;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: 500ms;
+          }
+
+          &:after {
+            content: '';
+            height: 16px;
+            width: 2px;
+          }
+        }
+      }
+
+      ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: 500ms;
+
+        li {
+          color: $color-dark-gray-800;
+          padding: 30px 0 30px 30px;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+
+          a {
+            color: $color-punchy-green-800;
+            font-weight: 600;
+            transition: 500ms;
+
+            @media (min-width: 1199px) {
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .questions {
+    &__list {
+      .submenu-questions {
+        p {
+          padding: 30px;
+          font-size: 18px;
+          line-height: 20px;
+
+          span {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
