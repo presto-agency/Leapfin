@@ -15,10 +15,11 @@
   }
 
   &.estimate {
-    margin: 30px auto -70px;
+    margin: 30px auto -15px;
 
     .demo {
       &__content {
+        padding: 66px 80px 71px;
         justify-content: space-between;
 
         &_description {
