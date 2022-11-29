@@ -16,3 +16,26 @@
     padding: 57px 0 0 0;
   }
 }
+
+.background-template {
+  position: relative;
+
+  &.rotate-bg {
+    &:before {
+      transform: translateX(-50%) rotate(-5deg);
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: $color-dark-gray-200;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(5deg);
+    width: 150vw;
+    height: 150%;
+    opacity: 0.5;
+  }
+}
