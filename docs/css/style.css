@@ -75,6 +75,10 @@ ul li {
   list-style: none;
 }
 
+ol li {
+  list-style: none;
+}
+
 img {
   vertical-align: top;
 }
@@ -1529,24 +1533,59 @@ h3,
 
 .price {
   position: relative;
-  padding: 198px 0 0 0;
+  padding: 161px 0 0 0;
+  margin: 0 0 107px 0;
 }
 
 .price .container {
   max-width: 1240px;
 }
 
-.price h1 {
-  max-width: 1115px;
-  box-sizing: content-box;
-  padding: 0 25px;
-  margin: 0 auto;
-  color: #fff;
+.price__title {
   text-align: center;
 }
 
-.price h1 span {
+.price__title h1 {
+  max-width: 1115px;
+  box-sizing: content-box;
+  padding: 0 25px;
+  margin: 37px auto 0;
+  color: #fff;
+}
+
+.price__title h1 span {
   color: #A2CB94;
+}
+
+.price__title h2 {
+  color: #fff;
+  margin: 0 0 40px 0;
+}
+
+.price__title > strong {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 4px 0;
+}
+
+.price__title > span {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #A2CB94;
+  text-transform: uppercase;
+  margin: 0 0 60px 0;
+}
+
+.price__title > p {
+  font-weight: 400;
+  color: #C0C0C7;
+  max-width: 822px;
+  margin: 0 auto;
 }
 
 .price:before {
@@ -1578,6 +1617,17 @@ h3,
   border-radius: 4px;
   padding: 64px;
   background-color: #fff;
+}
+
+.price__table.box-shadow {
+  max-width: 1033px;
+  margin: 124px auto 0;
+  box-shadow: 0px 4px 30px rgba(42, 50, 109, 0.08);
+}
+
+.price__table h2 {
+  text-align: center;
+  margin: 0 0 55px 0;
 }
 
 .price__table ul {
@@ -1681,6 +1731,43 @@ h3,
 .price__table ul li:nth-child(2),
 .price__table ul li:nth-child(3) {
   flex: 0 1 219px;
+}
+
+.price__table ol li {
+  display: flex;
+  margin: 0 0 72px 0;
+}
+
+.price__table ol li:last-child {
+  margin: 0;
+}
+
+.price__table ol li span {
+  flex: 0 0 72px;
+  height: 72px;
+  border-radius: 12px;
+  margin: 0 34px 0 0;
+}
+
+.price__table ol li span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.price__table ol li p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.price__table ol li p strong {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  color: #22338A;
+  margin: 0 0 16px 0;
 }
 
 .charges {
@@ -2751,14 +2838,43 @@ h3,
     margin: 0 auto;
   }
 
-  .price h1 {
+  .price__title {
+    padding: 0 24px;
+  }
+
+  .price__title h1 {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  .price__title h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .price__title span {
+    margin: 0 0 28px 0;
+  }
+
+  .price__title strong {
+    margin: 0 0 9px 0;
   }
 
   .price__table {
     padding: 20px 0;
     border-radius: initial;
+    margin: 90px 0 0 0;
+  }
+
+  .price__table h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 33px 0;
+  }
+
+  .price__table.box-shadow {
+    padding: 39px 50px 52px;
+    margin: 33px auto 0;
   }
 
   .price__table ul {
@@ -2838,6 +2954,15 @@ h3,
   .demo__content {
     border-radius: initial;
     padding: 25px;
+  }
+
+  .price {
+    margin: 0 0 68px 0;
+    padding: 95px 0 0 0;
+  }
+
+  .price__table {
+    margin: 33px 0 0 0;
   }
 
   .price__table ul li {
@@ -2955,6 +3080,24 @@ h3,
 
   .demo__content_description h2 {
     text-align: center;
+  }
+
+  .price__table ol li {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 56px 0;
+  }
+
+  .price__table ol li span {
+    height: 44px;
+    width: 44px;
+    flex: 0 0 44px;
+    margin: 0 0 14px 0;
+  }
+
+  .price__table ol li p strong {
+    margin: 0 0 9px 0;
   }
 
   .charges__tabs .tabs__body > li > div img {
