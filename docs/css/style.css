@@ -2082,6 +2082,76 @@ h3,
   font-weight: 400;
 }
 
+.our-team {
+  margin: 107px 0;
+}
+
+.our-team h2 {
+  margin: 0 0 0 50px;
+}
+
+.our-team ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 34px -20px -25px;
+}
+
+.our-team ul li {
+  width: calc((100% - 160px) / 4);
+  margin: 25px 20px;
+}
+
+.our-team ul li a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 500ms;
+}
+
+.our-team ul li a span {
+  position: relative;
+  flex: 0 0 140px;
+  width: 140px;
+  margin: 0 0 32px 0;
+}
+
+.our-team ul li a span img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 500ms;
+}
+
+.our-team ul li a span svg {
+  position: absolute;
+  border-radius: 5px;
+  bottom: 10px;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #fff;
+  fill: #22338A;
+  transition: 500ms;
+}
+
+.our-team ul li a strong {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #22338A;
+  margin: 0 0 4px 0;
+  transition: 500ms;
+}
+
+.our-team ul li a p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 @media (min-width: 1199px) {
   .questions__list .submenu-questions ul li a:hover {
     opacity: 0.5;
@@ -2157,6 +2227,18 @@ h3,
 
   .template__list li a:hover img {
     transform: scale(1.1);
+  }
+
+  .our-team ul li a:hover span img {
+    transform: scale(1.1);
+  }
+
+  .our-team ul li a:hover span svg {
+    fill: #1B2345;
+  }
+
+  .our-team ul li a:hover strong {
+    color: #1B2345;
   }
 }
 
@@ -2930,6 +3012,11 @@ h3,
   .questions__list .submenu-questions p span {
     right: 0;
   }
+
+  .our-team h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3062,6 +3149,19 @@ h3,
   .template__list li:last-child {
     margin: 0;
   }
+
+  .our-team {
+    margin: 68px 0 54px;
+  }
+
+  .our-team h2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .our-team ul li {
+    width: calc((100% - 80px) / 2);
+  }
 }
 
 @media (max-width: 567px) {
@@ -3102,6 +3202,32 @@ h3,
 
   .charges__tabs .tabs__body > li > div img {
     width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .our-team ul {
+    margin: 35px -13px -15px;
+  }
+
+  .our-team ul li {
+    width: calc((100% - 52px) / 2);
+    margin: 15px 13px;
+  }
+
+  .our-team ul li a span {
+    flex: 0 0 100px;
+    width: 100px;
+    margin: 0 0 16px 0;
+  }
+
+  .our-team ul li a span svg {
+    display: none;
+  }
+
+  .our-team ul li a strong {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
