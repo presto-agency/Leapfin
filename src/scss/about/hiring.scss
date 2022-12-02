@@ -1,5 +1,6 @@
 .hiring {
   margin: 120px 0 198px;
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@
     box-shadow: 0px 8px 20px rgba(99, 184, 102, 0.1);
     border-radius: 4px;
     padding: 69px 135px;
+    margin: 0 auto;
 
     &:before {
       content: '';
@@ -69,6 +71,7 @@
 @media (max-width: 1199px) {
   .hiring {
     margin: 54px 0 93px;
+
     &__content {
       padding: 46px 23px 34px;
 
