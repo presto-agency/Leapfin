@@ -10,6 +10,10 @@
     background: $color-royal-blue-800;
   }
 
+  &.background-3 {
+    background: linear-gradient(152.58deg, #2A326D 48.03%, #EDA13D 99.11%);
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -40,11 +44,20 @@
       h1 {
         font-size: 44px;
         line-height: 54px;
+      }
+
+      h1, h2 {
         color: $color-white;
 
         span {
           color: $color-punchy-green;
         }
+      }
+
+      > img {
+        align-self: flex-start;
+        height: 40px;
+        margin: 0 0 68px 0;
       }
 
       p {
@@ -104,6 +117,24 @@
           &:before {
             background: radial-gradient(50% 50% at 50% 50%, #1B2345 0%, rgba(27, 35, 69, 0) 100%);
           }
+        }
+      }
+
+      &.background-frame {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          opacity: .5;
+          width: 717px;
+          height: 589px;
+          bottom: -104px;
+          left: -106px;
+          background-image: url("../img/case-study/bg-frame.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
         }
       }
 
@@ -177,6 +208,20 @@
 
     .partners {
       margin: 44px 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    &__content {
+      &_img {
+        &.background-frame {
+          &:before {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

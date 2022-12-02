@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Leapfin</title>
+
+  <link rel="icon" type="image/svg" sizes="32x32" href="img/favicon.svg">
+  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <!--  <div class="root"></div>-->
+  @@include('_header.html')
+  <section class="hero background-3">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__content_title">
+          <img src="img/case-study/canva-white.svg" alt="logo">
+          <h2>
+            Leapfin helped Canva increase accuracy of revenue reporting and eliminate reliance on estimates
+          </h2>
+        </div>
+        <div class="hero__content_img background-frame">
+          <picture>
+            <source srcset="img/case-study/hero.webp" type="image/webp">
+            <img loading="eager" src="img/case-study/hero.jpg" alt="picture">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="demo">
+    <div class="container">
+      <div class="demo__content">
+        <div class="demo__content_description">
+          <h2>
+            Automate revenue recognition with <span>Leapfin today.</span>
+          </h2>
+        </div>
+        <div class="demo__content_form">
+          <form class="input-wrapper" action="#">
+            <label for="emailBottom" class="input-container">
+              <input required placeholder="Enter your email" type="email" name="" id="emailBottom">
+            </label>
+            <button class="button _green">
+              Get a free demo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('_footer.html')
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

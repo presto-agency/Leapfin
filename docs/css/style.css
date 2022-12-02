@@ -697,6 +697,10 @@ h3,
   background: #22338A;
 }
 
+.hero.background-3 {
+  background: linear-gradient(152.58deg, #2A326D 48.03%, #EDA13D 99.11%);
+}
+
 .hero:before {
   content: "";
   position: absolute;
@@ -729,11 +733,22 @@ h3,
 .hero__content_title h1 {
   font-size: 44px;
   line-height: 54px;
+}
+
+.hero__content_title h1,
+.hero__content_title h2 {
   color: #fff;
 }
 
-.hero__content_title h1 span {
+.hero__content_title h1 span,
+.hero__content_title h2 span {
   color: #1ED760;
+}
+
+.hero__content_title > img {
+  align-self: flex-start;
+  height: 40px;
+  margin: 0 0 68px 0;
 }
 
 .hero__content_title p {
@@ -792,6 +807,24 @@ h3,
 
 .hero__content_img.background-img._light-blue:before {
   background: radial-gradient(50% 50% at 50% 50%, #1B2345 0%, rgba(27, 35, 69, 0) 100%);
+}
+
+.hero__content_img.background-frame {
+  position: relative;
+}
+
+.hero__content_img.background-frame:before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  width: 717px;
+  height: 589px;
+  bottom: -104px;
+  left: -106px;
+  background-image: url("../img/case-study/bg-frame.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero__content_img > picture {
@@ -3211,6 +3244,10 @@ h3,
     right: 14px;
     width: 16px;
     height: 16px;
+  }
+
+  .hero__content_img.background-frame:before {
+    display: none;
   }
 
   .demo {

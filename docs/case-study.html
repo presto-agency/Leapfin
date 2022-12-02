@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Leapfin</title>
+
+  <link rel="icon" type="image/svg" sizes="32x32" href="img/favicon.svg">
+  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <!--  <div class="root"></div>-->
+  <header class="header">
+  <div class="container">
+    <div class="header__content">
+      <div class="header__content_logo">
+        <a href="#">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__links">
+          <li>
+            <a href="#">
+              Platform
+            </a>
+          </li>
+          <li class="submenu">
+            <p data-attr="call-2" class="trigger">
+              Solutions
+            </p>
+            <div id="call-2" class="dropdown-menu">
+              <div class="dropdown-menu__submenu">
+                <span data-close="call-2" class="back-list sub-close">
+                      Solutions
+                </span>
+                <ul class="dropdown-menu__submenu_list small">
+                  <li class="sub-submenu">
+                    <span class="plus"></span>
+                    <p>
+                      Business Initiatives
+                    </p>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <img src="img/home-dropdown/ipo.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              IPO-Readiness
+                            </strong>
+                            <small>
+                              Become SOX compliant and decrease risks in financial reporting
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <img src="img/home-dropdown/growth.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Growth & New Products
+                            </strong>
+                            <small>
+                              Accelerate your time to market and easily add new integration points
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="dropdown-menu__submenu_list">
+                  <li class="sub-submenu">
+                    <span class="plus"></span>
+                    <p>
+                      For Finance Systems & CTO
+                    </p>
+                    <ul>
+                      <li>
+                        <a class="_yellow-link" href="#">
+                          <span>
+                            <img src="img/home-dropdown/data.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Clean revenue data
+                            </strong>
+                            <small>
+                              Unify your siloed data with our financial record graph to ensure cleanliness
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="_yellow-link" href="#">
+                          <span>
+                            <img src="img/home-dropdown/optimize.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Optimize financial data pipeline
+                            </strong>
+                            <small>
+                              Scalable ETL that works with your existing finance ecosystem
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="_yellow-link" href="#">
+                          <span>
+                            <img src="img/home-dropdown/support.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Support financial reporting
+                            </strong>
+                            <small>
+                              Access your key financial data for customized reporting
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-submenu">
+                    <span class="plus"></span>
+                    <p>
+                      For Finance & Accounting
+                    </p>
+                    <ul>
+                      <li>
+                        <a class="_punchy-link" href="#">
+                          <span>
+                            <img src="img/home-dropdown/revenue.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Revenue Recognition
+                            </strong>
+                            <small>
+                              Automated journal entries at scale
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="_punchy-link" href="#">
+                          <span>
+                            <img src="img/home-dropdown/order.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Order-to-Cash Reconciliation
+                            </strong>
+                            <small>
+                              Automated journal entries from invoice to bank
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="_punchy-link" href="#">
+                          <span>
+                            <img src="img/home-dropdown/transaction.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Transaction Matching
+                            </strong>
+                            <small>
+                              Identify matched and unmatched transactions
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              Integrations
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Customers
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="submenu">
+            <p data-attr="call-1" class="trigger">
+              Resources
+            </p>
+            <div id="call-1" class="dropdown-menu">
+              <div class="dropdown-menu__submenu">
+                <span data-close="call-1" class="back-list sub-close">
+                      Resources
+                </span>
+                <ul class="dropdown-menu__submenu_list">
+                  <li class="sub-submenu">
+                    <span class="plus"></span>
+                    <p>
+                      Company
+                    </p>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <img src="img/home-dropdown/about.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              About Us
+                            </strong>
+                            <small>
+                              Meet Leapfin and the future of financial revenue data
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <img src="img/home-dropdown/career.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Careers
+                            </strong>
+                            <small>
+                              Take the next step in your career and help us build something big
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-submenu">
+                    <span class="plus"></span>
+                    <p>
+                      Learn
+                    </p>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <img src="img/home-dropdown/blog.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Blog
+                            </strong>
+                            <small>
+                              Thought leadership for IT, accounting, finance, and systems
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <img src="img/home-dropdown/resource.svg" alt="icon">
+                          </span>
+                          <p>
+                            <strong>
+                              Resource Center
+                            </strong>
+                            <small>
+                              Explore our webinars, ebooks, case studies, and more
+                            </small>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="button _green" href="#">
+          Request a Demo
+        </a>
+      </nav>
+      <a href="#" class="header__content_login">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#login"></use>
+        </svg>
+        <span>
+          Login
+        </span>
+      </a>
+      <div class="header__content_cross">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+  <section class="hero background-3">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__content_title">
+          <img src="img/case-study/canva-white.svg" alt="logo">
+          <h2>
+            Leapfin helped Canva increase accuracy of revenue reporting and eliminate reliance on estimates
+          </h2>
+        </div>
+        <div class="hero__content_img background-frame">
+          <picture>
+            <source srcset="img/case-study/hero.webp" type="image/webp">
+            <img loading="eager" src="img/case-study/hero.jpg" alt="picture">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="demo">
+    <div class="container">
+      <div class="demo__content">
+        <div class="demo__content_description">
+          <h2>
+            Automate revenue recognition with <span>Leapfin today.</span>
+          </h2>
+        </div>
+        <div class="demo__content_form">
+          <form class="input-wrapper" action="#">
+            <label for="emailBottom" class="input-container">
+              <input required placeholder="Enter your email" type="email" name="" id="emailBottom">
+            </label>
+            <button class="button _green">
+              Get a free demo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="description">
+        <div class="description__logo">
+          <a href="#">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="description__paragraph">
+          <p>
+            Our mission is to empower finance teams to do their best work and focus on driving their businesses forward
+            with data driven decisions.
+          </p>
+        </div>
+        <ul class="social-media desktop">
+          <li>
+            <a href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="navigation">
+        <div class="navigation__list-items sidebar">
+          <p>
+            PLATFORM
+          </p>
+          <ul>
+            <li>
+              <a href="#">
+                Why?
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Platform
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Integrations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Security & Governance
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li class="navigation__list-items">
+            <p>
+              Solutions
+            </p>
+            <ul>
+              <li>
+                <a href="#">
+                  Revenue Recognition
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Order-to-Cash Reporting
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Transaction Matching
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation__list-items">
+            <p>
+              Company
+            </p>
+            <ul>
+              <li>
+                <a href="#">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Customers
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation__list-items">
+            <p>
+              Resources
+            </p>
+            <ul>
+              <li>
+                <a href="#">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  API Docs
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation__list-items">
+            <p>
+              Legal
+            </p>
+            <ul>
+              <li>
+                <a href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Cookie Policy
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-media mob">
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <p>
+        Copyright © 2021 Leap Technologies. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
