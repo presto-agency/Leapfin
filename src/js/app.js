@@ -12,7 +12,6 @@ if(window.innerWidth < 1200){
 }
 scrollHeader()
 callTabs()
-googleMap()
 showSubmenu(document.querySelectorAll('.submenu-questions'));
 
 

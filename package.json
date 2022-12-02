@@ -36,7 +36,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@googlemaps/js-api-loader": "^1.15.1",
     "gulp-cheerio": "^1.0.0",
     "imagemin-webp": "^7.0.0"
   }
