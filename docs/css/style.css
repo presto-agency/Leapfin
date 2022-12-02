@@ -2253,12 +2253,14 @@ h3,
 .google-map__content_map {
   flex: 0 1 50%;
   height: 344px;
+  margin: 0 auto 30px;
 }
 
 .google-map__content_map iframe {
   border-radius: 8px;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  max-width: 417px !important;
+  height: 344px !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3354,6 +3356,11 @@ h3,
 
   .google-map__content_map {
     flex: initial;
+    margin: initial;
+  }
+
+  .google-map__content_map iframe {
+    max-width: 100% !important;
   }
 }
 
