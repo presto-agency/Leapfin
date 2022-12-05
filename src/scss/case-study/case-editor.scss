@@ -1,0 +1,145 @@
+.case-editor {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .editor {
+      flex: 0 1 730px;
+      margin: 0 40px 50px 0;
+
+      &__content {
+        margin: 0 0 97px 0;
+        &:last-of-type{
+          margin: 0;
+        }
+
+        h1, h2, h3, h4 {
+          margin: 0 0 24px 0;
+        }
+
+        p {
+          font-weight: 400;
+          margin: 0 0 24px 0;
+
+          &:last-of-type {
+            margin: 0;
+          }
+        }
+
+        strong {
+          display: block;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 500;
+          color: $color-royal-blue-800;
+          margin: 0 0 16px 0;
+        }
+      }
+    }
+
+    .phrase {
+      position: relative;
+      padding: 63px 0 0 0;
+      margin: 78px 0 82px;
+
+      &.sidebar {
+        margin: 273px 0 0 0;
+        flex: 0 1 253px;
+
+        .phrase {
+          &__top {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          &__bottom {
+            p {
+              strong {
+                font-size: 14px;
+                line-height: 18px;
+              }
+
+              small {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 56px;
+        height: 39px;
+        background-image: url("../img/case-study/commas.svg");
+        background-size: 56px 39px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &__top {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $color-royal-blue-800;
+      }
+
+      &__bottom {
+        display: flex;
+        margin: 24px 0 0 0;
+
+        span {
+          flex: 0 0 72px;
+          height: 72px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        p {
+          display: flex;
+          flex-direction: column;
+          margin: 0 0 0 24px;
+
+          strong {
+            font-weight: 600;
+            color: $color-dark-gray-800;
+          }
+
+          small {
+            color: $color-dark-gray-800;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1199px){
+  .case-editor{
+    &__wrapper{
+      .sidebar{
+        display: none;
+      }
+      .phrase{
+        margin: 50px 0;
+      }
+      .editor{
+        margin: 50px 0;
+        flex: initial;
+        width: 100%;
+        &__content{
+          margin: 0 0 40px 0;
+        }
+      }
+    }
+  }
+}
