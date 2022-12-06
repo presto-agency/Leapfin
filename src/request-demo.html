@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Leapfin</title>
+
+  <link rel="icon" type="image/svg" sizes="32x32" href="img/favicon.svg">
+  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <!--  <div class="root"></div>-->
+  @@include('_header.html')
+  <section class="hero background-4">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__content_title">
+          <h1>
+            See the power of Leapfin today
+          </h1>
+          <p>
+            <span>Leapfin helps fast growing companies</span> with high transaction volume and high complexity get accurate revenue reporting in less time.
+          </p>
+          <p>
+            Join the world’s fastest growing companies
+          </p>
+          <ul>
+            <li>
+              <img src="img/partners/1.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/2.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/5.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/6.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/4.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/7.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/3.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/8.svg" alt="logo">
+            </li>
+            <li>
+              <img src="img/partners/9.svg" alt="logo">
+            </li>
+          </ul>
+        </div>
+        <div class="hero__content_table">
+          <p>
+            Tell us a little about yourself and we'll connect you with a Leapfin expert
+          </p>
+          <form action="#">
+            <label for="textField" class="input-container">
+              <input required placeholder="Full Name*" type="text" id="textField">
+            </label>
+            <label for="emailBottom" class="input-container">
+              <input required placeholder="Work Email*" type="email" id="emailBottom">
+            </label>
+            <label for="companyField" class="input-container">
+              <input required placeholder="Company Name*" type="text" id="companyField">
+            </label>
+            <label for="titleField" class="input-container">
+              <input required placeholder="Title (Optional)" type="text" id="titleField">
+            </label>
+            <label for="phoneField" class="input-container">
+              <input required placeholder="Business Phone (Optional)" type="tel" id="phoneField">
+            </label>
+            <label for="optionField" class="input-container">
+              <p>Transaction Volume</p>
+              <select id="optionField">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+            <label for="checkField" class="input-container checkbox">
+              <input required type="checkbox" id="checkField">
+              <p>
+                I agree to receive amail communications from Leapfin related to this inquiry. Communication preferences can be updaed at any time.
+              </p>
+            </label>
+            <button class="button _green">Request a Demo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('_footer.html')
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
