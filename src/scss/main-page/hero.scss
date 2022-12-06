@@ -15,7 +15,7 @@
   }
 
   &.background-4 {
-    background: linear-gradient(180deg, rgba(42, 50, 109, 1) 61%, rgba(99, 184, 102, 1) 96%);
+    background: radial-gradient(176.12% 91.11% at 100% 120%, #63B866 0%, #2A326D 100%);
   }
 
   &:before {
@@ -307,7 +307,7 @@
   }
 }
 
-@media(max-width: 474px) {
+@media(max-width: 374px) {
   .hero {
     &__content {
       &_title {

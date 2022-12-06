@@ -713,7 +713,7 @@ h3,
 }
 
 .hero.background-4 {
-  background: linear-gradient(180deg, rgb(42, 50, 109) 61%, rgb(99, 184, 102) 96%);
+  background: radial-gradient(176.12% 91.11% at 100% 120%, #63B866 0%, #2A326D 100%);
 }
 
 .hero:before {
@@ -3674,10 +3674,6 @@ h3,
 }
 
 @media (max-width: 474px) {
-  .hero__content_title ul li {
-    width: 100%;
-  }
-
   .accuracy__list ul {
     margin: -8px;
   }
@@ -3695,6 +3691,10 @@ h3,
 
   .footer__content .navigation > ul > li:nth-child(2n+1) {
     width: calc(100% - 22px);
+  }
+
+  .hero__content_title ul li {
+    width: 100%;
   }
 
   .google-map__content_description a {
