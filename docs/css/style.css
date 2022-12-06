@@ -1805,39 +1805,6 @@ h3,
   align-items: center;
 }
 
-.price__table ul li.checked {
-  position: relative;
-}
-
-.price__table ul li.checked:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 32px;
-  height: 32px;
-  transform: translateX(-50%) translateY(-50%);
-  background-image: url("../img/checked.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.price__table ul li.not-checked {
-  position: relative;
-}
-
-.price__table ul li.not-checked:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 32px;
-  height: 2px;
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #878787;
-}
-
 .price__table ul li p {
   font-size: 16px;
   line-height: 24px;
