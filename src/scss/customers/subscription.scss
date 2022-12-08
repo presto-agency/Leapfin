@@ -7,7 +7,7 @@
     display: flex;
 
     &_item {
-      box-shadow: 0px 0px 40px rgba(108, 123, 170, 0.15);
+      box-shadow: 0 0 40px rgba(108, 123, 170, 0.15);
       border-radius: 8px;
       background-color: $color-white;
       flex: 0 1 50%;
@@ -54,6 +54,12 @@
         padding: 12px 16px;
         background-color: $color-royal-blue-800;
         border-radius: 4px;
+        transition: 500ms;
+        @media (min-width: 1200px) {
+          &:hover{
+            background-color: $color-punchy-green;
+          }
+        }
       }
 
       &.large {

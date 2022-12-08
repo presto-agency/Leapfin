@@ -2817,7 +2817,7 @@ h3,
 }
 
 .subscription__list-top_item {
-  box-shadow: 0px 0px 40px rgba(108, 123, 170, 0.15);
+  box-shadow: 0 0 40px rgba(108, 123, 170, 0.15);
   border-radius: 8px;
   background-color: #fff;
   flex: 0 1 50%;
@@ -2865,6 +2865,7 @@ h3,
   padding: 12px 16px;
   background-color: #22338A;
   border-radius: 4px;
+  transition: 500ms;
 }
 
 .subscription__list-top_item.large {
@@ -3059,6 +3060,10 @@ h3,
 
   .our-team ul li a:hover strong {
     color: #1ED760;
+  }
+
+  .subscription__list-top_item a:hover {
+    background-color: #1ED760;
   }
 }
 
