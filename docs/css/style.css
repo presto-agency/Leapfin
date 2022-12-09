@@ -3000,6 +3000,15 @@ h3,
   opacity: 0.5;
 }
 
+.marketplace.right-side {
+  max-width: 630px;
+  margin: 0 200px 0 auto;
+}
+
+.marketplace.right-side .marketplace__bottom-logos {
+  max-width: 100%;
+}
+
 .marketplace__title {
   position: relative;
   z-index: 2;
@@ -4159,7 +4168,7 @@ h3,
   }
 
   .marketplace {
-    margin: 100px 0 80px;
+    margin: 50px 0;
   }
 
   .marketplace.background-triangle {
@@ -4168,6 +4177,11 @@ h3,
 
   .marketplace.background-triangle:before {
     display: none;
+  }
+
+  .marketplace.right-side {
+    max-width: 100%;
+    margin: 0;
   }
 
   .marketplace__title {
