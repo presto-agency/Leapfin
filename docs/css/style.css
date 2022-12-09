@@ -1926,15 +1926,6 @@ h3,
   margin: 0 0 40px 0;
 }
 
-.price__title > strong {
-  display: block;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 600;
-  color: #fff;
-  margin: 0 0 4px 0;
-}
-
 .price__title > span {
   display: block;
   font-size: 16px;
@@ -1950,6 +1941,18 @@ h3,
   color: #C0C0C7;
   max-width: 822px;
   margin: 0 auto;
+}
+
+.price__title > p > strong {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.price__title p + p {
+  margin: 4px auto 0;
 }
 
 .price:before {
@@ -3982,8 +3985,8 @@ h3,
     margin: 0 0 28px 0;
   }
 
-  .price__title strong {
-    margin: 0 0 9px 0;
+  .price__title p + p {
+    margin: 9px auto 0;
   }
 
   .price__table {
