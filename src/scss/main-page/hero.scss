@@ -358,96 +358,6 @@
     }
   }
 
-  &__anchor-list {
-    position: relative;
-    margin: 136px auto 0;
-    max-width: 825px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: $color-dark-gray-600;
-    }
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    ul {
-      position: relative;
-      display: flex;
-
-
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background: $color-dark-gray-600;
-      }
-
-      li {
-        white-space: nowrap;
-        position: relative;
-        margin: 0 48px 0 0;
-        color: $color-dark-gray-600;
-        padding: 0 0 16px 0;
-        transition: 500ms;
-
-        @media (min-width: 1200px) {
-          &:hover {
-            color: $color-punchy-green-800;
-
-            a {
-              color: $color-punchy-green-800;
-            }
-          }
-        }
-
-        &.active {
-          color: $color-punchy-green-800;
-
-          a {
-            color: $color-punchy-green-800;
-          }
-
-          &:before {
-            background-color: $color-punchy-green-800;
-          }
-        }
-
-        &:before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          height: 2px;
-          width: 100%;
-        }
-
-        a {
-          color: $color-dark-gray-600;
-          transition: 500ms;
-        }
-
-        &:last-child {
-          margin: 0;
-        }
-      }
-    }
-  }
-
   &__subscription {
     margin: 104px auto 0;
     max-width: 718px;
@@ -654,9 +564,6 @@
       }
     }
 
-    &__anchor-list {
-      justify-content: flex-start;
-    }
   }
 }
 
