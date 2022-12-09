@@ -78,7 +78,7 @@
 
     .small {
       &__left {
-        flex: 0 1 282px;
+        margin: 0 25px 0 0;
 
         img {
           display: block;
@@ -104,15 +104,6 @@
     flex: initial;
     align-self: initial;
 
-    &.small {
-      .small {
-        &__left {
-          margin: 0 30px 0 0;
-          flex: initial;
-        }
-      }
-    }
-
     &.large {
       margin: 0 0 24px 0;
     }
@@ -127,6 +118,11 @@
         background-repeat: no-repeat;
         background-position: left top;
       }
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 16px;
     }
 
     &.large {
@@ -160,5 +156,22 @@
       }
     }
 
+  }
+
+  @media (max-width: 374px) {
+    &.small {
+      .small {
+        &__left {
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    a {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 }

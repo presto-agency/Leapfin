@@ -457,7 +457,7 @@
       color: $color-white;
     }
 
-    p{
+    p {
       color: $color-dark-gray-600;
       margin: 24px 0 0 0;
       font-weight: 400;
@@ -617,6 +617,16 @@
 @media (max-width: 767px) {
   .hero {
     &__content {
+
+      .comment-hero {
+        &__bottom {
+          p {
+            font-size: 21px;
+            line-height: 32px;
+          }
+        }
+      }
+
       &_img {
         &.background-frame {
           &:before {

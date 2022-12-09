@@ -2,18 +2,6 @@
   position: relative;
   padding: 270px 0 109px;
   background: radial-gradient(291.17% 160.89% at 103.99% -47.18%, #EDA13D 0%, #2A326D 61.82%), linear-gradient(169.81deg, #FFFFFF -31.66%, rgba(213, 215, 229, 0.39) 73.42%);
-  margin: -73px 0 0 0;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 141px 100vw 0 0;
-    border-color: $color-dark-gray-200 transparent transparent transparent;
-  }
 
   &__title {
     max-width: 682px;
@@ -69,12 +57,7 @@
 
 @media(max-width: 1023px) {
   .revenue {
-    margin: -136px 0 0 0;
     padding: 84px 0 24px 0;
-
-    &:before {
-      border-width: 41px 100vw 0 0;
-    }
 
     &__title {
       margin: 0 auto 33px;

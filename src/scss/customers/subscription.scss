@@ -113,26 +113,3 @@
     }
   }
 }
-
-@media (max-width: 374px) {
-  .subscription {
-    &__list-top {
-      &_item {
-        &.small {
-          .small {
-            &__left {
-              img {
-                width: 50%;
-              }
-            }
-          }
-        }
-
-        a {
-          font-size: 12px;
-          line-height: 14px;
-        }
-      }
-    }
-  }
-}

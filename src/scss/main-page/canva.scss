@@ -1,5 +1,6 @@
 .canva {
   position: relative;
+  z-index: 2;
   background: $color-dark-gray-200;
 
   &:before {
@@ -13,6 +14,18 @@
     border-width: 0 100vw 80px 0;
     border-color: transparent #fff transparent transparent;
   }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -141px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 141px 100vw 0 0;
+    border-color: $color-dark-gray-200 transparent transparent transparent;
+  }
+
 
   &__content {
     position: relative;
@@ -52,10 +65,15 @@
 
 @media (max-width: 1023px) {
   .canva {
-    padding: 67px 0;
+    padding: 67px 0 0 0;
 
     &:before {
       border-width: 0 100vw 40px 0;
+    }
+
+    &:after {
+      bottom: -41px;
+      border-width: 41px 100vw 0 0;
     }
 
     &__content {
