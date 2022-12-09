@@ -2967,12 +2967,15 @@ h3,
 }
 
 .marketplace {
-  position: relative;
   margin: 0 0 144px 0;
+}
+
+.marketplace.background-triangle {
+  position: relative;
   padding: 180px 0 0 0;
 }
 
-.marketplace:before {
+.marketplace.background-triangle:before {
   content: "";
   position: absolute;
   top: -58px;
@@ -2984,7 +2987,7 @@ h3,
   border-color: transparent #fff transparent transparent;
 }
 
-.marketplace:after {
+.marketplace.background-triangle:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -3015,9 +3018,20 @@ h3,
   display: flex;
 }
 
+.marketplace__content.reverse .marketplace__content_logos {
+  flex: 0 0 190px;
+  order: 2;
+  margin: 0 auto 0 46px;
+}
+
+.marketplace__content.reverse .subscription-card {
+  flex: 0 1 844px;
+  order: 1;
+}
+
 .marketplace__content_logos {
-  flex: 0 1 255px;
-  margin: 0 46px 0 91px;
+  flex: 0 0 255px;
+  margin: 0 46px 0 auto;
 }
 
 .marketplace__content_logos ul {
@@ -3033,6 +3047,21 @@ h3,
 
 .marketplace__content .subscription-card {
   flex: 0 1 699px;
+}
+
+.marketplace__bottom-logos {
+  max-width: 630px;
+}
+
+.marketplace__bottom-logos ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -15px -15px;
+}
+
+.marketplace__bottom-logos ul li {
+  height: 136px;
+  width: calc((100% - 90px) / 3);
 }
 
 @media (min-width: 1199px) {
@@ -4131,10 +4160,13 @@ h3,
 
   .marketplace {
     margin: 100px 0 80px;
+  }
+
+  .marketplace.background-triangle {
     padding: 0;
   }
 
-  .marketplace:before {
+  .marketplace.background-triangle:before {
     display: none;
   }
 
@@ -4144,6 +4176,14 @@ h3,
 
   .marketplace__content {
     flex-direction: column;
+  }
+
+  .marketplace__content.reverse .marketplace__content_logos {
+    display: none;
+  }
+
+  .marketplace__content.reverse .subscription-card {
+    flex: initial;
   }
 
   .marketplace__content_logos {
@@ -4165,6 +4205,20 @@ h3,
   .marketplace__content .subscription-card {
     flex: initial;
     width: 100%;
+  }
+
+  .marketplace__bottom-logos {
+    max-width: 100%;
+  }
+
+  .marketplace__bottom-logos ul {
+    margin: 12px -12px -12px;
+  }
+
+  .marketplace__bottom-logos ul li {
+    margin: 12px;
+    width: calc((100% - 48px) / 2);
+    height: 96px;
   }
 }
 
