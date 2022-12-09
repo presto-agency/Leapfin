@@ -17,7 +17,7 @@
         border-bottom: initial;
       }
 
-      p {
+      > p {
         cursor: pointer;
         position: relative;
         font-size: 24px;
@@ -61,21 +61,23 @@
         transition: 500ms;
 
         li {
-          color: $color-dark-gray-800;
-          padding: 7px 0 30px 30px;
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 400;
-          max-width: 675px;
+          > p {
+            color: $color-dark-gray-800;
+            padding: 7px 0 30px 30px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            max-width: 675px;
 
-          a {
-            color: $color-punchy-green-800;
-            font-weight: 600;
-            transition: 500ms;
+            a {
+              color: $color-punchy-green-800;
+              font-weight: 600;
+              transition: 500ms;
 
-            @media (min-width: 1199px) {
-              &:hover {
-                opacity: 0.5;
+              @media (min-width: 1199px) {
+                &:hover {
+                  opacity: 0.5;
+                }
               }
             }
           }

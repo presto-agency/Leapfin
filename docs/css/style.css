@@ -2263,7 +2263,7 @@ h3,
   border-bottom: initial;
 }
 
-.questions__list .submenu-questions p {
+.questions__list .submenu-questions > p {
   cursor: pointer;
   position: relative;
   font-size: 24px;
@@ -2273,7 +2273,7 @@ h3,
   color: #22338A;
 }
 
-.questions__list .submenu-questions p span {
+.questions__list .submenu-questions > p span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -2282,8 +2282,8 @@ h3,
   height: 16px;
 }
 
-.questions__list .submenu-questions p span:before,
-.questions__list .submenu-questions p span:after {
+.questions__list .submenu-questions > p span:before,
+.questions__list .submenu-questions > p span:after {
   content: "";
   position: absolute;
   width: 16px;
@@ -2296,7 +2296,7 @@ h3,
   transition: 500ms;
 }
 
-.questions__list .submenu-questions p span:after {
+.questions__list .submenu-questions > p span:after {
   content: "";
   height: 16px;
   width: 2px;
@@ -2308,7 +2308,7 @@ h3,
   transition: 500ms;
 }
 
-.questions__list .submenu-questions ul li {
+.questions__list .submenu-questions ul li > p {
   color: #878787;
   padding: 7px 0 30px 30px;
   font-size: 16px;
@@ -2317,7 +2317,7 @@ h3,
   max-width: 675px;
 }
 
-.questions__list .submenu-questions ul li a {
+.questions__list .submenu-questions ul li > p a {
   color: #A2CB94;
   font-weight: 600;
   transition: 500ms;
@@ -2965,7 +2965,7 @@ h3,
 }
 
 @media (min-width: 1199px) {
-  .questions__list .submenu-questions ul li a:hover {
+  .questions__list .submenu-questions ul li > p a:hover {
     opacity: 0.5;
   }
 }
