@@ -3055,8 +3055,14 @@ h3,
 }
 
 .marketplace.right-side {
+  max-width: 1115px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.marketplace.right-side .container {
   max-width: 630px;
-  margin: 0 200px 0 auto;
+  margin: 0 0 144px auto;
 }
 
 .marketplace.right-side .marketplace__bottom-logos {
@@ -4242,9 +4248,9 @@ h3,
     display: none;
   }
 
-  .marketplace.right-side {
+  .marketplace.right-side .container {
+    margin: initial;
     max-width: 100%;
-    margin: 0;
   }
 
   .marketplace__title {
