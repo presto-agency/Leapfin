@@ -1054,24 +1054,6 @@ h3,
   background: radial-gradient(50% 50% at 50% 50%, #1B2345 0%, rgba(27, 35, 69, 0) 100%);
 }
 
-.hero__content_img.background-frame {
-  position: relative;
-}
-
-.hero__content_img.background-frame:before {
-  content: "";
-  position: absolute;
-  opacity: 0.5;
-  width: 717px;
-  height: 589px;
-  bottom: -104px;
-  left: -106px;
-  background-image: url("../img/case-study/bg-frame.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .hero__content_img > picture {
   display: block;
   position: relative;
@@ -1083,6 +1065,64 @@ h3,
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.hero__content_description {
+  flex: 0 0 540px;
+}
+
+.hero__content_description ul {
+  position: relative;
+  z-index: 2;
+  padding: 37px 34px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 8px 30px rgba(108, 123, 170, 0.12);
+}
+
+.hero__content_description ul li {
+  display: flex;
+  margin: 0 0 30px 0;
+}
+
+.hero__content_description ul li:last-child {
+  margin: 0;
+}
+
+.hero__content_description ul li p {
+  font-weight: 400;
+}
+
+.hero__content_description ul li p span {
+  font-weight: 600;
+  color: #22338A;
+}
+
+.hero__content_description ul li p + p {
+  margin: 0 0 0 30px;
+}
+
+.hero__content_description ul li p:first-of-type {
+  flex: 0 0 98px;
+  text-align: right;
+}
+
+.hero__content_description.background-frame {
+  position: relative;
+}
+
+.hero__content_description.background-frame:before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  width: 717px;
+  height: 589px;
+  bottom: -104px;
+  left: -106px;
+  background-image: url("../img/case-study/bg-frame.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero__content_table {
@@ -3874,6 +3914,11 @@ h3,
     height: 400px;
   }
 
+  .hero__content_description {
+    margin: 40px 0 0 0;
+    flex: initial;
+  }
+
   .hero__content .comment-hero {
     flex: initial;
     margin: 64px 0 0 0;
@@ -4334,7 +4379,7 @@ h3,
     line-height: 32px;
   }
 
-  .hero__content_img.background-frame:before {
+  .hero__content_description.background-frame:before {
     display: none;
   }
 
@@ -4604,6 +4649,24 @@ h3,
 }
 
 @media (max-width: 474px) {
+  .hero__content_description ul {
+    padding: 25px 20px;
+  }
+
+  .hero__content_description ul li {
+    flex-direction: column;
+    margin: 0 0 18px 0;
+  }
+
+  .hero__content_description ul li p:first-of-type {
+    flex: initial;
+    text-align: left;
+  }
+
+  .hero__content_description ul li p + p {
+    margin: initial;
+  }
+
   .accuracy__list ul {
     margin: -8px;
   }
