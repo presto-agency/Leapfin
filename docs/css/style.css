@@ -865,26 +865,20 @@ h3,
 
 .anchor-list ul li {
   white-space: nowrap;
-  position: relative;
   margin: 0 48px 0 0;
   color: #D3D3D8;
-  padding: 0 0 16px 0;
   transition: 500ms;
 }
 
-.anchor-list ul li.active {
-  color: #A2CB94;
+.anchor-list ul li a {
+  display: block;
+  position: relative;
+  padding: 0 0 16px 0;
+  color: #D3D3D8;
+  transition: 500ms;
 }
 
-.anchor-list ul li.active a {
-  color: #A2CB94;
-}
-
-.anchor-list ul li.active:before {
-  background-color: #A2CB94;
-}
-
-.anchor-list ul li:before {
+.anchor-list ul li a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -893,9 +887,12 @@ h3,
   width: 100%;
 }
 
-.anchor-list ul li a {
-  color: #D3D3D8;
-  transition: 500ms;
+.anchor-list ul li a.active-color {
+  color: #A2CB94;
+}
+
+.anchor-list ul li a.active-color:before {
+  background-color: #A2CB94;
 }
 
 .anchor-list ul li:last-child {
