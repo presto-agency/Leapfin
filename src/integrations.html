@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Leapfin</title>
+
+  <link rel="icon" type="image/svg" sizes="32x32" href="img/favicon.svg">
+  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <!--  <div class="root"></div>-->
+  @@include('_header.html')
+  <section class="hero vertical-align background-4">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__content_title">
+          <h1>
+            One place one schema for your financial data
+          </h1>
+        </div>
+        <div class="hero__content_img">
+          <picture>
+            <source srcset="img/hero/lottie-pict.webp" media="(max-width: 1023px)" type="image/webp">
+            <source srcset="imgDesktop/lottie-pict.png" media="(max-width: 1023px)">
+            <source srcset="imgDesktop/lottie-pict-1.webp" type="image/webp">
+            <img loading="eager" src="imgDesktop/lottie-pict-1.png" alt="picture">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="constantly">
+    <div class="container">
+      <div class="constantly__content">
+        <h2>
+          We are constantly adding new integrations to this list
+        </h2>
+        <p>
+          If you don't see an integration here that you need submit a request.
+        </p>
+        <a href="#" class="button _green _arrow">
+          Submit a request
+        </a>
+      </div>
+    </div>
+  </section>
+
+  @@include('_footer.html')
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

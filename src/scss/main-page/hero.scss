@@ -18,6 +18,27 @@
     background: radial-gradient(176.12% 91.11% at 100% 120%, #63B866 0%, #2A326D 100%);
   }
 
+  &.vertical-align {
+    .hero {
+      &__content {
+        flex-direction: column;
+        justify-content: initial;
+
+        &_title, &_img {
+          flex: initial;
+        }
+
+        &_img {
+          margin: 76px 0 0 0;
+        }
+
+        &_title {
+          max-width: 590px;
+        }
+      }
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -156,6 +177,15 @@
           height: 100%;
           object-fit: contain;
         }
+      }
+
+      > img {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
 
@@ -428,6 +458,21 @@
 @media (max-width: 1023px) {
   .hero {
     padding: 80px 0 150px;
+
+    &.vertical-align {
+      .hero {
+        &__content {
+
+          &_img {
+            max-width: 100%;
+          }
+
+          &_title {
+            max-width: 100%;
+          }
+        }
+      }
+    }
 
     &:before {
       content: '';

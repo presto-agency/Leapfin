@@ -924,6 +924,24 @@ h3,
   background: radial-gradient(176.12% 91.11% at 100% 120%, #63B866 0%, #2A326D 100%);
 }
 
+.hero.vertical-align .hero__content {
+  flex-direction: column;
+  justify-content: initial;
+}
+
+.hero.vertical-align .hero__content_title,
+.hero.vertical-align .hero__content_img {
+  flex: initial;
+}
+
+.hero.vertical-align .hero__content_img {
+  margin: 76px 0 0 0;
+}
+
+.hero.vertical-align .hero__content_title {
+  max-width: 590px;
+}
+
 .hero:before {
   content: "";
   position: absolute;
@@ -1062,6 +1080,16 @@ h3,
 }
 
 .hero__content_img > picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero__content_img > img {
+  display: block;
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -3144,6 +3172,63 @@ h3,
   width: calc((100% - 90px) / 3);
 }
 
+.constantly {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 184px 0;
+}
+
+.constantly:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 772px;
+  height: 253px;
+  background-size: 772px 253px;
+  background-image: url("../img/bg-constantly.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.constantly:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 150vw;
+  transform: translateX(-50%) rotate(4deg);
+  height: 150%;
+  background-color: #F7F7F9;
+}
+
+.constantly .container {
+  max-width: 1188px;
+}
+
+.constantly__content {
+  position: relative;
+  z-index: 2;
+  padding: 170px 0 183px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.constantly__content h2 {
+  margin: 0 auto 16px;
+  max-width: 640px;
+}
+
+.constantly__content p {
+  font-weight: 400;
+  margin: 0 0 32px 0;
+}
+
 @media (min-width: 1199px) {
   .questions__list .submenu-questions ul li > p a:hover {
     opacity: 0.5;
@@ -3845,6 +3930,14 @@ h3,
     padding: 80px 0 150px;
   }
 
+  .hero.vertical-align .hero__content_img {
+    max-width: 100%;
+  }
+
+  .hero.vertical-align .hero__content_title {
+    max-width: 100%;
+  }
+
   .hero:before {
     content: "";
     border-width: 0 0 48px 100vw;
@@ -4313,6 +4406,23 @@ h3,
     margin: 12px;
     width: calc((100% - 48px) / 2);
     height: 96px;
+  }
+
+  .constantly {
+    margin: 93px 0 102px;
+  }
+
+  .constantly:before {
+    display: none;
+  }
+
+  .constantly:after {
+    display: none;
+  }
+
+  .constantly__content {
+    padding: 40px 29px;
+    box-shadow: 4.51688px 4.51688px 112.922px rgba(108, 123, 170, 0.12);
   }
 }
 
