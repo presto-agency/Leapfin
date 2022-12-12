@@ -22,18 +22,25 @@
           font-weight: 400;
           margin: 0 0 24px 0;
 
+          strong {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: $color-royal-blue-800;
+
+            em {
+              font-style: normal !important;
+            }
+          }
+
+          a {
+            color: $color-punchy-green;
+          }
+
           &:last-of-type {
             margin: 0;
           }
-        }
-
-        strong {
-          display: block;
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 500;
-          color: $color-royal-blue-800;
-          margin: 0 0 16px 0;
         }
       }
     }

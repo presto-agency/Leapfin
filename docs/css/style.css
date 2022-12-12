@@ -2809,17 +2809,24 @@ h3,
   margin: 0 0 24px 0;
 }
 
-.case-editor__wrapper .editor__content p:last-of-type {
-  margin: 0;
-}
-
-.case-editor__wrapper .editor__content strong {
+.case-editor__wrapper .editor__content p strong {
   display: block;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #22338A;
-  margin: 0 0 16px 0;
+}
+
+.case-editor__wrapper .editor__content p strong em {
+  font-style: normal !important;
+}
+
+.case-editor__wrapper .editor__content p a {
+  color: #1ED760;
+}
+
+.case-editor__wrapper .editor__content p:last-of-type {
+  margin: 0;
 }
 
 .case-editor__wrapper .phrase {
