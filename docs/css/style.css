@@ -827,7 +827,11 @@ h3,
   padding: 16px 0 0 0;
   width: 100vw;
   max-width: 100vw;
-  background-color: #22338A;
+  background-color: #F3F2F3;
+}
+
+.anchor-list.menu ul li a {
+  color: #878787;
 }
 
 .anchor-list.active {
