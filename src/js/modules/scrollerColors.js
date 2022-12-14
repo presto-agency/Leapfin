@@ -1,6 +1,5 @@
-export const scrollerColors = () => {
+export const scrollerColors = (elementsPage) => {
 
-  let elementsPage = document.querySelectorAll('.section-trigger-color');
   if (elementsPage.length > 0) {
     window.addEventListener("scroll", scrolling, false);
 

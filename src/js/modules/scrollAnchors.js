@@ -1,5 +1,4 @@
-export const anchorAnimation = () => {
-  const anchors = document.querySelectorAll('a[href*="#"]');
+export const scrollAnchors = (anchors) => {
   if (anchors.length > 0) {
     const yOffset = -182;
     for (let anchor of anchors) {

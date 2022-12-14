@@ -1,9 +1,5 @@
-export const showCustomerMenu = () => {
-
-  const menu = document.querySelector('.anchor-list.menu');
+export const showCustomerMenu = (menu, objects, topValue) => {
   if (menu) {
-    const objects = document.querySelector('.sections-customers');
-    let topValue = 350;
     let bottomValue = 0;
     window.addEventListener("scroll", scrolling, false);
 
