@@ -428,6 +428,7 @@ h3,
 }
 
 .footer {
+  overflow: hidden;
   position: relative;
   z-index: 10;
   background: #22338A;
@@ -3339,9 +3340,10 @@ h3,
   font-size: 14px;
   line-height: 18px;
   color: #878787;
+  transition: 500ms;
 }
 
-.prebuilt__content_wrapper .sidebar__content_top ul li a.color-active {
+.prebuilt__content_wrapper .sidebar__content_top ul li a.active-color {
   color: #A2CB94;
 }
 
@@ -3369,6 +3371,12 @@ h3,
 
 .prebuilt__content_wrapper .processors__item {
   margin: 76px 0 0 0;
+}
+
+.prebuilt__content_wrapper .processors__item > p {
+  margin: 24px 0 0 0;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .prebuilt__content_wrapper .processors__item:first-of-type {
@@ -3523,6 +3531,10 @@ h3,
 
   .our-team ul li a:hover strong {
     color: #1ED760;
+  }
+
+  .prebuilt__content_wrapper .sidebar__content_top ul li a:hover {
+    color: #A2CB94;
   }
 
   .prebuilt__content_wrapper .processors__item_list ul li:hover {

@@ -1,6 +1,5 @@
-export const scrollAnchors = (anchors) => {
+export const scrollAnchors = (anchors, yOffset ) => {
   if (anchors.length > 0) {
-    const yOffset = -182;
     for (let anchor of anchors) {
       anchor.addEventListener('click', function (e) {
         e.preventDefault()

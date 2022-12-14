@@ -19,11 +19,25 @@ const customersFunction = () => {
   const objects = document.querySelector('.sections-customers');
   let topValue = 350;
   let bottomValue = 0;
+  const yOffset = -152;
+  const anchors = document.querySelectorAll('a[href*="#"]');
+  const wrapper = document.querySelector('.sections-customers');
+  if (wrapper) {
+    scrollAnchors(anchors, yOffset);
+  }
   showCustomerMenu(menu, objects, topValue, bottomValue)
 }
+const integrationFunction = () => {
+  const yOffset = -90;
+  const anchors = document.querySelectorAll('a[href*="#"]');
+  const wrapper = document.querySelector('.prebuilt');
+  if (wrapper) {
+    scrollAnchors(anchors, yOffset);
+  }
+}
+integrationFunction()
 customersFunction();
 
-scrollAnchors(document.querySelectorAll('a[href*="#"]'));
 scrollerColors(document.querySelectorAll('.section-trigger-color'));
 showSubmenu(document.querySelectorAll('.submenu-questions'));
 
