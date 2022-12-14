@@ -1,6 +1,5 @@
-export const showCustomerMenu = (menu, objects, topValue) => {
+export const showCustomerMenu = (menu, objects, topValue, bottomValue) => {
   if (menu) {
-    let bottomValue = 0;
     window.addEventListener("scroll", scrolling, false);
 
     function isFullyVisible(el) {

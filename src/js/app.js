@@ -18,11 +18,13 @@ const customersFunction = () => {
   const menu = document.querySelector('.anchor-list.menu');
   const objects = document.querySelector('.sections-customers');
   let topValue = 350;
-  showCustomerMenu(menu, objects, topValue)
+  let bottomValue = 0;
+  showCustomerMenu(menu, objects, topValue, bottomValue)
 }
+customersFunction();
+
 scrollAnchors(document.querySelectorAll('a[href*="#"]'));
 scrollerColors(document.querySelectorAll('.section-trigger-color'));
-customersFunction();
 showSubmenu(document.querySelectorAll('.submenu-questions'));
 
 

@@ -122,6 +122,10 @@ h6 {
   min-height: 100%;
 }
 
+.wrapper.integration {
+  overflow: initial;
+}
+
 .container {
   max-width: 1115px;
   padding: 0px 25px;
@@ -3224,7 +3228,8 @@ h3,
 .constantly {
   position: relative;
   z-index: 2;
-  margin: 0 0 184px 0;
+  padding: 0 0 184px 0;
+  background-color: #F7F7F9;
 }
 
 .constantly:before {
@@ -3246,12 +3251,13 @@ h3,
 .constantly:after {
   content: "";
   position: absolute;
-  top: 40px;
-  left: 50%;
-  width: 150vw;
-  transform: translateX(-50%) rotate(4deg);
-  height: 150%;
-  background-color: #F7F7F9;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 80px 0;
+  border-color: transparent #fff transparent transparent;
 }
 
 .constantly .container {
@@ -3300,15 +3306,13 @@ h3,
 }
 
 .prebuilt__content_wrapper .sidebar {
-  flex: 0 1 25%;
+  flex: 0 1 30%;
   margin: 0 62px 0 0;
 }
 
 .prebuilt__content_wrapper .sidebar__content {
   position: sticky;
   top: 100px;
-  left: 0;
-  z-index: 1;
 }
 
 .prebuilt__content_wrapper .sidebar__content_top > p,
@@ -3360,7 +3364,7 @@ h3,
 }
 
 .prebuilt__content_wrapper .processors {
-  flex: 0 1 75%;
+  flex: 0 1 70%;
 }
 
 .prebuilt__content_wrapper .processors__item {
@@ -4603,7 +4607,9 @@ h3,
   }
 
   .constantly {
+    background-color: initial;
     margin: 93px 0 102px;
+    padding: 0;
   }
 
   .constantly:before {
