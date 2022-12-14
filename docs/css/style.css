@@ -118,6 +118,7 @@ h6 {
 }
 
 .wrapper {
+  overflow: hidden;
   min-height: 100%;
 }
 
