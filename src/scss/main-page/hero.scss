@@ -268,19 +268,6 @@
 
         &.checkbox {
           display: flex;
-
-          input {
-            width: 20px;
-            height: 20px;
-            margin: 0 16px 0 0;
-          }
-
-          p {
-            font-size: 12px;
-            line-height: 20px;
-            color: $color-dark-gray-600;
-            font-weight: 400;
-          }
         }
 
         p {

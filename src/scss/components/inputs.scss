@@ -1,9 +1,69 @@
 .input-container {
-  select{
+  position: relative;
+
+  select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
+
+  &.checkbox {
+    display: flex;
+
+    &.styled {
+      position: relative;
+      input {
+        border: none !important;
+        appearance: none;
+        padding: 0;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          background-color: $color-royal-blue-800;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        &:checked {
+          &:after {
+            content: '';
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/check-w.svg");
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 2;
+          }
+        }
+      }
+    }
+
+    input {
+      flex: 0 0 20px;
+      height: 20px;
+      margin: 0 16px 0 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      color: $color-dark-gray-600;
+      font-weight: 400;
+    }
+  }
+
   input, select {
     height: 60px;
     width: 100%;
