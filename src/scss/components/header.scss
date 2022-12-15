@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  z-index: 10;
+  z-index: 11;
   top: 0;
   left: 0;
   width: 100vw;
@@ -8,6 +8,12 @@
   @media (min-width: 1200px) {
     &.hide {
       background: $color-royal-blue-800;
+    }
+    &.light {
+      &.hide {
+        background: $color-gray-header;
+
+      }
     }
   }
 
@@ -310,6 +316,68 @@
       }
     }
   }
+
+  &.light {
+    .header {
+      &__content {
+        &_login {
+          color: $color-dark-gray-800;
+
+          svg {
+            fill: $color-dark-gray-800;
+          }
+          @media (min-width: 1200px) {
+            &:hover {
+              color: $color-royal-blue-800;
+
+              svg {
+                fill: $color-royal-blue-800;
+              }
+            }
+          }
+        }
+
+        &_cross {
+          span {
+            background-color: $color-dark-gray-800;
+          }
+        }
+
+        .navigation {
+          &__links {
+            > li {
+              > a, > p {
+                color: $color-dark-gray-800;
+              }
+
+              &.submenu {
+                &:before {
+                  border: {
+                    color: $color-dark-gray-800;
+                  };
+                }
+              }
+
+              &:hover {
+                @media (min-width: 1200px) {
+                  > a, > p {
+                    color: $color-royal-blue-800;
+                  }
+                  &.submenu {
+                    &:before {
+                      border: {
+                        color: $color-royal-blue-800;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -320,6 +388,18 @@
           &:before {
             content: '';
             background: $color-royal-blue-800;
+          }
+        }
+      }
+    }
+
+    &.light {
+      &.hide {
+        .header {
+          &__content {
+            &:before {
+              background: $color-gray-header;
+            }
           }
         }
       }

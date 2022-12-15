@@ -18,6 +18,27 @@
     background: radial-gradient(176.12% 91.11% at 100% 120%, #63B866 0%, #2A326D 100%);
   }
 
+  &.background-5 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(243, 242, 243, 1) 100%);
+
+    &:before {
+      bottom: initial;
+      top: 260px;
+      border-width: 240px 100vw 0 0;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 260px;
+      background-color: $color-white;
+    }
+  }
+
   &.vertical-align {
     .hero {
       &__content {
@@ -53,6 +74,8 @@
   }
 
   &__content {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     padding: 98px 0 0 0;
@@ -65,6 +88,12 @@
       justify-content: center;
       flex: 0 1 50%;
       margin: 0 50px 0 0;
+
+      &.blue-text {
+        h1, h2, h3 {
+          color: $color-royal-blue-800;
+        }
+      }
 
       h1 {
         font-size: 44px;
@@ -190,6 +219,8 @@
     }
 
     &_description {
+      border-radius: 4px;
+      box-shadow: 0px 8px 30px rgba(108, 123, 170, 0.12);
       flex: 0 0 540px;
 
       ul {
@@ -197,8 +228,6 @@
         z-index: 2;
         padding: 37px 34px;
         background-color: $color-white;
-        border-radius: 4px;
-        box-shadow: 0px 8px 30px rgba(108, 123, 170, 0.12);
 
         li {
           display: flex;
@@ -230,8 +259,39 @@
         }
       }
 
+      > p {
+        position: relative;
+        z-index: 2;
+        background-color: $color-white;
+        padding: 63px;
+
+        strong {
+          display: block;
+          font-size: 56px;
+          line-height: 64px;
+          color: $color-royal-blue-800;
+          font-weight: 600;
+        }
+
+        small {
+          display: block;
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 600;
+          color: $color-royal-blue-800;
+        }
+      }
+
       &.background-frame {
         position: relative;
+
+        &._variant {
+          &:before {
+            bottom: -180px;
+            left: -168px;
+            background-image: url("../img/bg-404.svg");
+          }
+        }
 
         &:before {
           content: '';
