@@ -22,7 +22,7 @@
           font-weight: 400;
           margin: 0 0 24px 0;
 
-          strong {
+          strong, small {
             display: block;
             font-size: 16px;
             line-height: 24px;
@@ -33,6 +33,15 @@
               font-style: normal !important;
             }
           }
+
+          small {
+            color: $color-punchy-green-800;
+
+            em {
+              text-transform: uppercase !important;
+            }
+          }
+
 
           a {
             color: $color-punchy-green;

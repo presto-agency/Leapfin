@@ -161,6 +161,9 @@
 
     &_img {
       flex: 0 1 540px;
+      &.small{
+        flex: 0 1 244px;
+      }
 
       &.background-img {
         position: relative;

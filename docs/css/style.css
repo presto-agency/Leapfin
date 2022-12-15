@@ -133,6 +133,51 @@ h6 {
   box-sizing: content-box;
 }
 
+.container.small {
+  max-width: 853px;
+}
+
+.root {
+  padding: 80px 0 0 0;
+}
+
+.root.background-color {
+  position: relative;
+  height: 235px;
+  padding: 0;
+  background-image: linear-gradient(#2A326D 5%, #63B866 95%);
+  background-size: 100vw 235px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.root.background-color:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -80px;
+  right: 200px;
+  width: 290px;
+  height: 166px;
+  background-image: url("../img/squares.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.root.background-color:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 0;
+  border-style: solid;
+  border-width: 115px 0 0 100vw;
+  border-color: transparent transparent transparent #fff;
+}
+
 .background-template {
   position: relative;
 }
@@ -1160,6 +1205,10 @@ h3,
 
 .hero__content_img {
   flex: 0 1 540px;
+}
+
+.hero__content_img.small {
+  flex: 0 1 244px;
 }
 
 .hero__content_img.background-img {
@@ -2974,7 +3023,8 @@ h3,
   margin: 0 0 24px 0;
 }
 
-.case-editor__wrapper .editor__content p strong {
+.case-editor__wrapper .editor__content p strong,
+.case-editor__wrapper .editor__content p small {
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -2982,8 +3032,17 @@ h3,
   color: #22338A;
 }
 
-.case-editor__wrapper .editor__content p strong em {
+.case-editor__wrapper .editor__content p strong em,
+.case-editor__wrapper .editor__content p small em {
   font-style: normal !important;
+}
+
+.case-editor__wrapper .editor__content p small {
+  color: #A2CB94;
+}
+
+.case-editor__wrapper .editor__content p small em {
+  text-transform: uppercase !important;
 }
 
 .case-editor__wrapper .editor__content p a {
@@ -3678,6 +3737,23 @@ h3,
 }
 
 @media (max-width: 1199px) {
+  .root {
+    padding: 57px 0 0 0;
+  }
+
+  .root.background-color {
+    background-size: 100vw 90px;
+    height: 90px;
+  }
+
+  .root.background-color:after {
+    border-width: 45px 0 0 100vw;
+  }
+
+  .root.background-color:before {
+    display: none;
+  }
+
   .header.hide .header__content:before {
     content: "";
     background: #22338A;
