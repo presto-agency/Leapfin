@@ -94,6 +94,7 @@
         flex: 0 1 70%;
 
         &__item {
+          position: relative;
           margin: 0 0 76px 0;
           cursor: pointer;
 
@@ -139,6 +140,7 @@
               margin: -15px;
 
               li {
+                position: relative;
                 margin: 15px;
                 height: 112px;
                 width: calc((100% - (15px * 6)) / 3);
@@ -157,13 +159,37 @@
                   object-fit: contain;
                 }
 
+                > p {
+                  opacity: 0;
+                  pointer-events: none;
+                  position: absolute;
+                  bottom: -22px;
+                  font-size: 14px;
+                  line-height: 18px;
+                  font-weight: 500;
+                  color: $color-punchy-green-800;
+                  transition: 500ms;
+                }
+
                 @media (min-width: 1200px) {
                   &:hover {
                     background: rgba(108, 123, 170, 0.04);
+
+                    > p {
+                      opacity: 1;
+                      pointer-events: initial;
+                    }
                   }
                 }
               }
             }
+          }
+
+          &_description {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            text-align: center;
           }
         }
       }

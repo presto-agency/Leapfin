@@ -3374,6 +3374,7 @@ h3,
 }
 
 .prebuilt__content_wrapper .processors__item {
+  position: relative;
   margin: 0 0 76px 0;
   cursor: pointer;
 }
@@ -3420,6 +3421,7 @@ h3,
 }
 
 .prebuilt__content_wrapper .processors__item_list ul li {
+  position: relative;
   margin: 15px;
   height: 112px;
   width: calc((100% - 90px) / 3);
@@ -3438,6 +3440,25 @@ h3,
   height: 70%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.prebuilt__content_wrapper .processors__item_list ul li > p {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: -22px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #A2CB94;
+  transition: 500ms;
+}
+
+.prebuilt__content_wrapper .processors__item_description {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  text-align: center;
 }
 
 @media (min-width: 1199px) {
@@ -3548,6 +3569,11 @@ h3,
 
   .prebuilt__content_wrapper .processors__item_list ul li:hover {
     background: rgba(108, 123, 170, 0.04);
+  }
+
+  .prebuilt__content_wrapper .processors__item_list ul li:hover > p {
+    opacity: 1;
+    pointer-events: initial;
   }
 }
 

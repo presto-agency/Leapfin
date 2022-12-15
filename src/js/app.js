@@ -38,7 +38,6 @@ const integrationFunction = () => {
 }
 integrationFunction()
 customersFunction();
-
 scrollerColors(document.querySelectorAll('.section-trigger-color'));
 showSubmenu(document.querySelectorAll('.submenu-questions'));
 filterItems()
