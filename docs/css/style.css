@@ -3288,7 +3288,7 @@ h3,
 .prebuilt {
   position: relative;
   z-index: 2;
-  margin: -230px 0 0 0;
+  margin: -200px 0 0 0;
 }
 
 .prebuilt__content {
@@ -3332,6 +3332,10 @@ h3,
   margin: 0 0 24px 0;
 }
 
+.prebuilt__content_wrapper .sidebar__content_top ul li.hide-item {
+  display: none;
+}
+
 .prebuilt__content_wrapper .sidebar__content_top ul li:last-child {
   margin: 0;
 }
@@ -3370,7 +3374,12 @@ h3,
 }
 
 .prebuilt__content_wrapper .processors__item {
-  margin: 76px 0 0 0;
+  margin: 0 0 76px 0;
+  cursor: pointer;
+}
+
+.prebuilt__content_wrapper .processors__item.hide-item {
+  display: none;
 }
 
 .prebuilt__content_wrapper .processors__item > p {
@@ -3379,7 +3388,7 @@ h3,
   line-height: 20px;
 }
 
-.prebuilt__content_wrapper .processors__item:first-of-type {
+.prebuilt__content_wrapper .processors__item:last-of-type {
   margin: 0;
 }
 

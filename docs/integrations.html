@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20221214175307">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221215104640">
 
   <title>Leapfin</title>
 
@@ -347,42 +347,42 @@
                   Categories
                 </p>
                 <ul>
-                  <li>
+                  <li data-group="group-1">
                     <a class="active-color" href="#processors">
                       Payment Processors
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-1">
                     <a href="#buynow">
                       Buy Now, Pay Later
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-1">
                     <a href="#mobile">
                       Mobile
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-2">
                     <a href="#billing">
                       Billing & Order Management
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-2">
                     <a href="#cloud">
                       Cloud Storage
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-2">
                     <a href="#internal">
                       Internal Data Sources
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-2">
                     <a href="#bi">
                       BI & Reporting
                     </a>
                   </li>
-                  <li>
+                  <li data-group="group-2">
                     <a href="#general">
                       General Ledger & ERP
                     </a>
@@ -394,13 +394,13 @@
                   Type
                 </p>
                 <label for="checkField-1" class="input-container checkbox styled">
-                  <input required type="checkbox" id="checkField-1">
+                  <input checked data-attr="group-1" class="trigger-filter" required type="checkbox" id="checkField-1">
                   <p>
                     Sources
                   </p>
                 </label>
                 <label for="checkField" class="input-container checkbox styled">
-                  <input required type="checkbox" id="checkField">
+                  <input checked data-attr="group-2" class="trigger-filter" required type="checkbox" id="checkField">
                   <p>
                     Destinations
                   </p>
@@ -409,7 +409,7 @@
             </aside>
           </div>
           <ul class="processors">
-            <li id="processors" class="processors__item section-trigger-color">
+            <li data-group="group-1" id="processors" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -446,7 +446,7 @@
                 </ul>
               </div>
             </li>
-            <li id="buynow" class="processors__item section-trigger-color">
+            <li data-group="group-1" id="buynow" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -471,7 +471,7 @@
                 </ul>
               </div>
             </li>
-            <li id="mobile" class="processors__item section-trigger-color">
+            <li data-group="group-1" id="mobile" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -493,7 +493,7 @@
                 </ul>
               </div>
             </li>
-            <li id="billing" class="processors__item section-trigger-color">
+            <li data-group="group-2" id="billing" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -521,7 +521,7 @@
                 </ul>
               </div>
             </li>
-            <li id="cloud" class="processors__item section-trigger-color">
+            <li data-group="group-2" id="cloud" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -543,7 +543,7 @@
                 </ul>
               </div>
             </li>
-            <li id="internal" class="processors__item section-trigger-color">
+            <li data-group="group-2" id="internal" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -568,7 +568,7 @@
                 Note: Leapfin is flexible and can integrate with your internal systems. Talk to sales to learn more.
               </p>
             </li>
-            <li id="bi" class="processors__item section-trigger-color">
+            <li data-group="group-2" id="bi" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -599,7 +599,7 @@
                 Note: Leapfin’s secure data access capabilities supports integrations with many BI tools, talk to sales to learn more.
               </p>
             </li>
-            <li id="general" class="processors__item section-trigger-color">
+            <li data-group="group-2" id="general" class="processors__item section-trigger-color">
               <div class="processors__item_title">
                 <p>
                   <strong>
@@ -832,6 +832,6 @@
   </div>
 </footer>
 </div>
-<script src="js/app.min.js?_v=20221214175307"></script>
+<script src="js/app.min.js?_v=20221215104640"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ import {callTabs} from "./modules/callTabs.js";
 import {showCustomerMenu} from "./modules/showCustomerMenu.js";
 import {scrollAnchors} from "./modules/scrollAnchors.js";
 import {scrollerColors} from "./modules/scrollerColors.js";
+import {filterItems} from "./modules/filterItems.js";
 
 if (window.innerWidth < 1200) {
   addClassHeader()
@@ -40,6 +41,7 @@ customersFunction();
 
 scrollerColors(document.querySelectorAll('.section-trigger-color'));
 showSubmenu(document.querySelectorAll('.submenu-questions'));
+filterItems()
 
 
 

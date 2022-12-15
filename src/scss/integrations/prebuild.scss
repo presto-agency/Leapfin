@@ -1,7 +1,7 @@
 .prebuilt {
   position: relative;
   z-index: 2;
-  margin: -230px 0 0 0;
+  margin: -200px 0 0 0;
 
   &__content {
     border-radius: 4px;
@@ -41,6 +41,10 @@
                 line-height: 18px;
                 color: $color-dark-gray-800;
                 margin: 0 0 24px 0;
+
+                &.hide-item {
+                  display: none;
+                }
 
                 &:last-child {
                   margin: 0;
@@ -90,7 +94,12 @@
         flex: 0 1 70%;
 
         &__item {
-          margin: 76px 0 0 0;
+          margin: 0 0 76px 0;
+          cursor: pointer;
+
+          &.hide-item {
+            display: none;
+          }
 
           > p {
             margin: 24px 0 0 0;
@@ -98,7 +107,7 @@
             line-height: 20px;
           }
 
-          &:first-of-type {
+          &:last-of-type {
             margin: 0;
           }
 
