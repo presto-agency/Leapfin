@@ -1092,7 +1092,7 @@ h3,
 
 .anchor-list {
   position: relative;
-  margin: 136px auto 0;
+  margin: 0 auto;
   max-width: 825px;
   display: flex;
   justify-content: center;
@@ -1245,6 +1245,10 @@ h3,
 
 .hero.vertical-align .hero__content_title {
   max-width: 590px;
+}
+
+.hero.customers-style {
+  padding: 80px 0 550px 0;
 }
 
 .hero:before {
@@ -1670,23 +1674,6 @@ h3,
   font-size: 16px;
   line-height: 24px;
   color: #C0C0C7;
-}
-
-.hero__subscription {
-  margin: 104px auto 0;
-  max-width: 718px;
-}
-
-.hero__subscription h3 {
-  text-align: center;
-  color: #fff;
-}
-
-.hero__subscription p {
-  color: #D3D3D8;
-  margin: 24px 0 0 0;
-  font-weight: 400;
-  text-align: center;
 }
 
 .hero .partners {
@@ -3359,11 +3346,29 @@ h3,
 .subscription {
   position: relative;
   z-index: 2;
-  margin: -230px 0 0;
+  margin: -550px 0 0;
+}
+
+.subscription__title {
+  margin: 104px auto 0;
+  max-width: 718px;
+}
+
+.subscription__title h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.subscription__title p {
+  color: #D3D3D8;
+  margin: 24px 0 0 0;
+  font-weight: 400;
+  text-align: center;
 }
 
 .subscription__list-top {
   display: flex;
+  margin: 74px 0 0 0;
 }
 
 .subscription__list-bottom {
@@ -4474,10 +4479,6 @@ h3,
     background-position: center 15px;
   }
 
-  .subscription {
-    margin: -121px 0 0;
-  }
-
   .subscription__list-top {
     flex-direction: column;
   }
@@ -5315,7 +5316,7 @@ h3,
   .anchor-list {
     position: relative;
     left: 25px;
-    margin: 136px 0 0 -25px;
+    margin: 0 0 0 -25px;
     justify-content: flex-start;
   }
 
@@ -5325,6 +5326,10 @@ h3,
 
   .anchor-list ul {
     padding: 0 25px 0 0;
+  }
+
+  .hero.customers-style {
+    padding: 80px 0 350px 0;
   }
 
   .hero__content .comment-hero__bottom p {
@@ -5505,6 +5510,18 @@ h3,
     margin: 0 auto;
     flex: initial;
     height: 242px !important;
+  }
+
+  .subscription {
+    margin: -350px 0 0;
+  }
+
+  .subscription__title {
+    margin: 48px 0 0 0;
+  }
+
+  .subscription__list-top {
+    margin: 32px 0 0 0;
   }
 
   .subscription__list-bottom ul {

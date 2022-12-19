@@ -60,6 +60,13 @@
     }
   }
 
+  &.customers-style {
+    padding: 80px 0 550px 0;
+    @media (max-width: 767px) {
+      padding: 80px 0 350px 0;
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -161,7 +168,8 @@
 
     &_img {
       flex: 0 1 540px;
-      &.small{
+
+      &.small {
         flex: 0 1 244px;
       }
 
@@ -478,23 +486,6 @@
           }
         }
       }
-    }
-  }
-
-  &__subscription {
-    margin: 104px auto 0;
-    max-width: 718px;
-
-    h3 {
-      text-align: center;
-      color: $color-white;
-    }
-
-    p {
-      color: $color-dark-gray-600;
-      margin: 24px 0 0 0;
-      font-weight: 400;
-      text-align: center;
     }
   }
 

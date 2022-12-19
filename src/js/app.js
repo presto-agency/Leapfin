@@ -18,7 +18,7 @@ callTabs()
 const customersFunction = () => {
   const menu = document.querySelector('.anchor-list.menu');
   const objects = document.querySelector('.sections-customers');
-  let topValue = 350;
+  let topValue = 0;
   let bottomValue = 0;
   const yOffset = -152;
   const anchors = document.querySelectorAll('a[href*="#"]');
