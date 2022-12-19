@@ -199,6 +199,10 @@ h6 {
   opacity: 0.5;
 }
 
+.sections-customers {
+  margin: -550px 0 0;
+}
+
 .nav-links__list {
   position: relative;
 }
@@ -3346,7 +3350,6 @@ h3,
 .subscription {
   position: relative;
   z-index: 2;
-  margin: -550px 0 0;
 }
 
 .subscription__title {
@@ -3374,7 +3377,7 @@ h3,
 .subscription__list-bottom {
   max-width: 826px;
   box-sizing: content-box;
-  margin: 27px 0 80px;
+  margin: 27px 0 0;
   padding: 0 0 0 26%;
 }
 
@@ -5253,6 +5256,10 @@ h3,
 }
 
 @media (max-width: 767px) {
+  .sections-customers {
+    margin: -350px 0 0;
+  }
+
   .arrow-links {
     margin: 47px 0;
   }
@@ -5510,10 +5517,6 @@ h3,
     margin: 0 auto;
     flex: initial;
     height: 242px !important;
-  }
-
-  .subscription {
-    margin: -350px 0 0;
   }
 
   .subscription__title {

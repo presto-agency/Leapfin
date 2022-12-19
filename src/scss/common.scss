@@ -108,6 +108,13 @@
   }
 }
 
+.sections-customers {
+  margin: -550px 0 0;
+  @media (max-width: 767px) {
+    margin: -350px 0 0;
+  }
+}
+
 .nav-links {
   &__list {
     position: relative;
@@ -306,7 +313,9 @@
       font-weight: 400;
     }
   }
+
   @media (max-width: 1023px) {
     margin: 24px 0 0 0;
   }
 }
+

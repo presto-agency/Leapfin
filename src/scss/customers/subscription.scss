@@ -1,7 +1,6 @@
 .subscription {
   position: relative;
   z-index: 2;
-  margin: -550px 0 0;
 
   &__title {
     margin: 104px auto 0;
@@ -28,7 +27,7 @@
   &__list-bottom {
     max-width: 826px;
     box-sizing: content-box;
-    margin: 27px 0 80px;
+    margin: 27px 0 0;
     padding: 0 0 0 26%;
 
     ul {
@@ -102,7 +101,6 @@
 
 @media (max-width: 767px) {
   .subscription {
-    margin: -350px 0 0;
     &__title{
       margin: 48px 0 0 0;
     }
