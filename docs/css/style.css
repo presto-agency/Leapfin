@@ -4074,6 +4074,155 @@ h3,
   margin: 75px 0 0 0;
 }
 
+.perks {
+  margin: 124px 0 203px;
+}
+
+.perks__content h2 {
+  text-align: center;
+}
+
+.perks__content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 26px -50px -50px;
+}
+
+.perks__content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  width: calc((100% - 500px) / 5);
+}
+
+.perks__content ul li img {
+  flex: 0 0 48px;
+  width: 48px;
+}
+
+.perks__content ul li p {
+  margin: 32px 0 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #22338A;
+  text-align: center;
+}
+
+.virtual {
+  margin: 200px 0 0;
+}
+
+.virtual__content h3,
+.virtual__content p {
+  text-align: center;
+}
+
+.virtual__content h3 {
+  max-width: 670px;
+  margin: 22px auto 68px;
+}
+
+.virtual__content p strong {
+  font-size: 24px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #A2CB94;
+}
+
+.virtual__content ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -19px;
+}
+
+.virtual__content ul li {
+  margin: 19px;
+  width: calc((100% - 76px) / 2);
+}
+
+.virtual__content ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.by-numbers {
+  background: linear-gradient(183.89deg, #FFFFFF 8.76%, rgba(213, 215, 229, 0.69) 98.58%);
+  padding: 188px 0 95px;
+}
+
+.by-numbers__content {
+  position: relative;
+}
+
+.by-numbers__content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 827px;
+  height: 320px;
+  background-image: url("../img/join-team/squares-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 827px 320px;
+}
+
+.by-numbers__content h2 {
+  text-align: center;
+  margin: 0 0 41px 0;
+}
+
+.by-numbers__content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.by-numbers__content ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  margin: 15px;
+  width: calc((100% - 90px) / 3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.by-numbers__content ul li:last-child {
+  width: 100%;
+  max-width: 540px;
+}
+
+.by-numbers__content ul li p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #22338A;
+}
+
+.by-numbers__content ul li p span,
+.by-numbers__content ul li p strong {
+  color: #1ED760;
+  font-weight: 600;
+}
+
+.by-numbers__content ul li p strong {
+  color: #A2CB94;
+}
+
+.by-numbers__content ul li img {
+  flex: 0 0 40px;
+  height: 40px;
+  margin: 0 32px 0 0;
+}
+
 @media (min-width: 1199px) {
   .questions__list .submenu-questions ul li > p a:hover {
     opacity: 0.5;
@@ -4730,6 +4879,14 @@ h3,
 
   .subscription__list-bottom ul li:nth-child(6) {
     margin: 15px;
+  }
+
+  .perks__content ul li {
+    width: calc((100% - 400px) / 4);
+  }
+
+  .by-numbers__content:before {
+    display: none;
   }
 }
 
@@ -5565,6 +5722,35 @@ h3,
   .hiring__content .reviews__content a {
     margin: 60px auto 0;
   }
+
+  .perks__content ul li {
+    width: calc((100% - 300px) / 3);
+  }
+
+  .by-numbers__content ul li {
+    width: calc((100% - 60px) / 2);
+  }
+
+  .by-numbers__content ul li p strong {
+    color: #1ED760;
+  }
+
+  .by-numbers__content ul li:last-child {
+    width: calc((100% - 60px) / 2);
+    max-width: initial;
+  }
+
+  .by-numbers {
+    padding: 92px 0 25px;
+  }
+
+  .by-numbers__content ul li {
+    width: calc(100% - 30px);
+  }
+
+  .by-numbers__content ul li:last-child {
+    width: calc(100% - 30px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -5889,6 +6075,22 @@ h3,
   .prebuilt__content_wrapper .processors__item_list ul li {
     width: calc((100% - 72px) / 2);
   }
+
+  .perks {
+    margin: 73px 0;
+  }
+
+  .perks__content ul li {
+    width: calc((100% - 200px) / 2);
+  }
+
+  .virtual {
+    margin: 73px 0 0;
+  }
+
+  .virtual__content ul li {
+    width: calc(100% - 38px);
+  }
 }
 
 @media (max-width: 567px) {
@@ -6039,5 +6241,14 @@ h3,
 
   .google-map__content_map iframe {
     width: 200px !important;
+  }
+
+  .perks__content ul li {
+    width: calc(100% - 100px);
+  }
+
+  .by-numbers__content ul li p {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
