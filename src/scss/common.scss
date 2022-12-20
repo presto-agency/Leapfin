@@ -109,6 +109,8 @@
 }
 
 .sections-customers {
+  position: relative;
+  z-index: 2;
   margin: -550px 0 0;
   @media (max-width: 767px) {
     margin: -350px 0 0;

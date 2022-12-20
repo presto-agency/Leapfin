@@ -151,6 +151,41 @@
         }
       }
 
+      ol {
+        margin: 40px 0 0 0;
+
+        li {
+          position: relative;
+          color: $color-gray-secondary;
+          padding: 0 0 0 64px;
+          margin: 0 0 40px 0;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+
+          &:last-child {
+            margin: 0;
+          }
+
+          span {
+            color: $color-punchy-green;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 32px;
+            height: 32px;
+            background-image: url("../img/checked.svg");
+            background-size: 32px 32px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
       .button {
         align-self: flex-start;
         margin: 48px 0 0 0;
@@ -226,6 +261,37 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          &:nth-child(1) {
+            width: 393px;
+            height: 249px;
+            margin: 0 137px 23px 0;
+          }
+
+          &:nth-child(2) {
+            width: 222px;
+            height: 240px;
+            margin: 0 23px 0 54px;
+          }
+
+          &:nth-child(3) {
+            width: 226px;
+            height: 170px;
+          }
+
+          img {
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
     }
 
@@ -489,6 +555,48 @@
     }
   }
 
+  &__values {
+    margin: 85px 0 133px;
+
+    h1, h2, h3 {
+      text-align: center;
+      color: $color-white;
+      margin: 0 0 45px 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: -17px;
+
+      li {
+        padding: 32px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        margin: 17px;
+        width: calc((100% - (17px * 4)) / 2);
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+
+          strong {
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 600;
+            color: $color-white;
+          }
+
+          span {
+            color: $color-punchy-green;
+          }
+        }
+      }
+    }
+  }
+
   .partners {
     position: relative;
     z-index: 2;
@@ -565,6 +673,14 @@
         flex: initial;
         margin: 0;
 
+        &.text-align {
+          text-align: center;
+
+          .button {
+            align-self: center;
+          }
+        }
+
         h1 {
           font-size: 32px;
           line-height: 36px;
@@ -582,6 +698,17 @@
           display: none;
         }
 
+        ol {
+          li {
+            padding: 0;
+            margin: 0 0 24px 0;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+
       }
 
       &_img {
@@ -589,11 +716,36 @@
         max-width: 500px;
         margin: 44px auto 0;
 
+        &.collage {
+          max-width: 375px;
+        }
+
         &.background-img {
 
           &:before {
             width: 400px;
             height: 400px;
+          }
+        }
+
+        ul {
+          li {
+            &:nth-child(1) {
+              width: 241px;
+              height: 152px;
+              margin: 0 auto 14px 0;
+            }
+
+            &:nth-child(2) {
+              width: 136px;
+              height: 147px;
+              margin: 0 17px 0 33px;
+            }
+
+            &:nth-child(3) {
+              width: 138px;
+              height: 104px;
+            }
           }
         }
       }
@@ -698,6 +850,20 @@
       }
     }
 
+    &__values {
+      ul {
+        margin: 31px 0 0;
+
+        li {
+          width: 100%;
+          margin: 0 0 24px 0;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -732,6 +898,24 @@
 @media(max-width: 374px) {
   .hero {
     &__content {
+      &_img {
+        ul {
+          li {
+            &:nth-child(1) {
+              margin: 0 auto 24px;
+            }
+
+            &:nth-child(2) {
+              margin: 0 auto 24px;
+            }
+
+            &:nth-child(3) {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
       &_table {
         ul {
           li {
