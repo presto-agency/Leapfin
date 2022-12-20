@@ -37,10 +37,10 @@
 }
 
 @media (max-width: 1199px) {
-  .perks{
-    &__content{
-      ul{
-        li{
+  .perks {
+    &__content {
+      ul {
+        li {
           width: calc((100% - (50px * 8)) / 4);
         }
       }
@@ -49,10 +49,10 @@
 }
 
 @media (max-width: 1023px) {
-  .perks{
-    &__content{
-      ul{
-        li{
+  .perks {
+    &__content {
+      ul {
+        li {
           width: calc((100% - (50px * 6)) / 3);
         }
       }
@@ -61,12 +61,16 @@
 }
 
 @media (max-width: 767px) {
-  .perks{
+  .perks {
     margin: 73px 0;
-    &__content{
-      ul{
-        li{
-          width: calc((100% - (50px * 4)) / 2);
+
+    &__content {
+      ul {
+        margin: 35px -12px -12px;
+
+        li {
+          margin: 12px;
+          width: calc((100% - (12px * 4)) / 2);
         }
       }
     }
@@ -74,11 +78,11 @@
 }
 
 @media (max-width: 374px) {
-  .perks{
-    &__content{
-      ul{
-        li{
-          width: calc((100% - (50px * 2)));
+  .perks {
+    &__content {
+      ul {
+        li {
+          width: calc((100% - (12px * 2)));
         }
       }
     }

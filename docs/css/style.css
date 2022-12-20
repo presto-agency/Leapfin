@@ -6080,8 +6080,13 @@ h3,
     margin: 73px 0;
   }
 
+  .perks__content ul {
+    margin: 35px -12px -12px;
+  }
+
   .perks__content ul li {
-    width: calc((100% - 200px) / 2);
+    margin: 12px;
+    width: calc((100% - 48px) / 2);
   }
 
   .virtual {
@@ -6244,7 +6249,7 @@ h3,
   }
 
   .perks__content ul li {
-    width: calc(100% - 100px);
+    width: calc(100% - 24px);
   }
 
   .by-numbers__content ul li p {
