@@ -1,6 +1,6 @@
 .by-numbers {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(213, 215, 229, 0.69) 100%);
-  padding: 188px 0 95px;
+  padding: 188px 0 195px;
 
   &__content {
     position: relative;
@@ -105,7 +105,7 @@
 
 @media (max-width: 1023px) {
   .by-numbers {
-    padding: 92px 0 25px;
+    padding: 92px 0 195px;
 
     &__content {
       ul {
