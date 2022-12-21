@@ -4359,6 +4359,7 @@ h3,
 }
 
 .openings-view__top ul li .select-wrapper select {
+  cursor: pointer;
   pointer-events: visible;
   text-align: center;
   border-radius: 4px;
