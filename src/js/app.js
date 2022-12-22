@@ -7,6 +7,7 @@ import {showCustomerMenu} from "./modules/showCustomerMenu.js";
 import {scrollAnchors} from "./modules/scrollAnchors.js";
 import {scrollerColors} from "./modules/scrollerColors.js";
 import {filterItems} from "./modules/filterItems.js";
+import {heroAnimation} from "./modules/heroAnimation.js";
 
 if (window.innerWidth < 1200) {
   addClassHeader()
@@ -14,6 +15,7 @@ if (window.innerWidth < 1200) {
   showSubmenu(document.querySelectorAll('.sub-submenu'))
 }
 scrollHeader()
+heroAnimation()
 callTabs()
 const customersFunction = () => {
   const menu = document.querySelector('.anchor-list.menu');

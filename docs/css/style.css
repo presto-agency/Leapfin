@@ -1490,6 +1490,10 @@ h3,
      object-fit: cover;
 }
 
+.hero__content_lottie {
+  flex: 0 1 540px;
+}
+
 .hero__content_description {
   border-radius: 4px;
   box-shadow: 0px 8px 30px rgba(108, 123, 170, 0.12);
@@ -5411,6 +5415,12 @@ h3,
   .hero__content_img ul li:nth-child(3) {
     width: 138px;
     height: 104px;
+  }
+
+  .hero__content_lottie {
+    flex: initial;
+    max-width: 500px;
+    margin: 44px auto 0;
   }
 
   .hero__content_description {
