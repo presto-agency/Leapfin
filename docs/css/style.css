@@ -346,7 +346,7 @@ h6 {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 4px 0;
 }
 
@@ -363,7 +363,7 @@ h4,
 h5,
 h6,
 h7 {
-  color: #22338A;
+  color: #2A326D;
 }
 
 p {
@@ -604,7 +604,7 @@ h3,
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 4px 0;
   transition: 500ms;
 }
@@ -654,7 +654,7 @@ h3,
   overflow: hidden;
   position: relative;
   z-index: 10;
-  background: #22338A;
+  background: #2A326D;
 }
 
 .footer__content {
@@ -888,7 +888,7 @@ h3,
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-color: #22338A;
+  background-color: #2A326D;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -1046,7 +1046,7 @@ h3,
   font-weight: 600;
   color: #fff;
   padding: 12px 16px;
-  background-color: #22338A;
+  background-color: #2A326D;
   border-radius: 4px;
   transition: 500ms;
 }
@@ -1203,7 +1203,7 @@ h3,
 }
 
 .hero.background-2 {
-  background: #22338A;
+  background: #2A326D;
 }
 
 .hero.background-3 {
@@ -1291,7 +1291,7 @@ h3,
 .hero__content_title.blue-text h1,
 .hero__content_title.blue-text h2,
 .hero__content_title.blue-text h3 {
-  color: #22338A;
+  color: #2A326D;
 }
 
 .hero__content_title h1 {
@@ -1516,7 +1516,7 @@ h3,
 
 .hero__content_description ul li p span {
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .hero__content_description ul li p + p {
@@ -1539,7 +1539,7 @@ h3,
   display: block;
   font-size: 56px;
   line-height: 64px;
-  color: #22338A;
+  color: #2A326D;
   font-weight: 600;
 }
 
@@ -1548,7 +1548,7 @@ h3,
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .hero__content_description.background-frame {
@@ -1875,7 +1875,7 @@ h3,
   line-height: 24px;
   font-weight: 600;
   margin: 0 0 24px 0;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .accurate__content_initiatives ul li p {
@@ -1932,7 +1932,7 @@ h3,
   position: relative;
   font-size: 24px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
   padding: 0 40px 0 0;
 }
 
@@ -2016,7 +2016,7 @@ h3,
 .systems__content_text strong {
   font-size: 24px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 24px 0;
 }
 
@@ -2404,7 +2404,7 @@ h3,
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .comment__content_description p:last-child {
@@ -2473,7 +2473,7 @@ h3,
 }
 
 .demo.estimate .demo__content_description h2 {
-  color: #22338A;
+  color: #2A326D;
 }
 
 .demo.estimate .demo__content_form {
@@ -2690,7 +2690,7 @@ h3,
 .price__table ul li:first-child p {
   font-size: 20px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
   font-weight: 600;
 }
 
@@ -2732,7 +2732,7 @@ h3,
   display: block;
   font-size: 24px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 16px 0;
 }
 
@@ -2847,7 +2847,7 @@ h3,
 
 .charges__tabs .tabs__body > li > div small {
   display: block;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .charges__tabs .tabs__body > li > div p + small {
@@ -2905,7 +2905,7 @@ h3,
   line-height: 34px;
   font-weight: 600;
   padding: 29px 70px 30px 32px;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .questions__list .submenu-questions > p span {
@@ -3036,7 +3036,7 @@ h3,
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .template__list li small {
@@ -3099,7 +3099,7 @@ h3,
   width: 28px;
   height: 28px;
   border: 2px solid #fff;
-  fill: #22338A;
+  fill: #2A326D;
   transition: 500ms;
 }
 
@@ -3107,7 +3107,7 @@ h3,
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 4px 0;
   transition: 500ms;
 }
@@ -3166,7 +3166,7 @@ h3,
 .hiring__content strong {
   font-size: 32px;
   line-height: 36px;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 24px 0;
 }
 
@@ -3230,7 +3230,7 @@ h3,
   font-size: 32px;
   line-height: 36px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 24px 0;
 }
 
@@ -3282,7 +3282,7 @@ h3,
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .case-editor__wrapper .editor__content p strong em,
@@ -3349,7 +3349,7 @@ h3,
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .case-editor__wrapper .phrase__bottom {
@@ -3441,7 +3441,7 @@ h3,
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
   padding: 32px 0 0 55px;
   background-image: url("../img/comment/commas.svg");
   background-repeat: no-repeat;
@@ -3729,7 +3729,7 @@ h3,
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
   margin: 0 0 16px 0;
 }
 
@@ -3810,7 +3810,7 @@ h3,
 .prebuilt__content_wrapper .processors__item_title p strong {
   font-size: 24px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
   font-weight: 600;
 }
 
@@ -3962,7 +3962,7 @@ h3,
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .blog-cards__list .card .description__content p + p {
@@ -4106,7 +4106,7 @@ h3,
   margin: 32px 0 0;
   font-size: 18px;
   line-height: 28px;
-  color: #22338A;
+  color: #2A326D;
   text-align: center;
 }
 
@@ -4204,7 +4204,7 @@ h3,
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .by-numbers__content ul li p span,
@@ -4380,7 +4380,7 @@ h3,
 .openings-view__bottom > li > p strong {
   font-size: 24px;
   line-height: 32px;
-  color: #22338A;
+  color: #2A326D;
 }
 
 .openings-view__bottom > li > ul > li > p {
@@ -4446,7 +4446,7 @@ h3,
   }
 
   .header.hide {
-    background: #22338A;
+    background: #2A326D;
   }
 
   .header.light.hide {
@@ -4496,20 +4496,20 @@ h3,
   }
 
   .header.light .header__content_login:hover {
-    color: #22338A;
+    color: #2A326D;
   }
 
   .header.light .header__content_login:hover svg {
-    fill: #22338A;
+    fill: #2A326D;
   }
 
   .header.light .header__content .navigation__links > li:hover > a,
   .header.light .header__content .navigation__links > li:hover > p {
-    color: #22338A;
+    color: #2A326D;
   }
 
   .header.light .header__content .navigation__links > li:hover.submenu:before {
-    border-color: #22338A;
+    border-color: #2A326D;
   }
 
   .footer__content .navigation__list-items li a:hover {
@@ -4595,7 +4595,7 @@ h3,
 
   .header.hide .header__content:before {
     content: "";
-    background: #22338A;
+    background: #2A326D;
   }
 
   .header.light.hide .header__content:before {
