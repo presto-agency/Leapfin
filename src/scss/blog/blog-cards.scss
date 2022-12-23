@@ -17,6 +17,16 @@
                 background-color: rgba($color-royal-blue-800, 0.5);
               }
             }
+
+            .description {
+              &__content {
+                p {
+                  strong {
+                    opacity: .7;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -73,6 +83,7 @@
                 line-height: 32px;
                 font-weight: 600;
                 color: $color-royal-blue-800;
+                transition: 500ms;
               }
             }
 

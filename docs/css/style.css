@@ -4014,6 +4014,7 @@ h3,
   line-height: 32px;
   font-weight: 600;
   color: #2A326D;
+  transition: 500ms;
 }
 
 .blog-cards__list > li .card .description__content p + p {
@@ -4669,6 +4670,10 @@ h3,
 
   .blog-cards__list > li:hover .card__img:before {
     background-color: rgba(42, 50, 109, 0.5);
+  }
+
+  .blog-cards__list > li:hover .card .description__content p strong {
+    opacity: 0.7;
   }
 }
 
