@@ -16,6 +16,9 @@
   &.small {
     max-width: 853px;
   }
+  &.x-small{
+    max-width: 730px;
+  }
 }
 
 .root {
@@ -270,7 +273,7 @@
   @media (max-width: 1023px) {
     flex-wrap: nowrap;
     overflow-x: auto;
-    margin: 0 0 16px 0;
+    margin: -6px -6px 10px;
     scrollbar-width: none;
 
     &::-webkit-scrollbar {

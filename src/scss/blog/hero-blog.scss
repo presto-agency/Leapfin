@@ -1,6 +1,23 @@
 .hero-blog {
   margin: 56px 0 110px;
 
+  &.single {
+    .hero-blog {
+      &__content {
+        flex-direction: column;
+
+        &_img {
+          margin: 48px 0 0 0;
+          order: 2;
+          flex: initial;
+        }
+        .description{
+          flex: initial;
+        }
+      }
+    }
+  }
+
   &__content {
     display: flex;
 
@@ -42,6 +59,7 @@
 @media (max-width: 1023px) {
   .hero-blog {
     margin: 23px 0 42px;
+
     &__content {
       flex-direction: column;
 
