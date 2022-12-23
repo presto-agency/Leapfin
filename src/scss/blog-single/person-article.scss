@@ -1,0 +1,52 @@
+.person-article {
+  margin: 110px 0 124px;
+
+  &__content {
+    border-radius: 8px;
+    background-color: $color-dark-gray-200;
+    max-width: 540px;
+    padding: 32px;
+    margin: 0 auto;
+    display: flex;
+
+    span {
+      flex: 0 0 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin: 0 24px 0 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    p {
+      strong {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-royal-blue-800;
+        margin: 0 0 8px 0;
+      }
+
+      small {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $color-dark-gray-800;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .person-article{
+    margin: 80px 0 86px;
+    &__content{
+      padding: 32px 24px;
+    }
+  }
+}
