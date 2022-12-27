@@ -8,6 +8,7 @@ import {scrollAnchors} from "./modules/scrollAnchors.js";
 import {scrollerColors} from "./modules/scrollerColors.js";
 import {filterItems} from "./modules/filterItems.js";
 import {heroAnimation} from "./modules/heroAnimation.js";
+import {runSwiper} from "./modules/heroSwiper.js";
 
 if (window.innerWidth < 1200) {
   addClassHeader()
@@ -43,6 +44,17 @@ customersFunction();
 scrollerColors(document.querySelectorAll('.section-trigger-color'));
 showSubmenu(document.querySelectorAll('.submenu-questions'));
 filterItems()
+
+const addSliders = () => {
+  let count = 0;
+  for (let k = 0; k < 4; k++) {
+    setTimeout(function () {
+      runSwiper(k)
+    }, count)
+    count += 1000;
+  }
+}
+addSliders()
 
 
 
