@@ -116,6 +116,9 @@
   position: relative;
   z-index: 2;
   margin: -550px 0 0;
+  &.mod{
+    margin: 16px 0 80px;
+  }
   @media (max-width: 767px) {
     margin: -350px 0 0;
   }
