@@ -4,7 +4,8 @@ export const runSwiper = (n) => {
   const sliderHero = new Swiper(`.hero-swiper-${n}`, {
     modules: [Autoplay],
     autoplay: {
-      delay: 0
+      delay: 0,
+      disableOnInteraction: false
     },
     direction: "vertical",
     loop: true,
