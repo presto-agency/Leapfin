@@ -4457,43 +4457,43 @@ h3,
   -moz-appearance: none;
 }
 
-.openings-view__bottom > li > p {
+.openings-view__bottom > p {
   margin: 54px 0 40px 0;
 }
 
-.openings-view__bottom > li > p strong {
+.openings-view__bottom > p strong {
   font-size: 24px;
   line-height: 32px;
   color: #2A326D;
 }
 
-.openings-view__bottom > li > ul > li > p {
+.openings-view__bottom > ul > li > p {
   margin: 40px 0 24px 0;
 }
 
-.openings-view__bottom > li > ul > li > p strong {
+.openings-view__bottom > ul > li > p strong {
   font-size: 20px;
   line-height: 24px;
   color: #1ED760;
 }
 
-.openings-view__bottom > li > ul > li > ul > li {
+.openings-view__bottom > ul > li > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 0 32px 0;
 }
 
-.openings-view__bottom > li > ul > li > ul > li:last-child {
+.openings-view__bottom > ul > li > div:last-child {
   margin: 0;
 }
 
-.openings-view__bottom > li > ul > li > ul > li p {
+.openings-view__bottom > ul > li > div p {
   display: flex;
   flex-direction: column;
 }
 
-.openings-view__bottom > li > ul > li > ul > li p strong {
+.openings-view__bottom > ul > li > div p strong {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -4501,16 +4501,16 @@ h3,
   margin: 0 0 8px 0;
 }
 
-.openings-view__bottom > li > ul > li > ul > li p small {
+.openings-view__bottom > ul > li > div p small {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: #737373;
 }
 
-.openings-view__bottom > li > ul > li > ul > li .button,
-.openings-view__bottom > li > ul > li > ul > li .hiring__content a,
-.hiring__content .openings-view__bottom > li > ul > li > ul > li a {
+.openings-view__bottom > ul > li > div .button,
+.openings-view__bottom > ul > li > div .hiring__content a,
+.hiring__content .openings-view__bottom > ul > li > div a {
   align-self: center;
 }
 
@@ -5468,9 +5468,9 @@ h3,
     display: none;
   }
 
-  .openings-view__bottom > li > ul > li > ul > li .button,
-  .openings-view__bottom > li > ul > li > ul > li .hiring__content a,
-  .hiring__content .openings-view__bottom > li > ul > li > ul > li a {
+  .openings-view__bottom > ul > li > div .button,
+  .openings-view__bottom > ul > li > div .hiring__content a,
+  .hiring__content .openings-view__bottom > ul > li > div a {
     padding: 8px 16px;
   }
 }
@@ -6780,15 +6780,15 @@ h3,
     width: calc(100% - 38px);
   }
 
-  .openings-view__bottom > li > ul > li > ul > li {
+  .openings-view__bottom > ul > li > div {
     flex-direction: column;
     justify-content: initial;
     align-items: flex-start;
   }
 
-  .openings-view__bottom > li > ul > li > ul > li .button,
-  .openings-view__bottom > li > ul > li > ul > li .hiring__content a,
-  .hiring__content .openings-view__bottom > li > ul > li > ul > li a {
+  .openings-view__bottom > ul > li > div .button,
+  .openings-view__bottom > ul > li > div .hiring__content a,
+  .hiring__content .openings-view__bottom > ul > li > div a {
     margin: 16px 0 0 0;
     align-self: flex-start;
   }
