@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Leapfin</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <!--  <div class="root"></div>-->
+  @@include('_header.html')
+  <section class="hero background-3">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__content_title text-align">
+          <h1>
+            Leapfin Revenue Platform
+          </h1>
+          <p>
+            If all you need is a revenue solution, then why do you have to resort to patching everything together?
+          </p>
+          <a class="button _green" href="#">
+            See how it works
+          </a>
+        </div>
+        <div class="hero__content_img platform">
+          <ol>
+            <li>
+              <img src="img/platform/data.svg" alt="picture">
+            </li>
+            <li>
+              <img src="img/platform/custom.svg" alt="picture">
+            </li>
+            <li>
+              <img src="img/platform/excel.svg" alt="picture">
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('_footer.html')
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
