@@ -1476,6 +1476,7 @@ h3,
 }
 
 .hero__content_img.platform ol li {
+  opacity: 0.3;
   animation: show-logo 6s linear infinite;
 }
 

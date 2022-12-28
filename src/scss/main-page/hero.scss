@@ -252,6 +252,7 @@
           position: relative;
 
           li {
+            opacity: 0.3;
             animation: show-logo 6s linear infinite;
             @keyframes show-logo {
               0% {
