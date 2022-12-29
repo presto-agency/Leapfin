@@ -1207,20 +1207,17 @@ h3,
   transition: 500ms;
 }
 
-.anchor-list ul li a:before {
+.anchor-list ul li a.active-color {
+  color: #A2CB94;
+}
+
+.anchor-list ul li a.active-color:before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 2px;
   width: 100%;
-}
-
-.anchor-list ul li a.active-color {
-  color: #A2CB94;
-}
-
-.anchor-list ul li a.active-color:before {
   background-color: #A2CB94;
 }
 
