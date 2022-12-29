@@ -9,6 +9,10 @@
   scrollbar-width: none;
   transition: 300ms;
 
+  &.mod {
+    margin: 28px auto 122px;
+  }
+
   &.menu {
     position: fixed;
     top: -100px;
@@ -117,14 +121,16 @@
     left: 25px;
     margin: 0 0 0 -25px;
     justify-content: flex-start;
-    &.active {
-      ul {
-        padding: 0 25px;
-
-      }
+    &.mod{
+      margin: 24px 0 48px -25px;
     }
     ul {
       padding: 0 25px 0 0;
+    }
+    &.active {
+      ul {
+        padding: 0 25px;
+      }
     }
   }
 }
