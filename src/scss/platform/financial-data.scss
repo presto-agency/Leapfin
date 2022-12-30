@@ -37,6 +37,7 @@
   &__content {
     position: relative;
     max-height: 443px;
+
     &:before {
       content: '';
       pointer-events: none;
@@ -188,4 +189,16 @@
     }
   }
 
+  @media (max-width: 1439px) {
+    .swiper-button-next{
+      left: 25px;
+      top: initial;
+      bottom: -50px;
+    }
+    .swiper-button-prev{
+      left: 25px;
+      top: initial;
+      bottom: -100px;
+    }
+  }
 }

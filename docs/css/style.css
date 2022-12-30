@@ -5327,6 +5327,18 @@ h3,
     transform: initial;
     margin: 0 0 8px 0;
   }
+
+  .financial-data .swiper-button-next {
+    left: 25px;
+    top: initial;
+    bottom: -50px;
+  }
+
+  .financial-data .swiper-button-prev {
+    left: 25px;
+    top: initial;
+    bottom: -100px;
+  }
 }
 
 @media (max-width: 1199px) {
