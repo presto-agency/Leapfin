@@ -9,6 +9,7 @@ import {scrollerColors} from "./modules/scrollerColors.js";
 import {filterItems} from "./modules/filterItems.js";
 import {heroAnimation} from "./modules/heroAnimation.js";
 import {runSwiper} from "./modules/heroSwiper.js";
+import {platformSwiper} from "./modules/platformSwiper.js";
 
 if (window.innerWidth < 1200) {
   addClassHeader()
@@ -55,6 +56,7 @@ const addSliders = () => {
   }
 }
 addSliders()
+platformSwiper()
 
 
 
