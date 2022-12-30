@@ -35,7 +35,22 @@
   }
 
   &__content {
+    position: relative;
     max-height: 443px;
+    &:before {
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      z-index: 2;
+      bottom: -3px;
+      left: 0;
+      width: 443px;
+      height: 100px;
+      background: linear-gradient(
+          to bottom,
+          transparent,
+          #2A326D)
+    }
   }
 
   .swiper-button-prev {
@@ -83,13 +98,13 @@
   }
 
   .swiper-slide {
-    &.punchy{
-      .swiper-slide{
-        &__content{
-          &_description{
-            >div{
-              p{
-                strong{
+    &.punchy {
+      .swiper-slide {
+        &__content {
+          &_description {
+            > div {
+              p {
+                strong {
                   color: $color-punchy-green-800;
                 }
               }
@@ -98,13 +113,14 @@
         }
       }
     }
-    &.orange{
-      .swiper-slide{
-        &__content{
-          &_description{
-            >div{
-              p{
-                strong{
+
+    &.orange {
+      .swiper-slide {
+        &__content {
+          &_description {
+            > div {
+              p {
+                strong {
                   color: $color-bright-orange;
                 }
               }
@@ -125,20 +141,6 @@
         display: flex;
         align-items: center;
 
-        &:before{
-          content: '';
-          pointer-events: none;
-          position: absolute;
-          bottom: -3px;
-          left: 0;
-          width: 100%;
-          height: 100px;
-          background: linear-gradient(
-              to bottom,
-              transparent,
-                #2A326D)
-        }
-
         > div {
           max-height: 443px;
           overflow-y: auto;
@@ -148,6 +150,7 @@
           &::-webkit-scrollbar {
             display: none;
           }
+
           p {
             font-size: 20px;
             line-height: 28px;

@@ -5028,7 +5028,20 @@ h3,
 }
 
 .financial-data__content {
+  position: relative;
   max-height: 443px;
+}
+
+.financial-data__content:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  bottom: -3px;
+  left: 0;
+  width: 443px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #2A326D);
 }
 
 .financial-data .swiper-button-prev {
@@ -5094,17 +5107,6 @@ h3,
   flex: 0 1 445px;
   display: flex;
   align-items: center;
-}
-
-.financial-data .swiper-slide__content_description:before {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to bottom, transparent, #2A326D);
 }
 
 .financial-data .swiper-slide__content_description > div {
