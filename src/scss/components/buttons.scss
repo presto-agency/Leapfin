@@ -13,6 +13,10 @@
     background: $color-punchy-green;
   }
 
+  &._blue {
+    background: $color-royal-blue-800;
+  }
+
   &._arrow {
     position: relative;
     padding: 18px 60px 18px 26px;
@@ -44,6 +48,9 @@
     &:hover {
       &._green {
         background: $color-dark-blue;
+      }
+      &._blue {
+        background: $color-punchy-green;
       }
     }
   }

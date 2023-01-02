@@ -1,5 +1,23 @@
 .better-technology {
   margin: 40px 0 16px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -219px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 180px 0;
+    border-color: transparent #fff transparent transparent;
+    @media (max-width: 1199px) {
+      bottom: -120px;
+      border-width: 0 100vw 80px 0;
+    }
+  }
 
   &__title {
     text-align: center;
@@ -19,7 +37,7 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      margin: -31px -28px;
+      margin: -31px -28px 40px;
 
       li {
         width: calc((100% - (28px * 6)) / 3);
@@ -66,6 +84,7 @@
         flex-wrap: nowrap;
         overflow-x: auto;
         scrollbar-width: none;
+        padding: 0 25px 0 0;
 
         &::-webkit-scrollbar {
           display: none;

@@ -1,4 +1,6 @@
 .demo {
+  position: relative;
+  z-index: 2;
   margin: 30px auto 67px;
 
   &.green-bg {
