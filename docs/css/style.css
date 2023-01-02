@@ -3169,6 +3169,10 @@ h3,
   margin: 114px 0 40px;
 }
 
+.questions.financial {
+  margin: 0;
+}
+
 .questions.financial .submenu-questions.punchy > p strong {
   color: #A2CB94;
 }
