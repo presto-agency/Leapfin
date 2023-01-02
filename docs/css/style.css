@@ -387,6 +387,43 @@ h6 {
   height: 100px;
 }
 
+.sections-financial-data {
+  position: relative;
+  z-index: 2;
+  padding: 100px 0 310px;
+  background: linear-gradient(166deg, rgb(42, 50, 109) 68%, rgb(237, 161, 61) 100%);
+}
+
+.sections-financial-data .mobile {
+  display: none;
+}
+
+.sections-financial-data:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 180px 100vw 0 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.sections-financial-data:after {
+  content: "";
+  position: absolute;
+  top: -180px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 180px 100vw 0 0;
+  border-color: transparent #2A326D transparent transparent;
+}
+
 h1,
 h2,
 h3,
@@ -3132,6 +3169,29 @@ h3,
   margin: 114px 0 40px;
 }
 
+.questions.financial .submenu-questions.punchy > p strong {
+  color: #A2CB94;
+}
+
+.questions.financial .submenu-questions.orange > p strong {
+  color: #FAA204;
+}
+
+.questions.financial .submenu-questions > p {
+  padding: 30px 30px 30px 0;
+  color: #fff;
+}
+
+.questions.financial .submenu-questions ul li p {
+  color: #E6E6E9;
+  max-width: 100%;
+  padding: 0;
+}
+
+.questions.financial .submenu-questions ul li p + p {
+  margin: 16px 0 0 0;
+}
+
 .questions__list .submenu-questions {
   border-bottom: 2px solid #E5E6E9;
 }
@@ -3153,6 +3213,15 @@ h3,
   font-weight: 600;
   padding: 29px 70px 30px 32px;
   color: #2A326D;
+}
+
+.questions__list .submenu-questions > p strong {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1ED760;
+  margin: 0 0 16px 0;
 }
 
 .questions__list .submenu-questions > p span {
@@ -3203,6 +3272,14 @@ h3,
   color: #A2CB94;
   font-weight: 600;
   transition: 500ms;
+}
+
+.questions__list .submenu-questions ul li > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 32px 0;
 }
 
 .template {
@@ -4990,41 +5067,8 @@ h3,
   color: #A2CB94;
 }
 
-.financial-data {
-  position: relative;
-  z-index: 2;
-  padding: 100px 0 310px;
-  background: linear-gradient(166deg, rgb(42, 50, 109) 68%, rgb(237, 161, 61) 100%);
-}
-
 .financial-data .container {
   position: relative;
-}
-
-.financial-data:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 180px 100vw 0 0;
-  border-color: transparent #fff transparent transparent;
-}
-
-.financial-data:after {
-  content: "";
-  position: absolute;
-  top: -180px;
-  right: 50%;
-  transform: translateX(50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 180px 100vw 0 0;
-  border-color: transparent #2A326D transparent transparent;
 }
 
 .financial-data__content {
@@ -5044,12 +5088,12 @@ h3,
   background: linear-gradient(to bottom, transparent, #2A326D);
 }
 
-.financial-data .swiper-button-prev {
+.financial-data .swiper-button-next {
   top: calc(50% + 30px);
   left: -42px;
 }
 
-.financial-data .swiper-button-next {
+.financial-data .swiper-button-prev {
   top: calc(50% - 30px);
   left: -42px;
   right: initial;
@@ -5328,13 +5372,13 @@ h3,
     margin: 0 0 8px 0;
   }
 
-  .financial-data .swiper-button-next {
+  .financial-data .swiper-button-prev {
     left: 25px;
     top: initial;
     bottom: -50px;
   }
 
-  .financial-data .swiper-button-prev {
+  .financial-data .swiper-button-next {
     left: 25px;
     top: initial;
     bottom: -100px;
@@ -5357,6 +5401,28 @@ h3,
 
   .root.background-color:before {
     display: none;
+  }
+
+  .sections-financial-data .desk {
+    display: none;
+  }
+
+  .sections-financial-data .mobile {
+    display: block;
+  }
+
+  .sections-financial-data {
+    background: #2A326D;
+    padding: 0 0 80px 0;
+  }
+
+  .sections-financial-data:before {
+    border-width: 80px 100vw 0 0;
+  }
+
+  .sections-financial-data:after {
+    top: -80px;
+    border-width: 80px 100vw 0 0;
   }
 
   .header.hide .header__content:before {
