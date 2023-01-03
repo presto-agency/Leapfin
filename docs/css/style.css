@@ -2880,7 +2880,7 @@ h3,
 
 .price:before {
   content: "";
-  background: linear-gradient(177.96deg, #2A326D 30.65%, #63B866 81.17%);
+  background: linear-gradient(157deg, rgb(42, 50, 109) 48%, rgb(99, 184, 102) 100%);
   position: absolute;
   z-index: -1;
   top: 0;
@@ -3459,6 +3459,7 @@ h3,
 
 .hiring__content {
   display: flex;
+  background-color: #fff;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -3523,11 +3524,25 @@ h3,
 }
 
 .google-map {
-  margin: 198px 0;
+  position: relative;
+  padding: 0 0 198px 0;
+}
+
+.google-map:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1755px;
+  background: linear-gradient(184.2deg, #FFFFFF 15.85%, #D5D7E5 50.65%);
+  opacity: 0.5;
 }
 
 .google-map__content {
   display: flex;
+  background-color: #fff;
   max-width: 920px;
   margin: 0 auto;
   padding: 39px 43px 59px;
@@ -6613,8 +6628,14 @@ h3,
     margin: 0 auto;
   }
 
-  .price__title {
-    padding: 0 24px;
+  .price:before {
+    background: linear-gradient(171deg, rgb(42, 50, 109) 21%, rgb(83, 136, 107) 100%);
+    height: 700px;
+  }
+
+  .price:after {
+    border-width: 0 0 80px 100vw;
+    top: 620px;
   }
 
   .price__title h1 {
@@ -6637,7 +6658,6 @@ h3,
 
   .price__table {
     padding: 20px 0;
-    border-radius: initial;
     margin: 90px 0 0 0;
   }
 
@@ -6648,7 +6668,7 @@ h3,
   }
 
   .price__table.box-shadow {
-    padding: 39px 50px 52px;
+    padding: 39px 36px 52px;
     margin: 33px auto 0;
   }
 
@@ -6684,10 +6704,6 @@ h3,
     flex: 0 1 33.333%;
   }
 
-  .price .container {
-    padding: 0;
-  }
-
   .charges {
     margin: 60px auto;
   }
@@ -6709,6 +6725,10 @@ h3,
   .our-team h2 {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  .google-map:after {
+    height: 1450px;
   }
 
   .google-map__content_map iframe {
@@ -7371,7 +7391,7 @@ h3,
   }
 
   .google-map {
-    margin: 93px 0 76px;
+    padding: 0 0 76px 0;
   }
 
   .google-map__content {
