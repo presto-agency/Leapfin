@@ -113,7 +113,7 @@
                   &:first-child {
                     strong {
                       &:after {
-                        transform: translateX(20px) translateY(-50%);
+                        transform: translateX(20px);
                       }
                     }
                   }
@@ -147,10 +147,8 @@
 
                   &:after {
                     content: '';
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    transform: translateX(0) translateY(-50%);
+                    display: inline-block;
+                    position: static;
                     width: 16px;
                     height: 16px;
                     background-size: 16px 16px;
@@ -158,6 +156,16 @@
                     background-repeat: no-repeat;
                     background-image: url("../img/accurate/arrow-right.svg");
                     transition: 500ms;
+                  }
+
+                  @media (max-width: 567px) {
+                    width: 100%;
+                    &:after {
+                      position: absolute;
+                      top: 50%;
+                      right: 0;
+                      transform: translateY(-50%);
+                    }
                   }
                 }
               }

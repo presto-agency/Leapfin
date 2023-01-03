@@ -2,7 +2,7 @@
   position: relative;
 
   &.background-grey {
-    z-index: 2;
+    z-index: 3;
     padding: 156px 0 208px;
     background: linear-gradient(167.45deg, rgba(213, 215, 229, 0.15) 11.06%, #FFFFFF 88.28%);
 
@@ -135,7 +135,6 @@
       }
 
       a {
-        align-self: flex-start;
         position: relative;
         font-size: 16px;
         line-height: 24px;
@@ -145,17 +144,24 @@
 
         &:after {
           content: '';
-          position: absolute;
-          top: 50%;
-          right: 0;
-          transform: translateX(0) translateY(-50%);
+          position: static;
+          display: inline-block;
+          transform: translateY(2px);
           width: 16px;
           height: 16px;
-          background-size: 16px 16px;
+          background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
           background-image: url("../img/accurate/arrow-right.svg");
           transition: 500ms;
+        }
+
+        @media (min-width: 1200px) {
+          &:hover {
+            &:after{
+              transform: translateY(2px) translateX(20px);
+            }
+          }
         }
       }
 

@@ -10,6 +10,8 @@
     padding: 64px 0 0 0;
 
     .description {
+      display: flex;
+      flex-direction: column;
       flex: 0 1 271px;
       margin: 0 40px 0 0;
 
@@ -30,6 +32,7 @@
 
       &__paragraph {
         margin: 16px 0 0 0;
+        flex: 1 1 auto;
 
         p {
           font-size: 16px;
@@ -65,7 +68,7 @@
             font-size: 16px;
             line-height: 24px;
             font-weight: 500;
-            color: $color-white;
+            color: $color-gray-header;
             transition: 500ms;
             @media (min-width: 1200px) {
               &:hover {
@@ -101,8 +104,8 @@
     }
 
     .social-media {
-      margin: 72px 0 0 0;
       display: flex;
+      margin: 16px 0 0 0;
 
       &.mob {
         display: none;
@@ -184,6 +187,7 @@
       }
 
       .description {
+        height: 100%;
         flex: initial;
         margin: 0 0 32px 0;
 
