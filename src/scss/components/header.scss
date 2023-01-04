@@ -186,9 +186,6 @@
                   }
 
                   li {
-                    max-width: 313px;
-                    min-height: 84px;
-
                     .plus {
                       display: none;
                     }
@@ -207,6 +204,9 @@
 
                     ul {
                       li {
+                        max-width: 313px;
+                        min-height: 84px;
+                        padding: 0 0 20px 0;
                         a {
                           display: flex;
 
@@ -592,8 +592,6 @@
                       width: 100%;
                       padding: 16px 20px 16px 0;
                       border-bottom: 1px solid #F3F2F3;
-                      min-height: initial;
-                      max-width: initial;
 
                       &.active {
                         .plus {
@@ -660,10 +658,15 @@
                         overflow: hidden;
 
                         li {
+                          min-height: initial;
+                          max-width: initial;
                           border-bottom: initial;
 
                           &:first-child {
-                            padding: 32px 0 0 0;
+                            padding: 32px 0 20px 0;
+                          }
+                          &:last-child {
+                            padding: 0;
                           }
                         }
                       }

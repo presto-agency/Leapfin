@@ -627,11 +627,6 @@ h3,
   background: #FAFAFB;
 }
 
-.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li {
-  max-width: 313px;
-  min-height: 84px;
-}
-
 .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li .plus {
   display: none;
 }
@@ -646,6 +641,12 @@ h3,
   font-weight: 400;
   color: #878787;
   opacity: 0.8;
+}
+
+.header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li {
+  max-width: 313px;
+  min-height: 84px;
+  padding: 0 0 20px 0;
 }
 
 .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list li ul li a {
@@ -5799,8 +5800,6 @@ h3,
     width: 100%;
     padding: 16px 20px 16px 0;
     border-bottom: 1px solid #F3F2F3;
-    min-height: initial;
-    max-width: initial;
   }
 
   .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li.active .plus:after {
@@ -5865,11 +5864,17 @@ h3,
   }
 
   .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li ul li {
+    min-height: initial;
+    max-width: initial;
     border-bottom: initial;
   }
 
   .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li ul li:first-child {
-    padding: 32px 0 0 0;
+    padding: 32px 0 20px 0;
+  }
+
+  .header__content .navigation__links > li.submenu .dropdown-menu__submenu_list > li ul li:last-child {
+    padding: 0;
   }
 
   .header__content .navigation .button,
@@ -6146,6 +6151,7 @@ h3,
 
 @media (max-width: 1023px) {
   .background-template:before {
+    top: -50px;
     height: 100%;
   }
 
@@ -7304,24 +7310,13 @@ h3,
     margin: 30px 0 0 0;
   }
 
-  .charges__tabs:before {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    z-index: 2;
-    right: -8px;
-    top: 0;
-    width: 10%;
-    height: 48px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
-  }
-
   .charges__tabs .tabs__items {
     overflow: auto;
     justify-content: initial;
     flex-wrap: nowrap;
     scrollbar-width: none;
     border-bottom: initial;
+    width: calc(100% + 25px);
   }
 
   .charges__tabs .tabs__items::-webkit-scrollbar {
@@ -7331,10 +7326,6 @@ h3,
   .charges__tabs .tabs__items li {
     white-space: nowrap;
     margin: 0 30px 0 0;
-  }
-
-  .charges__tabs .tabs__items li:last-child {
-    margin: 0 100px 0 0;
   }
 
   .charges__tabs .tabs__body {
