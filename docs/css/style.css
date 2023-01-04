@@ -274,46 +274,51 @@ h6 {
   justify-content: space-between;
 }
 
-.arrow-links__navigation a {
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  color: #A2CB94;
-  padding: 0 34px 0 0;
-  transition: 500ms;
-}
-
-.arrow-links__navigation a.disabled {
+.arrow-links__navigation .button-container.prev a {
   padding: 0 0 0 34px;
   color: #D3D3D8;
 }
 
-.arrow-links__navigation a.disabled:before {
+.arrow-links__navigation .button-container.prev a:before {
   background-image: url("../img/ArrowLeft.svg");
   right: initial;
   left: 0;
 }
 
-.arrow-links__navigation a.blue {
+.arrow-links__navigation .button-container.next a {
+  color: #A2CB94;
+  padding: 0 34px 0 0;
+}
+
+.arrow-links__navigation .button-container.next a:before {
+  background-image: url("../img/ArrowRight.svg");
+  right: 0;
+}
+
+.arrow-links__navigation .button-container.blue a {
   padding: 0 0 0 34px;
   color: #6C7BAA;
 }
 
-.arrow-links__navigation a.blue:before {
-  background-image: url("../img/ArrowRight-b.svg");
-  right: initial;
+.arrow-links__navigation .button-container.blue a:before {
   left: 0;
+  background-image: url("../img/ArrowRight-b.svg");
 }
 
-.arrow-links__navigation a:before {
+.arrow-links__navigation .button-container a {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 500ms;
+}
+
+.arrow-links__navigation .button-container a:before {
   content: "";
   position: absolute;
-  right: 0;
-  top: 50%;
   transform: translateY(-50%);
+  top: 50%;
   width: 24px;
   height: 24px;
-  background-image: url("../img/ArrowRight.svg");
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: center;
@@ -5393,7 +5398,7 @@ h3,
     color: #A2CB94;
   }
 
-  .arrow-links__navigation a:hover {
+  .arrow-links__navigation .button-container a:hover {
     opacity: 0.5;
   }
 
