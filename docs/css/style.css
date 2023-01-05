@@ -4986,6 +4986,59 @@ h3,
   transition: 500ms;
 }
 
+.single-editor ul {
+  margin: 0 0 24px 0;
+}
+
+.single-editor ul li {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #878787;
+  padding: 0 0 0 40px;
+  margin: 0 0 16px 0;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: left top;
+}
+
+.single-editor ul li:last-child {
+  margin: 0;
+}
+
+.single-editor ol {
+  counter-reset: myCounter;
+  margin: 0 0 24px 0;
+}
+
+.single-editor ol li {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #878787;
+  padding: 0 0 0 40px;
+  margin: 0 0 16px 0;
+}
+
+.single-editor ol li:last-child {
+  margin: 0;
+}
+
+.single-editor ol li:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  counter-increment: myCounter;
+  content: counter(myCounter) ".";
+  color: #2A326D;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
 .single-editor .wp-block-table {
   margin: 32px 0 88px;
 }
@@ -5006,6 +5059,7 @@ h3,
 }
 
 .single-editor .wp-block-table table tbody tr td {
+  border: initial !important;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
