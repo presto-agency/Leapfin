@@ -25,7 +25,7 @@
           transform: translateY(-50%);
           width: 20px;
           height: 20px;
-          background-color: $color-royal-blue-800;
+          border: 2px solid $color-royal-blue-400;
           border-radius: 4px;
           cursor: pointer;
         }
@@ -44,6 +44,10 @@
             background-repeat: no-repeat;
             background-position: center;
             z-index: 2;
+          }
+          &:before{
+            border: 2px solid $color-royal-blue-800;
+            background-color: $color-royal-blue-800;
           }
         }
       }

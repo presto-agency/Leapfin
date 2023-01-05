@@ -563,6 +563,7 @@ h3,
 .header__content .navigation__links {
   display: flex;
   padding: 28px 0 0 0;
+  margin: 0 25px 0 0;
 }
 
 .header__content .navigation__links > li {
@@ -973,7 +974,7 @@ h3,
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-color: #2A326D;
+  border: 2px solid #ABAECD;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -991,6 +992,11 @@ h3,
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
+}
+
+.input-container.checkbox.styled input:checked:before {
+  border: 2px solid #2A326D;
+  background-color: #2A326D;
 }
 
 .input-container.checkbox input {
@@ -4154,6 +4160,7 @@ h3,
   margin: 24px 0 0 0;
   font-size: 12px;
   line-height: 20px;
+  font-weight: 400;
 }
 
 .prebuilt__content_wrapper .processors__item:last-of-type {
