@@ -2250,6 +2250,12 @@ h3,
   color: #2A326D;
 }
 
+.systems__content_text p strong br {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+}
+
 .systems__content_text p strong span {
   color: #1ED760;
 }
@@ -3156,7 +3162,7 @@ h3,
   color: #2A326D;
 }
 
-.charges__tabs .tabs__body > li > div p + small {
+.charges__tabs .tabs__body > li > div p > small {
   margin: 24px 0 4px 0;
 }
 
@@ -3225,6 +3231,10 @@ h3,
 .questions__list .submenu-questions.active span:before,
 .questions__list .submenu-questions.active span:after {
   transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.questions__list .submenu-questions.active span:before {
+  opacity: 0;
 }
 
 .questions__list .submenu-questions:last-child {
