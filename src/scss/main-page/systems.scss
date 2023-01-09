@@ -128,12 +128,6 @@
           font-weight: 400;
           color: $color-royal-blue-800;
 
-          br {
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 36px;
-          }
-
           span {
             color: $color-punchy-green;
           }
@@ -155,6 +149,7 @@
           transform: translateY(2px);
           width: 16px;
           height: 16px;
+          margin: 0 0 0 10px;
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;

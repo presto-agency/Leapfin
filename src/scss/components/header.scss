@@ -34,16 +34,23 @@
           object-fit: contain;
         }
       }
+      @media (max-width: 374px) {
+        flex: 0 0 76px;
+        height: 23px;
+      }
     }
 
     &_login {
+      &.mobile {
+        display: none;
+      }
+
       position: relative;
       color: $color-white;
       font-size: 16px;
       line-height: 24px;
       padding: 0 0 0 22px;
       height: 24px;
-      transition: 500ms;
 
       svg {
         position: absolute;
@@ -53,7 +60,6 @@
         width: 15px;
         height: 16px;
         fill: $color-white;
-        transition: 500ms;
       }
 
       @media (min-width: 1200px) {
@@ -208,6 +214,7 @@
                         max-width: 313px;
                         min-height: 84px;
                         padding: 0 0 20px 0;
+
                         a {
                           display: flex;
 
@@ -316,6 +323,12 @@
             }
           }
         }
+      }
+    }
+
+    .button {
+      &.mobile {
+        display: none;
       }
     }
   }
@@ -451,7 +464,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        height: 57px;
+        height: 66px;
         transition: 500ms;
       }
 
@@ -461,7 +474,19 @@
       }
 
       &_login {
-        margin: 0 50px 0 0;
+        display: none;
+
+        &.mobile {
+          color: $color-dark-gray-800;
+          display: block;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 500;
+
+          svg {
+            fill: $color-dark-gray-800;
+          }
+        }
       }
 
       .navigation {
@@ -470,7 +495,7 @@
         background: $color-white;
         width: 100%;
         height: calc(100% - 57px);
-        top: 57px;
+        top: 66px;
         right: 100vw;
         margin: 0;
         padding: 26px 25px 24px;
@@ -514,7 +539,7 @@
               }
 
               .dropdown-menu {
-                top: 57px;
+                top: 66px;
                 z-index: 3;
                 opacity: 1;
                 overflow-y: auto;
@@ -666,6 +691,7 @@
                           &:first-child {
                             padding: 32px 0 20px 0;
                           }
+
                           &:last-child {
                             padding: 0;
                           }
@@ -681,8 +707,18 @@
         }
 
         .button {
-          text-align: center;
-          width: 100%;
+          display: none;
+        }
+      }
+
+      .button {
+        &.mobile {
+          display: block;
+          z-index: 2;
+          margin: 0 45px 0 0;
+          font-size: 12px;
+          line-height: 18px;
+          padding: 11px 12px;
         }
       }
     }

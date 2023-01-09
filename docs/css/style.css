@@ -505,7 +505,10 @@ h3,
   line-height: 24px;
   padding: 0 0 0 22px;
   height: 24px;
-  transition: 500ms;
+}
+
+.header__content_login.mobile {
+  display: none;
 }
 
 .header__content_login svg {
@@ -516,7 +519,6 @@ h3,
   width: 15px;
   height: 16px;
   fill: #fff;
-  transition: 500ms;
 }
 
 .header__content_cross {
@@ -705,6 +707,12 @@ h3,
   line-height: 24px;
   color: #fff;
   transition: 500ms;
+}
+
+.header__content .button.mobile,
+.header__content .hiring__content a.mobile,
+.hiring__content .header__content a.mobile {
+  display: none;
 }
 
 .header.light .header__content_login {
@@ -2113,6 +2121,7 @@ h3,
   background-repeat: no-repeat;
   background-image: url("../img/accurate/arrow-right.svg");
   transition: 500ms;
+  margin: 0 0 0 10px;
 }
 
 .accurate__content_roles ul li a p:nth-child(2) small {
@@ -2250,12 +2259,6 @@ h3,
   color: #2A326D;
 }
 
-.systems__content_text p strong br {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 36px;
-}
-
 .systems__content_text p strong span {
   color: #1ED760;
 }
@@ -2276,6 +2279,7 @@ h3,
   transform: translateY(2px);
   width: 16px;
   height: 16px;
+  margin: 0 0 0 10px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -5743,7 +5747,7 @@ h3,
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 57px;
+    height: 66px;
     transition: 500ms;
   }
 
@@ -5754,7 +5758,19 @@ h3,
   }
 
   .header__content_login {
-    margin: 0 50px 0 0;
+    display: none;
+  }
+
+  .header__content_login.mobile {
+    color: #878787;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .header__content_login.mobile svg {
+    fill: #878787;
   }
 
   .header__content .navigation {
@@ -5763,7 +5779,7 @@ h3,
     background: #fff;
     width: 100%;
     height: calc(100% - 57px);
-    top: 57px;
+    top: 66px;
     right: 100vw;
     margin: 0;
     padding: 26px 25px 24px;
@@ -5810,7 +5826,7 @@ h3,
   }
 
   .header__content .navigation__links > li.submenu .dropdown-menu {
-    top: 57px;
+    top: 66px;
     z-index: 3;
     opacity: 1;
     overflow-y: auto;
@@ -5964,8 +5980,18 @@ h3,
   .header__content .navigation .button,
   .header__content .navigation .hiring__content a,
   .hiring__content .header__content .navigation a {
-    text-align: center;
-    width: 100%;
+    display: none;
+  }
+
+  .header__content .button.mobile,
+  .header__content .hiring__content a.mobile,
+  .hiring__content .header__content a.mobile {
+    display: block;
+    z-index: 2;
+    margin: 0 45px 0 0;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 11px 12px;
   }
 
   .partners {
@@ -7736,6 +7762,11 @@ h3,
 }
 
 @media (max-width: 374px) {
+  .header__content_logo {
+    flex: 0 0 76px;
+    height: 23px;
+  }
+
   .footer__content .navigation > ul > li {
     width: calc(100% - 22px);
   }
