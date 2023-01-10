@@ -569,6 +569,7 @@ h3,
 }
 
 .header__content .navigation__links > li {
+  cursor: pointer;
   padding: 0 0 28px 0;
   margin: 0 32px 0 0;
   transition: 500ms;
