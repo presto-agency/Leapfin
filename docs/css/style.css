@@ -571,7 +571,7 @@ h6,
 .header__content .navigation__links {
   display: flex;
   padding: 28px 0 0 0;
-  margin: 0 25px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .header__content .navigation__links > li {
@@ -1215,6 +1215,7 @@ h6,
 }
 
 .anchor-list.mod {
+  max-width: 1115px;
   margin: 28px auto 122px;
 }
 
@@ -6201,7 +6202,7 @@ h6,
   }
 
   .anchor-list.active {
-    top: 57px;
+    top: 66px;
   }
 
   .accurate {

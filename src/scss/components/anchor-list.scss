@@ -10,6 +10,7 @@
   transition: 300ms;
 
   &.mod {
+    max-width: 1115px;
     margin: 28px auto 122px;
   }
 
@@ -36,7 +37,7 @@
   &.active {
     top: 80px;
     @media (max-width: 1199px) {
-      top: 57px;
+      top: 66px;
     }
   }
 
