@@ -9,8 +9,20 @@ export const showSubmenu = (itemsLinks) => {
             e.preventDefault()
             let itemsMenu = item.querySelectorAll('ul>li');
             let submenuHeight = getHeight(itemsMenu)
-            checkHeight(itemsMenu[0], submenuHeight)
-            itemsMenu[0].parentNode.parentNode.classList.toggle('active')
+            let active = item.parentNode.parentNode.querySelector('.active');
+            let wrapper = itemsMenu[0].parentNode.parentNode;
+            if (!!active && active !== wrapper) {
+              active.querySelector('ul').style.maxHeight = 0 + 'px';
+              active.classList.remove('active');
+              checkHeight(itemsMenu[0], submenuHeight);
+              wrapper.classList.add('active')
+            } else if (!!active && active === wrapper) {
+              active.querySelector('ul').style.maxHeight = 0 + 'px';
+              active.classList.remove('active');
+            } else {
+              checkHeight(itemsMenu[0], submenuHeight)
+              wrapper.classList.add('active')
+            }
           }
         }
       })
@@ -24,7 +36,7 @@ export const showSubmenu = (itemsLinks) => {
   }
 
   function checkHeight(item, height) {
-    item.parentNode.style.maxHeight = item.parentNode.style.maxHeight === height + 'px' ? '0' : height + 'px';
+    item.parentNode.style.maxHeight = height + 'px';
   }
 
   setHeight(itemsLinks)
