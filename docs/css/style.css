@@ -3662,7 +3662,9 @@ h6,
 .case-editor__wrapper .editor__content h1,
 .case-editor__wrapper .editor__content h2,
 .case-editor__wrapper .editor__content h3,
-.case-editor__wrapper .editor__content h4 {
+.case-editor__wrapper .editor__content h4,
+.case-editor__wrapper .editor__content h5,
+.case-editor__wrapper .editor__content h6 {
   margin: 0 0 24px 0;
 }
 
@@ -3685,16 +3687,16 @@ h6,
   font-style: normal !important;
 }
 
+.case-editor__wrapper .editor__content p a {
+  color: #1ED760;
+}
+
 .case-editor__wrapper .editor__content p small {
   color: #A2CB94;
 }
 
 .case-editor__wrapper .editor__content p small em {
   text-transform: uppercase !important;
-}
-
-.case-editor__wrapper .editor__content p a {
-  color: #1ED760;
 }
 
 .case-editor__wrapper .editor__content p:last-of-type {
