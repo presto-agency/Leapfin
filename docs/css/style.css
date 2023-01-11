@@ -3668,6 +3668,10 @@ h6,
   margin: 0 0 24px 0;
 }
 
+.case-editor__wrapper .editor__content a {
+  color: #1ED760;
+}
+
 .case-editor__wrapper .editor__content p {
   font-weight: 400;
   margin: 0 0 24px 0;
@@ -3685,10 +3689,6 @@ h6,
 .case-editor__wrapper .editor__content p strong em,
 .case-editor__wrapper .editor__content p small em {
   font-style: normal !important;
-}
-
-.case-editor__wrapper .editor__content p a {
-  color: #1ED760;
 }
 
 .case-editor__wrapper .editor__content p small {

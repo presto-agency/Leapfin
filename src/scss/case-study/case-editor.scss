@@ -18,6 +18,10 @@
           margin: 0 0 24px 0;
         }
 
+        a {
+          color: $color-punchy-green;
+        }
+
         p {
           font-weight: 400;
           margin: 0 0 24px 0;
@@ -32,10 +36,6 @@
             em {
               font-style: normal !important;
             }
-          }
-
-          a {
-            color: $color-punchy-green;
           }
 
           small {
