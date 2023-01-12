@@ -6,7 +6,7 @@ export const scrollerColors = (elementsPage) => {
         if (isFullyVisible(el)) {
           let idEl = el.id;
           const activeButton = document.querySelector('.active-color');
-          let link = document.querySelector(`a[href='#${idEl}']`);
+          let link = document.querySelector(`ul>li>a[href='#${idEl}']`);
           if (activeButton !== link && !link.classList.contains('active-color')) {
             changeClass(activeButton, link)
           }
